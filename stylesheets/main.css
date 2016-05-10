@@ -1,0 +1,14 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "Helvetica", sans-serif;
+}
+
+#CenterPage {
+  max-width: 1295px;
+  min-width: 1295px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
