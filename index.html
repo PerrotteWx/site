@@ -3,51 +3,20 @@
 	 Last Modified: 10 May 2016 -->
 <html>
 <head>
-<link rel="stylesheet" type="test/css" href="/site/stylesheets/main.css">
+<link rel="stylesheet" type="text/css" href="/site/stylesheets/main.css">
 
 </head>
 
 <body>
+<p>The website previously located at atms.unca.edu/~gperrott is being relocated to this address. Please adjust your boookmark accordingly.</p>
+
+
+
 <div id="widgets">
 <iframe width="250" height="715" style="overflow-x:hidden; overflow-y:hidden; border: none; margin-top: 63px;"
 	src="http://innovation.srh.noaa.gov/NWSwidget/?lat=35.59&amp;lon=-82.54&widgetMode=1">
 </iframe>
 </div>
-
-<script type="text/javascript">
-// Current Server Time script (SSI or PHP)- By JavaScriptKit.com (http://www.javascriptkit.com)
-// For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
-// This notice must stay intact for use.
-
-//Depending on whether your page supports SSI (.shtml) or PHP (.php), UNCOMMENT the line below your page supports and COMMENT the one it does not:
-//Default is that SSI method is uncommented, and PHP is commented:
-
-var currenttime = '<!--#config timefmt="%B %d, %Y %H:%M:%S"--><!--#echo var="DATE_GMT" -->' //SSI method of getting server date
-//var currenttime = '<?php print gmdate("F d, Y H:i:s", time())?>' //PHP method of getting server date
-
-///////////Stop editting here/////////////////////////////////
-
-var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
-var serverdate=new Date(currenttime)
-
-function padlength(what){
-var output=(what.toString().length==1)? "0"+what : what
-return output
-}
-
-function displaytime(){
-serverdate.setSeconds(serverdate.getSeconds()+1)
-var datestring=montharray[serverdate.getMonth()]+" "+padlength(serverdate.getDate())+", "+serverdate.getFullYear()
-var timestring=padlength(serverdate.getHours())+":"+padlength(serverdate.getMinutes())+":"+padlength(serverdate.getSeconds())+" UTC"
-document.getElementById("servertime").innerHTML=timestring
-}
-
-window.onload=function(){
-setInterval("displaytime()", 1000)
-}
-</script>
-
-<p id="clock"><b>The current time is: </b><span id="servertime"></span></p>
 
 </body>
 </html>
