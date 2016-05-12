@@ -74,6 +74,7 @@ nav ul span li {
 	background-color: #0F0F0F;
 	padding: 5px 0 2px 0;
 	font-size: 82%;
+	color: white;
 }
 
 nav ul span li:hover {
@@ -107,6 +108,7 @@ nav ul li:hover > ul {
 nav a {
 	display: block;
 	padding: 5px 0;
+	color: white;
 }
 
 /* Changes the text in the drop downs */
