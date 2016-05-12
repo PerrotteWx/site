@@ -28,7 +28,7 @@ nav {
 	margin: 0 auto;
 	min-width: 1295px;
 	max-width: 1295px;
-	background-color: #B0B0B0;
+	background-color: #0F0F0F;
 }
 
 nav:after {
@@ -57,27 +57,27 @@ nav ul li {
 	margin: 0;
 	padding: 0;
 	font-family: "Tahoma", sans-serif;
-	color: b;
+	color: white;
 	cursor: default;
-	background-color: #B0B0B0;
+	background-color: #0F0F0F;
 	font-size: 95%;
 }
 
 /* Changes the main link color on hover and the area behind the main link on hover */
 nav ul li:hover {
-	background-color: black;
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 /* Headers within dropdowns */
 nav ul span li {
-	background-color: #B0B0B0;
+	background-color: #0F0F0F;
 	padding: 5px 0 2px 0;
 	font-size: 82%;
 }
 
 nav ul span li:hover {
-	background-color: #B0B0B0;
+	background-color: white;
 	color: black;
 }
 
@@ -95,7 +95,7 @@ nav ul ul {
 nav ul ul li {
 	float: none;
 	min-width: 180px;
-	color: black;
+	color: white;
 }
 
 /* Changes the area behind the drop down links and is responsible for displaying the drop down on hover */
@@ -127,7 +127,7 @@ nav a:visited {
 }
 
 nav a:hover {
-	color: white;
+	color: black;
 	font-family: "Tahoma", sans-serif;
-	background-color: black;
+	background-color: white;
 }
