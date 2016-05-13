@@ -1,0 +1,70 @@
+body { 
+	background-color: #0F0F0F;
+	font-family: "Tahoma", "Helvetica", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#mainText h2 {
+	color: white;
+	font-size: 31pt;
+	text-shadow: 2px 0 7px #003c77;
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+table {
+	position: absolute;
+	top: 100px;
+	left: -25px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+	text-align: center;
+}
+
+table tr td {
+	padding: 0 5px;
+}
+
+#mainText {
+	position: absolute;
+	top: 15px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	min-width: 825px;
+	text-align: center;
+}
+
+#contentWrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#disclaimer {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#disclaimer p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 0 7px #003C77;
+}
+
+#myLogo {
+	width: 375px;
+}
+
+#ATMSlogo {
+	width: 375px;
+}

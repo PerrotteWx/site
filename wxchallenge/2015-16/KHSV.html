@@ -8,7 +8,7 @@
 <!-- Favicon from https://commons.wikimedia.org/wiki/File:Hielo.png -->
 <link rel="icon" href="/images/favicon.png" />
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/fcstmenus_v2tourney.css">
+<link rel="stylesheet" type="text/css" href="/stylesheets/fcstmenus_v2.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 </head>
 
@@ -35,30 +35,6 @@ $(".toggleDiv").hide();
 </script>
 
 <script type="text/javascript">
-var ObsURL = "/~gperrott/observations/KHSV.xml";
-var night = "";
-var fairvsclear = "";
-</script>
-
-<script src="/~gperrott/scripts/surfaceobs_v2.js"></script>
-
-<!--Sets the background color of the icon-->
-<script type="text/javascript">
-var skyColorTime = new Date().getUTCHours();
-	
-if (skyColorTime >= 0 && skyColorTime <= 11) {
-	night = "nt";
-	fairvsclear = "Clear"
-}
-else {
-	night = "";
-	fairvsclear = "Fair";
-}
-</script>
-
-
-
-<script type="text/javascript">
 $(function(){
 $("#linksSelector").change(function(){
 $(".toggleDiv").hide();
@@ -70,27 +46,8 @@ $(".toggleDiv").hide();
 <!-- END OF SCRIPTS SECTION - Place page content below this line
 ***************************************************************** -->
 
-<div id="currentIcon">
-</div>
-
-<div id="pageHeader">
-
-<div id="wxName" title="Current Weather"></div>
-<div id="currentTemp" title="Current Temperature"></div>
-<div id="currentDew" title="Current Dewpoint"></div>
-<div id="currentWind" title="Current Wind Speed and Direction"></div>
-<div id="currentGust" title="Current Wind Gust"></div>
-<!-- barometer icon source: https://thenounproject.com/term/barometer/1841/ -->
-<div id="currentPressure" title="Current Sea Level Pressure (MSLP)"></div>
-<div id="Tourney">
-<p><b>2015&ndash;16 WxChallenge Tournament</b></p>
-</div>
-
-</div>
-
-
 <div id="iframeContainer">
-<iframe  name="content" src="challengehome.shtml"></iframe>
+	<iframe  name="content" src="/wxchallenge/challengehome.html"></iframe>
 </div>
 
 <div id="cityName">
@@ -116,6 +73,8 @@ $(".toggleDiv").hide();
 
 <div id="initialNotice" class="toggleDiv">
 <p>Choose a category of weather products in the selection box above. All links for that category will be displayed here.</p>
+<img src="/images/ASOS_Locations/Alabama_KHSV.svg">
+
 </div>
 
 <div id="obsLinks" class="beforeSelect toggleDiv">
@@ -165,7 +124,6 @@ $(".toggleDiv").hide();
 	<li><a href="http://www.microclimates.org/forecast/KHSV/" target="content">USL Model Output</a></li>
 	<li><a href="https://mesonet.agron.iastate.edu/mos/table.phtml?station=KHSV" target="content">ISU Interactive MOS Table</a></li>
 	<li><a href="http://www.nws.noaa.gov/cgi-bin/mos/getall.pl?sta=KHSV" target="content">NWS One Stop MOS</a></li>
-	<li><a href="/~gperrott/modeldata/ekdmos/php/KHSV_ekdmos.php" target="content">12Z EKDMOS via Greg Perrotte</a></li>
 	<li><a href="http://www.mdl.nws.noaa.gov/~naefs_ekdmos/text_prods_v1.1.php" target="content">EKDMOS via MDL</a></li>
 	<li><a href="http://www.meteor.iastate.edu/~ckarsten/bufkit/image_loader.phtml?site=khsv&amp;nam=on&amp;nam_mos=on&amp;namm=on&amp;gfs_mos=on&amp;gfs=on&amp;gfsm_mos=on&amp;gfsm=on&amp;nws=on&amp;rap=on&amp;obs=on&amp;nam4km=on&amp;con=on&amp;ratio=11&amp;max_t=on&amp;cobb=on&amp;compaction=on&amp;mean_mt=on&amp;max_mt=on&amp;mean=on" target="content">ISU Meteorogram Generator</a></li>
 	<li><a href="http://www.nws.noaa.gov/mdl/gfslamp/meteodata.php?BackHour=0&amp;sta=KHSV" target="content">LAMP</a></li>
@@ -200,7 +158,6 @@ $(".toggleDiv").hide();
 <li><a href="http://weather.cod.edu/satrad/nexrad/index.php?type=HTX-undefined-0-undefined#" target="content">Local Radar via COD</a></li>
 	<li><a href="http://tempest.aos.wisc.edu/radar/se3comphtml5.html" target="content">Regional Loop via UW-Madison</a></li>
 	<li><a href="http://radar.weather.gov/ridge/Conus/full_lite_loop.php" target="content">U.S. Radar Loop</a></li>
-	<li><a href="http://nmq.ou.edu/applications/qvs_3d_tools_main.html" target="content">MRMS-NSSL Cross Section Generator</a></li>
 	<li><a href="http://mrms.ou.edu" target ="content">MRMS-NSSL Suite Launcher</a></li>
 </ul>
 </div>

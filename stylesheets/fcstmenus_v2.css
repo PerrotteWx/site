@@ -65,28 +65,9 @@ body {
 	font-size: 90%;
 }
 
-#pageHeader {
-	position: absolute;
-	left: 293px;
-	top: 0px;
-	right: 0px;
-	height: 36px;
-	margin: 0;
-	padding: 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b9b+0,00467f+49,003977+50,003c77+100 */
-	background: #003c77; /* Old browsers */
-	background: -moz-linear-gradient(top, #003b9b 0%, #00467f 49%, #003977 50%, #003c77 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	border-bottom: 1px black solid;
-	color: white;
-	overflow: hidden;
-	font-size: 12pt;
-}
-
 #iframeContainer {
 	position: absolute;
-	top: 37px;
+	top: 0px;
 	right: 0px;
 	bottom: 0px;
 	left: 257px;
@@ -105,7 +86,7 @@ body {
 	position: absolute;
 	top: 0px;
 	left: 0px;
-	width: 219px;
+	width: 256px;
 	height: 36px;
 
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b9b+0,00467f+49,003977+50,003c77+100 */
@@ -114,6 +95,7 @@ body {
 	background: -webkit-linear-gradient(top, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	border-bottom: 1px black solid;
+	border-right: 1px black solid;
 	margin: 0;
 	padding: 0;
 	text-align: center;
@@ -136,8 +118,9 @@ body {
 	top: 37px;
 	left: 0px;
 	height: 36px;
-	width: 219px;
+	width: 256px;
 	background-color: gray;
+	border-right: 1px black solid;
 	z-index: 1;
 }
 
@@ -161,6 +144,15 @@ body {
 #initialNotice p {
 	margin: 20px 12px 0px 12px;
 	text-align: justify;
+}
+
+#initialNotice img {
+	display: block;
+	position: relative;
+	top: 50px;
+	width: 160px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 #footerDiv {
@@ -248,156 +240,3 @@ body {
 	top: 11px;
 	float: right;
 }
-
-#currentIcon {
-	position: absolute;
-	top: 0px;
-	left: 219px;
-	height: 72px;
-	width: 72px;
-	background-color: #003c77;
-	border-right: 1px black solid;
-	border-bottom: 1px black solid;
-	border-left: 1px black solid;
-	z-index: 1;
-}
-
-#currentIcon img {
-	height: 72px;
-	width: 72px;
-	margin: 0;
-	padding: 0;
-}
-
-#wxName {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 160px;
-	height: 36px;
-	background-color:;
-	font-size: 13pt;
-}
-
-#wxName p {
-	position: relative;
-	top: -9px;
-	left: 5px;
-	float: left;
-	cursor: default;
-}
-#currentTemp {
-	position: absolute;
-	top: 0px;
-	left: 161px;
-	width: 74px;
-	height: 36px;
-	background-color:;
-}
-
-#currentTemp img {
-	position: relative;
-	top: 3px;
-	float: left;
-	height: 30px;
-	margin: 0;
-	padding: 0;
-}
-
-#currentTemp p {
-	position: relative;
-	top: -7px;
-	float: left;
-	cursor: default;
-}
-#currentDew {
-	position: absolute;
-	top: 0px;
-	left: 235px;
-	width: 75px;
-	height: 36px;
-	background-color:;
-}
-
-#currentDew img {
-	position: relative;
-	top: 3px;
-	float: left;
-	height: 30px;
-	margin: 0;
-	padding: 0;
-}
-
-#currentDew p {
-	position: relative;
-	top: -7px;
-	float: left;
-	cursor: default;
-}
-#currentWind {
-	position: absolute;
-	top: 0px;
-	left: 310px;
-	width: 160px;
-	height: 36px;
-	background-color:;
-}
-
-#currentWind img {
-	position: relative;
-	top: 3px;
-	left: 7px;
-	float: left;
-	height: 30px;
-	margin: 0;
-	padding: 0;
-}
-
-#currentWind p {
-	position: relative;
-	top: -7px;
-	left: 12px;
-	float: left;
-	cursor: default;
-	top: -8px;
-	left: 15px;
-}
-#innerGustDiv {
-	position: absolute;
-	top: 0px;
-	left: 470px;
-	background-color:;
-}
-
-#innerGustDiv p {
-	position: relative;
-	top: -7px;
-	left: 3px;
-}
-
-#innerPressureDiv {
-	position: absolute;
-	top: 0px;
-	width: 135px;
-	height: 36px;
-	background-color:;
-}
-
-#innerPressureDiv img {
-	position: relative;
-	top: 3px;
-	left: 7px;
-	float: left;
-	height: 30px;
-	margin: 0;
-	padding: 0;
-}
-
-#innerPressureDiv p {
-	position: relative;
-	top: -7px;
-	left: 12px;
-	float: left;
-	cursor: default;
-}
-
