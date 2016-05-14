@@ -1,0 +1,114 @@
+/* Possible footer background color: 435058 */
+
+body {
+  background-color: #D5D5D5;
+  font-family: "Helvetica", "Tahoma", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 13pt;
+}
+
+#CenterPage {
+  max-width: 1295px;
+  min-width: 1295px;
+  min-height: 1500px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* PLACE ALL UNIQUE CSS BELOW */
+
+#aboutMe {
+	position: relative;
+	top: 25px;
+	left: 25px;
+	height: 462px;
+	width: 920px;
+	margin: 0;
+	padding: 0;
+	font-size: 13pt;
+	text-align: justify;
+}
+
+#aboutMe h2 {
+	margin: 0;
+	padding: 0;
+}
+
+#portrait {
+	display: block;
+	float: right;
+	position: relative;
+	right: 25px;
+	top: 106px;
+}
+
+#pictureFrame {
+	display: block;
+	float: left;
+	position: relative;
+	width: 310px;
+	height: 310px;
+	left: 965px;
+	top: 20px;
+	background-color: #0F0F0F;
+}
+
+#gallery {
+	position: relative;
+	left: 25px;
+	width: 1245px;
+}
+
+#gallery h2 {
+	margin: 0;
+	padding: 0;
+}
+
+#galleryRow1 {
+	min-height: 457px;
+	margin: 0;
+	padding: 0;
+}
+
+#labelsRow1 {
+	min-height: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+#leftLabel1 {
+	float: left;
+	position: relative;
+	top: 5px;
+	left: -475px;
+	margin: 0;
+	padding: 0;
+}
+
+#rightLabel1 {
+	float: right;
+	position: relative;
+	top: 5px;
+	left: -180px;
+	margin: 0;
+	padding: 0;
+}
+
+#seniorPic {
+	display: block;
+	float: left;
+	width: 610px;
+}
+
+#tobaccoCup {
+	display: block;
+	float: right;
+	width: 610px;
+	position: relative;
+	top: 114px;
+}
+
