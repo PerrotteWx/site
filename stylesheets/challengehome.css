@@ -1,5 +1,5 @@
 body { 
-	background-color: #0F0F0F;
+	background-color: #2C3A39;
 	font-family: "Tahoma", "Helvetica", sans-serif;
 	margin: 0;
 	padding: 0;
@@ -36,7 +36,7 @@ table tr td {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	min-width: 825px;
+	min-width: 975px;
 	text-align: center;
 }
 
@@ -62,9 +62,5 @@ table tr td {
 }
 
 #myLogo {
-	width: 375px;
-}
-
-#ATMSlogo {
 	width: 375px;
 }
