@@ -1,0 +1,84 @@
+/* Possible footer background color: 435058 */
+
+body {
+  background-color: #D5D5D5;
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 13pt;
+}
+
+#CenterPage {
+  max-width: 1295px;
+  min-width: 1295px;
+  min-height: 830px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* PLACE ALL UNIQUE CSS BELOW */
+
+#picture {
+	position: relative;
+	float: left;
+	top: 25px;
+	left: 300px;
+}
+
+#contactInfo {
+	position: relative;
+	float: 
+	right;
+	top: 160px;
+	right: 300px;
+	margin: 0;
+	padding: 0;
+}
+
+#contactInfo a:link {
+	color: black;
+}
+
+#contactInfo a:visited {
+	color: black;
+}
+
+#contactInfo a:hover {
+	color: black;
+}
+
+#contactInfo h1 {
+	text-align: center;
+}
+
+#contactInfo h2 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#linkedInLogo {
+	position: relative;
+	top: -25px;
+	left: 5px;
+	width: 100px;
+}
+
+#twitterLogo {
+	position: relative;
+	left: 25px;
+	width: 75px;
+}
+
+.twitterLink {
+	float: right;
+	position: relative;
+	right: 5px;
+	top: 10px;
+}

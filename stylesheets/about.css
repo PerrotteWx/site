@@ -5,7 +5,6 @@ body {
   font-family: "Helvetica", "Tahoma", sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 13pt;
 }
 
 #CenterPage {
@@ -36,6 +35,10 @@ body {
 #aboutMe h2 {
 	margin: 0;
 	padding: 0;
+}
+
+#aboutMe p {
+	font-size: 13pt;
 }
 
 #portrait {
