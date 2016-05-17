@@ -10,6 +10,7 @@ body {
 #CenterPage {
   max-width: 1295px;
   min-width: 1295px;
+
   margin: 0 auto;
   padding: 0;
   background-color: white;
@@ -19,8 +20,144 @@ body {
 
 /* PLACE ALL UNIQUE CSS BELOW */
 
+h2 {
+	position: relative;
+	left: 25px;
+}
+
+#containerDiv {
+	min-height: 179px;
+}
+
 #alertDiv {
-	margin: 0 0 0 15px;
+	float: left;
+	position: relative;
+	top: 25px;
+	left: 25px;
+	width: 945px;
+	margin: 0;
 	padding: 0;
-	font-size: 14pt;
+	font-size: 13pt;
+}
+
+#alertDiv p {
+	margin: 0;
+	padding: 0;
+}
+
+#socialMedia {
+	float: right;
+	position: relative;
+	width: 300px;
+	height: 130px;
+	top: 25px;
+	right: 25px;
+	margin: 0;
+	padding: 0 0 10px 0;
+	text-align: center;
+}
+
+#socialMedia h3 {
+	margin: 0;
+	padding: 0;
+}
+
+#socialMedia img {
+	margin: 0;
+	padding: 0;
+}
+
+#twitterLogo {
+	position: relative;
+	top: 5px;
+	left: -8px;
+	width: 100px;
+}
+
+#linkedInLogo {
+	position: relative;
+	top: -15px;
+	left: 2px;
+	width: 70px;
+}
+
+
+
+#mainContent {
+	position: relative;
+	left: 25px;
+	width: 1245px;
+	font-size: 13pt;
+}
+
+#AshevilleFcst {
+	width: 1245px;
+	border: 1px black solid;
+
+}
+
+#AshevilleFcst h3 {
+	margin: 0;
+	padding: 5px 0 5px 5px;
+	background-color: #D5D5D5;
+	border-bottom: 1px black solid;
+}
+
+#AshevilleFcst h4 {
+	
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	font-size: 15pt;
+}
+
+#AshevilleFcst img {
+	height: 150px;
+	margin: 8px 0 0 0;
+	padding: 0;
+	background-color: #87CEEB;
+	border-radius: 10px;
+}
+
+#AVLday1 {
+	margin: 0 0 0 10px;
+	padding: 0;
+	height: 220px;
+}
+
+#AVLday1 {
+	position: relative;
+	top: 13px;
+}
+
+
+#links {
+	text-align: center;
+}
+
+#links h2 {
+	float: left;
+	position: relative;
+	top: 65px;
+}
+
+#UNCAlogo {
+	position: relative;
+	top: -73px;
+	left: -125px;
+	width: 300px;
+}
+
+#UNCAatms {
+	position: relative;
+	top: -3px;
+	left: 0px;
+	width: 200px;
+}
+
+#WxChallengeLogo {
+	position: relative;
+	top: -1px;
+	left: 125px;
+	width: 200px;
 }
