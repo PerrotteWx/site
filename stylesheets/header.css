@@ -135,3 +135,15 @@ nav a:hover {
 	font-family: "Tahoma", sans-serif;
 	background-color: #D5D5D5;
 }
+
+#NorthCarolina {
+	width: 275px;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+
+#SouthCarolina {
+	width: 200px;
+	margin: 0 auto;
+	padding: 5px 0;
+}

@@ -1,0 +1,220 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', 'Tahoma', sans-serif;
+}
+
+#menucontainer a {
+	display: block;
+	padding: 7px 2px 7px 7px;
+	text-decoration: none;
+}
+
+#menucontainer a:link {
+	color: #003c77;
+}
+
+#menucontainer a:visited {
+	color: #003c77;
+}
+
+#menucontainer a:hover {
+	color: white;
+	background-color: #003c77;
+}
+
+#cityName a {
+	position: relative;
+	top: -19px;
+	display: block;
+	padding: 7px 2px 7px 7px;
+	text-decoration: none;
+}
+
+#cityName a:link {
+	color: white;
+}
+
+#cityName a:visited {
+	color: white;
+}
+
+#cityName a:hover {
+	color: white;
+}
+
+#menucontainer ul {
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 10px 0 0 0;	
+	padding: 0;
+}
+
+#menucontainer ul li p {
+	margin: 0;
+	padding: 7px 2px 7px 7px;
+	color: #003c77;
+}
+
+.beforeSelect {
+	display: none;
+}
+
+.sublinkHeader {
+	text-align: center;
+	font-size: 90%;
+}
+
+#iframeContainer {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 257px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#iframeContainer iframe {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+#cityName {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 256px;
+	height: 36px;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b9b+0,00467f+49,003977+50,003c77+100 */
+	background: #003c77; /* Old browsers */
+	background: -moz-linear-gradient(top, #003b9b 0%, #00467f 49%, #003977 50%, #003c77 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-bottom: 1px black solid;
+	border-right: 1px black solid;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+}
+
+#menucontainer {
+	position: absolute;
+	top: 73px;
+	left: 0px;
+	bottom: 36px;
+	width: 256px;
+	background-color: white;
+	border-right: 1px black solid;
+	overflow: auto;
+}
+
+#selectorContainer {
+	position: absolute;
+	top: 37px;
+	left: 0px;
+	height: 36px;
+	width: 256px;
+	background-color: gray;
+	border-right: 1px black solid;
+	z-index: 1;
+}
+
+#linksSelector {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #F4F4F4;
+	border-style: none;
+	text-align: center;
+	font-size: 11pt;
+	cursor: pointer;
+}
+
+#linksSelector option {
+	padding: 10px 14px;
+	font-size: 12pt;
+}
+
+#initialNotice p {
+	margin: 20px 12px 0px 12px;
+	text-align: justify;
+}
+
+#initialNotice img {
+	display: block;
+	position: relative;
+	top: 50px;
+	width: 235px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#footerDiv {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 36px;
+	width: 256px;
+	margin: 0;
+	padding: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b9b+0,00467f+49,003977+50,003c77+100 */
+	background: #003c77; /* Old browsers */
+	background: -moz-linear-gradient(top, #003b9b 0%, #00467f 49%, #003977 50%, #003c77 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-right: 1px black solid;
+	border-top: 1px black solid;
+}
+
+#footerLinks {
+	position: absolute;
+	left: 64px;
+	bottom: 0px;
+	height: 36px;
+	width: 192px;
+}
+
+#footerLinks ul {
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footerLinks a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+	font-size: 82%;
+}
+
+#footerLinks a:link {
+	color: white;
+}
+
+#footerLinks a:visited {
+	color: white;
+}
+
+#footerLinks a:hover {
+	color: white;
+}
+
+#link1 {
+	position: absolute;
+	top: 11px;
+	left: -10px;
+}
+
+#link2 {
+	position: absolute;
+	top: 11px;
+	left: 95px;
+}
