@@ -1,3 +1,7 @@
+.widerLinkHeader {
+	width: 305px;
+}
+
 #logoWrapper {
 	position: relative;
 	width: 1295px;
@@ -53,7 +57,7 @@ nav ul li {
 	display: block;
 	position: relative;
 	float: left;
-	width: 185px;
+	width: 198px;
 	margin: 0;
 	padding: 0;
 	font-family: "Tahoma", sans-serif;
