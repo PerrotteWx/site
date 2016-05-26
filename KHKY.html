@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--Created by Gregory Perrotte
+	Last Modified: 22 May 2016-->
+<html>
+<head>
+<title>Hickory, N.C. Forecasting Resources</title>
+
+<!-- Favicon from https://commons.wikimedia.org/wiki/File:Hielo.png -->
+<link rel="icon" href="/images/favicon.png" />
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/fcstmenus_v3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- *********************************************
+     PLACE ALL SCRIPTS IN THIS SECTION -->
+<script>
+$(document).ready(function () {
+    $('li').click(function () {
+	$('li').removeClass('changeBackground');
+	$(this).addClass('changeBackground');
+	$('#menufooter li').removeClass('changeBackground');
+    });
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+$("#converterSelector").change(function(){
+$(".toggleDiv").hide();
+	$("#" + $(this).val()).fadeIn(700);
+});
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+$("#linksSelector").change(function(){
+$(".toggleDiv").hide();
+	$("#" + $(this).val()).fadeIn(0);
+});
+});
+</script>
+
+<!-- END OF SCRIPTS SECTION - Place page content below this line
+***************************************************************** -->
+
+<div id="iframeContainer">
+<iframe  name="content" src="/wxchallenge/challengehome.html"></iframe>
+</div>
+
+<div id="cityName">
+<h4><a href="/KHKY">Hickory, N.C. (KHKY)</a></h4>
+</div>
+
+<div id="selectorContainer">
+<select id="linksSelector">
+	<option value="initalNotice" selected disabled>Link Categories</option>
+	<option value="obsLinks">Observations &amp; Analyses</option>
+	<option value="NOAAlinks">NWS and WPC Products</option>
+	<option value="NWPlinks">Numerical Weather Prediction</option>
+	<option value="radarLinks">Radar</option>
+	<option value="satelliteLinks">Satellite</option>
+	<option value="stationInfoLinks">Station Information</option>
+	<option value="upperAirLinks">Upper Air</option>
+	<option value="otherLinks">Other Resources</option>
+</select>
+</div>
+
+
+<div id="menucontainer">
+
+<div id="initialNotice" class="toggleDiv">
+<p>Choose a category of weather products in the selection box above. All links for that category will be displayed here.</p>
+<img src="/images/ASOS_Locations/NorthCarolina_KHKY.svg">
+
+</div>
+
+<div id="obsLinks" class="beforeSelect toggleDiv">
+<ul>
+	<li class="sublinkHeader"><u>Observations</u></li>
+	<li><a href="http://mesowest.utah.edu/cgi-bin/droman/meso_table_mesodyn.cgi?stn=KHKY&amp;unit=0&amp;time=LOCAL&amp;hours=24&amp;past=0&amp;order=1" target="content">MesoWest Tabular Obs</a></li>
+	<li><a href="http://mesowest.utah.edu/cgi-bin/droman/meso_graph_mesodyn.cgi?&amp;unit=0&amp;time=LOCAL&amp;past=0&amp;gsize=0.85&amp;hours=24&amp;stn1=KHKY&amp;var1=TMPF&amp;level1=2.0m&amp;stn2=KHKY&amp;var2=WND&amp;level2=10.0m" target="content">MesoWest Meteorogram Obs</a></li>
+	<li><a href="http://mesowest.utah.edu/cgi-bin/droman/mesomap.cgi?state=NC&rawsflag=3" target="content">MesoWest State Obs Map</a></li>
+	<li><a href="http://www.wrh.noaa.gov/mesowest/getobext.php?wfo=slc&amp;sid=KHKY&amp;num=48&amp;raw=0&amp;dbn=m&amp;banner=header" target="_blank"> Obs (48 hrs) via NWS</a></li>
+	<li><a href="https://www.faa.gov/air_traffic/weather/asos/?state=NC" target="_blank">Statewide ASOS/AWOS Obs</a></li>
+	<li><a href="http://weather.uwyo.edu/cgi-bin/wyowx.fcgi?TYPE=sfgram&amp;DATE=current&amp;HOUR=current&amp;UNITS=A&amp;STATION=HKY" target="content">24 hr Meteorogram</a></li>
+	<li class="lastlink"><a href="http://www.lightningmaps.org/realtime?lang=en" target="_blank">Current Lightning Strikes</a></li>	
+</ul>
+<ul class="sub-nav">
+	<li class="sublinkHeader"><u>Analyses</u></li>
+	<li><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif" target="content">U.S. Surface Analysis</a></li>
+	<li><a href="http://wxmaps.org/pix/curtmp.png" target="content">U.S. Current Temperatures</a></li>
+	<li><a href="http://images.intellicast.com/WxImages/CurrentTemps/tys.jpg" target="content">Current Temperatures</a></li>
+	<li><a href="http://images.intellicast.com/WxImages/TempChange/tys.jpg" target="content">24 hr Temperature Change</a></li>
+	<li><a href="http://www.spc.noaa.gov/exper/mesoanalysis/new/viewsector.php?sector=17&amp;parm=pmsl&amp;underlay=1&amp;source=1" target="content">SPC Mesoanalysis</a></li>
+</ul>
+</div>
+
+
+
+
+<div id="NOAAlinks" class="beforeSelect toggleDiv">
+<ul>
+	<li class="sublinkHeader"><u>Quantified Precipitation Forecasts</u></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/qpf/fill_94qwbg.gif?" target="content">Day 1 (WPC)</a></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/qpf/fill_98qwbg.gif?" target="content">Day 2 (WPC)</a></li>
+	
+	<li class="sublinkHeader"><u>Other Products</u></li>
+	<li><a href="http://forecast.weather.gov/product.php?site=GSP&amp;issuedby=GSP&amp;product=AFD&amp;format=CI&amp;version=1&amp;glossary=1" target="content">NWS Forecast Discussion</a></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/basicwx/bwxloop_ndfd.html" target="content">WPC Short Range Forecast Loop</a></li>
+	<li><a href="http://forecast.weather.gov/MapClick.php?lon=-81.39040024850487&amp;lat=35.740452413622975#.V0FLxWxf3IU" target="content">NWS Forecast for KHKY</a></li>
+	<li><a href="http://forecast.weather.gov/MapClick.php?lat=35.7405&amp;lon=-81.3904&amp;unit=0&amp;lg=english&amp;FcstType=graphical" target="content">NWS Hourly Weather Graph</a></li>
+	<li><a href="http://graphical.weather.gov/sectors/gsp.php#tabs" target="content">NWS NDFD</a></li>
+</ul>
+</div>
+
+
+<div id="NWPlinks" class="beforeSelect toggleDiv">
+<ul>
+	<li class="sublinkHeader"><u>Text Output/Meteorograms</u></li>	
+	<li><a href="https://mesonet.agron.iastate.edu/mos/table.phtml?station=KHKY" target="content">ISU Interactive MOS Table</a></li>
+	<li><a href="http://www.nws.noaa.gov/cgi-bin/mos/getall.pl?sta=KHKY" target="content">NWS One Stop MOS</a></li>
+	<li><a href="http://www.meteor.iastate.edu/~ckarsten/bufkit/image_loader.phtml?site=khky&amp;nam=on&amp;nam_mos=on&amp;namm=on&amp;gfs_mos=on&amp;gfs=on&amp;gfsm_mos=on&amp;gfsm=on&amp;nws=on&amp;rap=on&amp;obs=on&amp;nam4km=on&amp;con=on&amp;ratio=11&amp;max_t=on&amp;cobb=on&amp;compaction=on&amp;mean_mt=on&amp;max_mt=on&amp;mean=on" target="content">ISU Meteorogram Generator</a></li>
+	<li><a href="http://www.mdl.nws.noaa.gov/~naefs_ekdmos/text_prods_v1.1.php" target="content">EKDMOS via MDL</a></li><F5>
+	<li><a href="http://www.nws.noaa.gov/mdl/gfslamp/meteodata.php?BackHour=0&amp;sta=KHKY" target="content">LAMP</a></li>
+	<li><a href="http://68.226.77.253/text/1DegGFS/GFS_KHKY.txt" target="content">GFS Text Output</a></li>
+	<li><a href="https://wwwl.accuweather.com/pro_login.php" target="_blank">ECMWF (AccuWeather Pro)</a></li>
+	<li><a href="https://spotwx.com" target="_blank">SpotWx Meteorograms</a></li>
+	<li class="lastlink"><a href="http://www.nws.noaa.gov/cgi-bin/lamp/getlav.pl?sta=KHKY" target="content">LAMP Text</a></li>
+	
+	<li class="sublinkHeader"><u>Graphical Output</u></li>
+	<li><a href="http://www.pivotalweather.com/" target="content">Pivotal Weather Models Page</a></li>
+	<li><a href="http://weather.cod.edu/forecast/" target="content">COD Models Page</a></li>
+	<li><a href="http://www.tropicaltidbits.com/analysis/models/" target="content">Tropical Tidbits Models Page</a></li>
+	<li><a href="http://weather.graphics/hrrr/hrrr_gif.php" target="content">WxBell HRRR Sim. Radar</a></li>
+	<li><a href="http://rapidrefresh.noaa.gov/HRRR/Welcome.cgi" target="content">HRRR</a></li>
+	<li><a href="http://www.wunderground.com/wundermap/?zoom=4&amp;rad=0&amp;wxsn=0&amp;mm=1&amp;mm.mdl=ECMWF&amp;mm.type=SURPRE&amp;mm.hour=0&amp;mm.opa=100" target="_blank">ECMWF via WunderMap</a></li>
+	<li><a href="http://weather.gc.ca/astro/clds_vis_animation_e.html?id=se&amp;utc=12" target="content">GEM Clouds (12Z Run)</a></li>
+	<li><a href="http://weather.gc.ca/astro/clds_vis_animation_e.html?id=se&amp;utc=00" target="content">GEM Clouds (0Z Run)</a></li>
+	<li><a href="http://mag.ncep.noaa.gov/model-guidance-model-parameter.php?group=Model%20Guidance&amp;model=gefs-spag&amp;area=namer&amp;cycle=&amp;param=500_540_582_ht&amp;fourpan=no&amp;imageSize=&amp;ps=model" target="_blank">GEFS Spaghetti Plots</a></li>
+	<li><a href="http://www.esrl.noaa.gov/psd/map/images/ens/ens.html#us" target="content">NMC Ensemble</a></li>
+	<li><a href="http://www.twisterdata.com" target="content">TwisterData Models Page</a></li>
+	<li><a href="http://mp1.met.psu.edu/~fxg1/ewallhires.html" target="content">PSU e-WALL</a></li>
+	
+
+</ul>
+</div>
+
+<div id="radarLinks" class="beforeSelect toggleDiv">
+<ul>
+<li><a href="http://weather.cod.edu/satrad/nexrad/index.php?type=GSP-undefined-0-undefined#" target="content">Local Radar via COD</a></li>
+	<li><a href="http://tempest.aos.wisc.edu/radar/se3comphtml5.html" target="content">Regional Loop via UW-Madison</a></li>
+	<li><a href="http://radar.weather.gov/ridge/Conus/full_lite_loop.php" target="content">U.S. Radar Loop</a></li>
+	<li><a href="http://mrms.ou.edu" target ="content">MRMS-NSSL Suite Launcher</a></li>
+</ul>
+</div>
+
+<div id="satelliteLinks" class="beforeSelect toggleDiv">
+<ul>
+<li><a href="http://climate.cod.edu/hanis/satellite/1km/index.php?type=Carolinas-vis-1-24&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">Visible Satellite Loop</a></li>
+	<li><a href="http://weather.rap.ucar.edu/satellite/displaySat.php?region=CLT&amp;itype=ir&amp;size=large&amp;endDate=20151022&amp;endTime=-1&amp;duration=12" target="content">Infrared Satellite Loop</a></li>
+	<li><a href="http://www.ssd.noaa.gov/goes/east/ma/h5-mloop-rb.html" target="content">Regional Infrared Satellite Loop</a></li>
+	<li><a href="http://weather.rap.ucar.edu/satellite/displaySat.php?region=US&amp;itype=wv&amp;size=large&amp;duration=8" target="content">U.S. Water Vapor Loop</a></li>
+	<li><a href="http://www.star.nesdis.noaa.gov/smcd/opdb/aviation/loops/fog/cldbasese_loope.html" target="_blank">Low Cloud Base Loop (Night)</a></li>
+	<li><a href="http://www.ospo.noaa.gov/Products/atmosphere/hdwinds/goes.html?satellite=E&maploc=NH&maptype=WV&interval=1" target="content">GOES High Density Winds WV</a></li>
+	<li><a href="http://climate.cod.edu/hanis/satellite/hemi/index.php?type=polar-wv-1-96&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">N. Hemisphere WV Loop</a></li>
+	<li><a href="https://worldview.earthdata.nasa.gov/?p=geographic&amp;l=VIIRS_SNPP_CorrectedReflectance_TrueColor,MODIS_Aqua_CorrectedReflectance_TrueColor,MODIS_Terra_CorrectedReflectance_TrueColor,Reference_Labels%28hidden%29,Reference_Features,Coastlines%28hidden%29&amp;v=-156.21937635834234,9.118399801831792,-21.21937635834236,75.7043373018318" target="_blank">NASA Worldview</a></li>
+	<li><a href="http://realearth.ssec.wisc.edu" target="_blank">UW&ndash;Madison RealEarth</a></li>
+</ul>
+</div>
+
+
+<div id ="stationInfoLinks" class="beforeSelect toggleDiv">
+<ul>
+<li><p>Latitude: 35.74222&deg;N</p></li>
+<li><p>Longitude: 81.38222&deg;W</p></li>
+<li><p>Elevation: 1188 ft</p></li>
+<li><a href="https://www.google.com/maps/place/35%C2%B044'32.0%22N+81%C2%B022'56.0%22W/@35.7421792,-81.3889516,1846m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d35.74222!4d-81.38222" target="_blank">Google Maps</a></li>
+</ul>
+</div>
+
+
+
+
+<div id="upperAirLinks" class="beforeSelect toggleDiv">
+<ul>
+<li><a href="http://climate.cod.edu/flanis/analysis/rapmeso/index.php?type=US-wvvor-25" target="content">COD RAP Mesoanalysis</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/rapmeso/index.php?type=US-850Tadv-25" target="content">COD 850 mb Temp Advection</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/raob/index.php?type=conus-current-current-skewt-KGSO-0" target="content">Latest Sounding</a></li>
+	<li><a href="http://weather.rap.ucar.edu/upper/upaCNTR_250.gif" target="content">250 mb Plot</a></li>
+	<li><a href="http://weather.rap.ucar.edu/upper/upaCNTR_300.gif" target="content">300 mb Plot</a></li>
+	<li><a href="http://twister.sbs.ohio-state.edu/upper/charts/500" target="content">500 mb Plot</a></li>
+	<li><a href="http://twister.sbs.ohio-state.edu/upper/charts/700" target="content">700 mb Plot</a></li>
+	<li><a href="http://twister.sbs.ohio-state.edu/upper/charts/850" target="content">850 mb Plot</a></li>
+	<li><a href="http://twister.sbs.ohio-state.edu/upper/charts/925" target="content">925 mb Plot</a></li>
+	<li><a href="http://wxmaps.org/pix/gfsmr.00hr.html" target="content">GFS Analysis Plots</a></li>
+</ul>
+</div>
+
+
+
+
+
+<div id="otherLinks" class="beforeSelect toggleDiv">
+<ul>
+<li><a href="/files/ForecastSheet.xls">Forecasting Spreadsheet</a></li>
+	<li><a href="https://mesonet.agron.iastate.edu/mos/" target="content">GFS/NAM MOS Bias Plots</a></li>
+	<li><a href="http://leonardo.met.tamu.edu/Weather_Interface/" target="content">Texas A&amp;M Weather Interface</a></li>
+	<li><a href="http://www.simuawips.com/" target="content">SimuAWIPS</a></li>
+	<li><a href="http://www.aos.wisc.edu/~mkcollins4/wxchallenge.html" target="content">Marc Collins' Weather Portal</a></li>
+</ul>
+</div>
+
+</div>
+
+<div id="footerDiv">
+
+<div id="footerLinks">
+<ul>
+<li><a id="link1" href="/index.html">Home</a></li>
+<li><a id="link2" href="/contact.html" target="content">Contact</a></li>
+</ul>
+</div>
+</div>
+
+</body>
+</html>
