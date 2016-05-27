@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Created by: Gregory Perrotte
-	 Last Modified: 18 May 2016 -->
+	 Last Modified: 27 May 2016 -->
 <html>
 <head>
 <title>North Carolina Forecasting Resources</title>
@@ -71,19 +71,51 @@
 </div><!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
 
-<h4>Click on one of the star icons below to view a forecasting resources menu for that North Carolina city.</h4>
+<h4 id="mapHeader">Click on one of the star icons below to view a forecasting resources menu for that North Carolina city.</h4>
 <div id="NorthCarolinaMap">
 
-<a><img id="KAVL" src="/images/star.svg" alt="KAVL" title="Asheville, N.C. (KAVL)" /></a>	
-<a><img id="KCLT" src="/images/star.svg" alt="KCLT" title="Charlotte, N.C. (KCLT)" /></a>
-
-<a href="/KHKY.html"><img id="KHKY" src="/images/star.svg" alt="KHKY" title="Hickory, N.C. (KHKY)" /></a>
-
-<a href="/KSVH.html"><img id="KSVH" src="/images/star.svg" alt="KSVH" title="Statesville, N.C. (KSVH)" /></a>
-
-<img id="NCstatemap" src="/images/NC.svg" alt="See list of locations below." />
+<div id="stationLocations">
+<div id="KAVL">
+<a href="/KAVL.html"><img src="/images/star.svg" alt="KAVL" title="Asheville, N.C. (KAVL)" /></a>	
 </div>
 
+<div id="KCLT">
+<a href="/KCLT.html"><img src="/images/star.svg" alt="KCLT" title="Charlotte, N.C. (KCLT)" /></a>
+</div>
+
+<div id="KHKY">
+<a href="/KHKY.html"><img src="/images/star.svg" alt="KHKY" title="Hickory, N.C. (KHKY)" /></a>
+</div>
+
+<div id="KSVH">
+<a href="/KSVH.html"><img src="/images/star.svg" alt="KSVH" title="Statesville, N.C. (KSVH)" /></a>
+</div>
+
+</div>
+
+<img id="NCstatemap" src="/images/NC.svg" alt="There was an error displaying the map. See the list of locations below." onerror="displayTextLinks()" />
+</div>
+
+
+<script type="text/javascript">
+function displayTextLinks() {
+	alert("An ERROR has occurred and the map could not be displayed. Please use the list of available stations instead.");
+	document.getElementById("NorthCarolinaMap").style.display = "none";
+	document.getElementById("mapHeader").style.display = "none";
+}	
+
+</script>
+
+<div id="textLinks">
+<h4>Available North Carolina Stations</h4>
+
+<a href="/KAVL.html">Asheville</a>
+<a href="/KCLT.html">Charlotte</a>
+<a href="/KHKY.html">Hickory</a>
+<a href="/KSVH.html">Statesville</a>
+</div>
+
+<br>
 
 
 </div>
