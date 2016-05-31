@@ -24,6 +24,7 @@
 	height: 100px;
 	width: 900px;
 	text-align: left;
+	font-size: 11pt;
 }
 
 #footerEmail {
@@ -42,6 +43,7 @@
 	height: 100px;
 	width: 300px;
 	text-align: right;
+	font-size: 11pt;
 }
 
 #copyParagraph {
