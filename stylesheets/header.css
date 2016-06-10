@@ -100,7 +100,7 @@ nav ul ul li {
 	float: none;
 	min-width: 180px;
 	color: white;
-	padding: 10px 0;
+	padding:0;
 	font-size: 13pt;
 }
 
@@ -112,7 +112,7 @@ nav ul li:hover > ul {
 /* Changes all links with the "a" tag */
 nav a {
 	display: block;
-	padding: 5px 0;
+	padding: 20px 0;
 }
 
 /* Changes the text in the drop downs */
