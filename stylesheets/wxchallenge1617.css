@@ -1,0 +1,176 @@
+body {
+  background-color: #5D92B1;
+  font-family: "Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#CenterPage {
+  max-width: 1295px;
+  min-width: 1295px;
+
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0px 0px 40px 12px rgba(0,0,0,0.7);
+}
+
+/* PLACE ALL UNIQUE CSS BELOW */
+
+h4 {
+	margin: 25px 0 0 25px;
+	padding: 0;
+}
+
+#USmapsvg {
+	display: block;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#stationLocations img:hover{
+	border-radius: 50px;
+	background: #D5D5D5;
+	background: -webkit-radial-gradient(rgba(,213,213,1), rgba(213,213,213,0));
+	background: -o-radial-gradient(rgba(213,213,213,1), rgba(213,213,213,0));
+	background: radial-gradient(rgba(0,0,0,1), rgba(213,213,213,0));
+}
+
+#KSDB {
+	float: left;
+	display: block;
+	position: relative;
+	top: 400px;
+	left: 160px;
+	margin: 0;
+	padding: 0;
+}
+
+#KISP {
+	display: block;
+	float: left;
+	position: relative;
+	top: 257px;
+	left: 998px;
+	margin: 0;
+	padding: 0;
+}
+
+#KDRO {
+	display: block;
+	float: left;
+	position: relative;
+	top: 380px;
+	left: 272px;
+	margin: 0;
+	padding: 0;
+}
+
+#KTPA {
+	display: block;
+	float: left;
+	position: relative;
+	top: 618px;
+	left: 745px;
+	margin: 0;
+	padding: 0;
+}
+
+#KGRB {
+	display: block;
+	float: left;
+	position: relative;
+	top: 205px;
+	left: 512px;
+	margin: 0;
+	padding: 0;
+}
+
+#KMSY {
+	display: block;
+	float: left;
+	position: relative;
+	top: 580px;
+	left: 435px;
+	margin: 0;
+	padding: 0;
+}
+
+#KABR {
+	display: block;
+	float: left;
+	position: relative;
+	top: 188px;
+	left: 210px;
+	margin: 0;
+	padding: 0;
+}
+
+#KELP {
+	display: block;
+	float: left;
+	position: relative;
+	top: 525px;
+	left: -43px;
+	margin: 0;
+	padding: 0;
+}
+
+#KBKW {
+	display: block;
+	float: left;
+	position: relative;
+	top: 362px;
+	left: 413px;
+	margin: 0;
+	padding: 0;
+}
+
+#KFWA {
+	display: block;
+	float: left;
+	position: relative;
+	top: 290px;
+	left: 257px;
+	margin: 0;
+	padding: 0;
+}
+
+#KHSV {
+	display: block;
+	float: left;
+	position: relative;
+	top: 455px;
+	left: 180px;
+	margin: 0;
+	padding: 0;
+}
+
+#textLinks {
+	margin: 0;
+	padding: 0;
+}
+
+#textLinks a {
+	position: relative;
+	left: 25px;
+	margin: 0 30px 0 0;
+	padding: 0;
+	font-size: 13pt;
+}
+
+#textLinks a:link {
+	color: black;
+	text-decoration: none;
+}
+
+#textLinks a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+#textLinks a:hover {
+	color: black;
+	text-decoration: underline;
+}
