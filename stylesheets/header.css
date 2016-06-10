@@ -112,13 +112,17 @@ nav ul li:hover > ul {
 /* Changes all links with the "a" tag */
 nav a {
 	display: block;
-	padding: 20px 0;
+	padding: 7px 0;
 }
 
 /* Changes the text in the drop downs */
 nav ul a {
 	display: block;
 	text-align: center;
+}
+
+nav ul li ul li a {
+	padding: 20px 0;
 }
 
 nav a:link {
