@@ -1,0 +1,435 @@
+/* NOTE: All elements are listed in alphabetical order, not the order they appear on the page */
+
+/*** PLACE ALL CLASSES IN THIS SECTION ***/
+
+.showButton {
+	display: block;
+}
+
+.beforeSelect {
+	display: none;
+}
+
+.converterResult {
+	margin: 0;
+	padding: 2px 6px 0 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+}
+
+.converterStyle {
+	display: none;
+	margin: 0;
+	padding: 0 0 28px 0;
+}
+
+.converterStyle button {
+	float: left;
+	height: 25px;
+	margin: 0;
+	padding: 0;
+	width: 100px;
+	background-color: #F4F4F4;
+	border-radius: 0px;
+	border-style: none;
+	font-size: 1.0em;
+}
+
+.converterStyle input {
+	float: left;
+	height: 25px;
+	width: 110px;
+	margin: 0 0 0 13px;
+	padding: 0;
+	text-align: center;
+	border-radius: 0;
+	border-style: none;
+	font-size: 0.8em;
+}
+
+.converterStyle label {
+	float: left;
+	position: relative;
+	width: 50px;
+	margin: 0 10px 0 5px;
+	padding: 0;
+	font-size: 1.10em;
+	color: white;
+}
+
+.showConverter {
+	display: block;
+}
+
+.sublinkHeader {
+	text-align: center;
+	font-size: 0.96em;
+}
+
+/*** END OF CLASSES SECTION ***/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica', 'Tahoma', sans-serif;
+}
+
+
+
+/* Sets the properties of the city name at the top of the menu */
+#cityName {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 36px;
+	width: 256px;
+	margin: 0;
+	padding: 0;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b9b+0,00467f+49,003977+50,003c77+100 */
+	background: #003c77; /* Old browsers */
+	background: -moz-linear-gradient(top, #003b9b 0%, #00467f 49%, #003977 50%, #003c77 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-bottom: 1px black solid;
+	border-right: 1px black solid;
+	text-align: center;
+	color: white;
+}
+
+#cityName h3 {
+	display: block;
+	position: relative;
+	top: -18px;
+	padding: 7px 2px 7px 7px;
+}
+
+
+
+/* CSS for the footer */
+#footerDiv {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 36px;
+	width: 256px;
+	margin: 0;
+	padding: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b9b+0,00467f+49,003977+50,003c77+100 */
+	background: #003c77; /* Old browsers */
+	background: -moz-linear-gradient(top, #003b9b 0%, #00467f 49%, #003977 50%, #003c77 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	border-right: 1px black solid;
+	border-top: 1px black solid;
+}
+
+#footerLinks {
+	position: absolute;
+	left: 64px;
+	bottom: 0px;
+	height: 36px;
+	width: 192px;
+}
+
+#footerLinks a {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+}
+
+#footerLinks a:link {
+	color: white;
+}
+
+#footerLinks a:visited {
+	color: white;
+}
+
+#footerLinks a:hover {
+	color: white;
+}
+
+#footerLinks li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: white;
+	font-size: 82%;
+}
+
+#footerLinks ul {
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* Sets the properties of the button to hide the menu below the city name */
+#hideMenuButton {
+	position: absolute;
+	top: 37px;
+	height: 38px;
+	width: 256px;
+	background-color: white;
+	border-right: 1px black solid;
+	text-align:center;
+	cursor: default;
+}
+
+#hideMenuButton h5 {
+	margin: 5px 0;
+	padding: 5px 0;
+	cursor: pointer;
+}
+
+#hideMenuButton h5:hover {
+	text-decoration: underline;
+}
+
+
+
+/* Sets the properties of the iframe container div and the iframe itself */
+#iframeContainer {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 257px;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#iframeContainer iframe {
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+
+
+/* Sets the properties of the paragraph below the selector when the page loads */
+#initialNotice h3 {
+	margin: 10px 0 10px 0;
+	padding: 0;
+	text-align: center;
+}
+
+#initialNotice img {
+	display: block;
+	width: 235px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#initialNotice p {
+	margin: 15px 12px 0px 12px;
+	text-align: left;
+	font-size: 13pt;
+}
+
+
+
+/* Sets the properties of the links in the footer */
+#link1 {
+	position: absolute;
+	top: 11px;
+	left: -40px;
+}
+
+#link1:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+
+
+/* Sets the properties of the category selection menu ***(Only applies to Firefox)***/
+#linksSelector {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #F4F4F4;
+	border-style: none;
+	text-align: center;
+	font-size: 11pt;
+	cursor: pointer;
+}
+
+#linksSelector option {
+	padding: 10px 14px;
+	font-size: 12pt;
+}
+
+
+
+/* Sets the properties of the div that contains the area where the links are displayed */
+#menucontainer {
+	position: absolute;
+	top: 115px;
+	left: 0px;
+	bottom: 36px;
+	width: 256px;
+	background-color: white;
+	border-right: 1px black solid;
+	overflow: auto;
+}
+
+#menucontainer a {
+	display: block;
+	padding: 10px 2px 10px 5px;
+	text-decoration: none;
+}
+
+#menucontainer a:link {
+	color: #003c77;
+}
+
+#menucontainer a:visited {
+	color: #003c77;
+}
+
+#menucontainer a:hover {
+	color: white;
+	background-color: #003c77;
+}
+
+#menucontainer ul {
+	list-style-position: inside;
+	list-style-type: none;
+	margin: 10px 0 0 0;	
+	padding: 0;
+}
+
+#menucontainer ul li p {
+	margin: 0;
+	padding: 7px 2px 7px 7px;
+	color: #003c77;
+}
+
+
+
+/* Sets the properties of the selection box itself */
+#selectorContainer {
+	position: absolute;
+	top: 75px;
+	left: 0px;
+	height: 40px;
+	width: 256px;
+	border-right: 1px black solid;
+	z-index: 1;
+}
+
+
+
+/* Sets the properties of the button that fades the menu back in */
+#showMenuButton {
+	display:none;
+	position: absolute;
+	top:0px;
+	height:23px;
+	width: 150px;
+	opacity: 0.70;
+	background-color: #F2F2F2;
+	text-align: center;
+	border: 1px black solid;
+	border-radius: 7px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+#showMenuButton:hover {
+	text-decoration: underline;
+	opacity: 1.0;
+}
+
+#showMenuButton h3 {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#unitConverter {
+	display: none;
+	position: absolute;
+	left:257px;
+	bottom: 0px;
+	height: 125px;
+	width: 300px;
+	background-color: #003c77;
+	border-right: 1px black solid;
+	border-top: 1px black solid;
+	border-top-right-radius: 25px;
+	z-index: 15;
+}
+
+#unitConverter p {
+	position: relative;
+	top: 17px;
+	left: 26px;
+}
+
+#unitConverter select {
+	position: relative;
+	left: 50px;
+	width: 200px;
+	height: 27px;
+	margin: 0 0 12px 0;
+	padding: 0;
+	text-align: center;
+	border-radius: 0;
+	border-style: 1px black solid;
+	font-size: 1.12em;
+}
+
+#unitConverterHide {
+	position: absolute;
+	right: 0;
+	bottom: 12px;
+	height: 30px;
+	width: 130px;
+	margin: 0;
+	padding: 0;
+	opacity: 0.35;
+	background-color: #F4F4F4;
+	border-radius: 30px;
+	text-align: center;
+}
+
+#unitConverterHide:hover {
+	opacity: 1.0;
+	text-decoration: underline;
+}
+
+#unitConverterHide h4 {
+	margin: 0;
+	padding: 5px 0 0 0;
+	cursor: pointer;
+}
+
+#unitConverterShow {
+	position: absolute;
+	top: 9px;
+	left: 40px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	color: white;
+}
+
+#unitConverterShow:hover {
+	text-decoration: underline;
+}
+
+#unitConverterShow h4 {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+}
