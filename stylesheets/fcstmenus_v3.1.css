@@ -330,16 +330,16 @@ body {
 
 /* Sets the properties of the button that fades the menu back in */
 #showMenuButton {
-	display:none;
+	display: none;
 	position: absolute;
-	top:0px;
-	height:23px;
+	top: 0px;
+	height: 35px;
 	width: 150px;
-	opacity: 0.70;
+	opacity: 0.65;
 	background-color: #F2F2F2;
 	text-align: center;
 	border: 1px black solid;
-	border-radius: 7px;
+	border-radius: 50px;
 	cursor: pointer;
 	z-index: 10;
 }
@@ -350,7 +350,7 @@ body {
 }
 
 #showMenuButton h3 {
-	margin: 0;
+	margin: 6px 0 0 0;
 	padding: 0;
 }
 
