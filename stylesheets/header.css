@@ -153,3 +153,8 @@ nav a:hover {
 	margin: 0 auto;
 	padding: 5px 0;
 }
+
+#wxchallengeLogo {
+	background-color: #D5D5D5;
+	border-bottom: 1px black solid;
+}

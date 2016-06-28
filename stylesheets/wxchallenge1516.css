@@ -1,3 +1,13 @@
+.onLinkHover {
+	border-radius: 50px;
+	background: #D5D5D5;
+	background: -webkit-radial-gradient(rgba(213,213,213,1), rgba(213,213,213,0));
+	background: -o-radial-gradient(rgba(213,213,213,1), rgba(213,213,213,0));
+	background: radial-gradient(rgba(0,0,0,1), rgba(213,213,213,0));
+	-webkit-filter: brightness(300%);
+	filter: brightness(300%);
+}
+
 body {
   background-color: #5D92B1;
   font-family: "Helvetica", sans-serif;
@@ -8,36 +18,46 @@ body {
 #CenterPage {
   max-width: 1295px;
   min-width: 1295px;
-
   margin: 0 auto;
   padding: 0;
   background-color: white;
-  box-shadow: 0px 0px 40px 12px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
 }
 
 /* PLACE ALL UNIQUE CSS BELOW */
+
+h3 {
+	margin: 25px 0 0 25px;
+	padding: 0;
+}
 
 h4 {
 	margin: 25px 0 0 25px;
 	padding: 0;
 }
 
+
+
 #USmapsvg {
-	display: block;
+	display: inline;
+	position: relative;
+	left: 98px;
 	width: 1100px;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
-#stationLocations img:hover{
+#stationLocations div:hover{
 	border-radius: 50px;
 	background: #D5D5D5;
-	background: -webkit-radial-gradient(rgba(,213,213,1), rgba(213,213,213,0));
+	background: -webkit-radial-gradient(rgba(213,213,213,1), rgba(213,213,213,0));
 	background: -o-radial-gradient(rgba(213,213,213,1), rgba(213,213,213,0));
 	background: radial-gradient(rgba(0,0,0,1), rgba(213,213,213,0));
+	-webkit-filter: brightness(300%);
+	filter: brightness(300%);
 }
 
-#KSDB {
+#KSDBstar {
 	float: left;
 	display: block;
 	position: relative;
@@ -45,9 +65,12 @@ h4 {
 	left: 160px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KISP {
+
+
+#KISPstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -55,9 +78,10 @@ h4 {
 	left: 998px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KDRO {
+#KDROstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -65,9 +89,10 @@ h4 {
 	left: 272px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KTPA {
+#KTPAstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -75,9 +100,10 @@ h4 {
 	left: 745px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KGRB {
+#KGRBstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -85,9 +111,10 @@ h4 {
 	left: 512px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KMSY {
+#KMSYstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -95,9 +122,10 @@ h4 {
 	left: 435px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KABR {
+#KABRstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -105,9 +133,10 @@ h4 {
 	left: 210px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KELP {
+#KELPstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -115,9 +144,10 @@ h4 {
 	left: -43px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KBKW {
+#KBKWstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -125,9 +155,10 @@ h4 {
 	left: 413px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KFWA {
+#KFWAstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -135,9 +166,10 @@ h4 {
 	left: 257px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
 }
 
-#KHSV {
+#KHSVstar {
 	display: block;
 	float: left;
 	position: relative;
@@ -145,19 +177,49 @@ h4 {
 	left: 180px;
 	margin: 0;
 	padding: 0;
+	z-index: 10;
+}
+
+#legend {
+	float: right;
+	position: relative;
+	top: 375px;
+	width: 157px;
+	margin: 0 25px 0 0;
+	padding: 0;
+	border: 1px black solid;
+	z-index: 15;
+}
+
+#legend h3 {
+	margin: 0;
+	padding: 5px 0 5px 5px;
+	background-color: #435458;
+	color: white;
+	border-bottom: 1px black solid;
+}
+
+#legend img {
+	display: block;
+	margin: 3px auto;
+}
+
+#legend p {
+	display: block;
+	margin: 0 0 10px 0;
+	text-align: center;
+	font-size: 1.0em;
 }
 
 #textLinks {
-	margin: 0;
+	margin: 0 0 25px 0;
 	padding: 0;
 }
 
 #textLinks a {
-	position: relative;
-	left: 25px;
-	margin: 0 30px 0 0;
-	padding: 0;
-	font-size: 13pt;
+	margin: 0 20px 0 0;
+	padding: 5px;
+	font-size: 1.09em;
 }
 
 #textLinks a:link {
@@ -173,4 +235,13 @@ h4 {
 #textLinks a:hover {
 	color: black;
 	text-decoration: underline;
+}
+
+#textLinks ul {
+	margin: 5px 0 0 25px;
+	padding: 0;
+}
+
+#textLinks ul li {
+	display: inline;
 }

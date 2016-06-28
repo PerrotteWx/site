@@ -1,21 +1,52 @@
 <!DOCTYPE html>
-<!-- Created by: Gregory Perrotte
-	 Last Modified: 10 June 2016 -->
+<!-- Last Modified: 25 June 2016 -->
+
 <html>
 <head>
-<title>PerrotteWx | 2015&ndash;2016 WxChallenge Locations</title>
+
+<meta name="author" content="Gregory Perrotte" />
+<meta charset="UTF-8" />
 <meta name="description" content="Collections of links to various weather products for every 2015-16 WxChallenge location." />
 <meta name="keywords" content="wxchallenge,wxchallenge menu,weather,weather challenge,forecasting menu,weather resources,weather links" />
-<meta charset="UTF-8" />
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/wxchallenge1516.css">
 <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
 <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css">
 <link rel="icon" href="/images/favicon.png" />
 
+<title>PerrotteWx | 2015&ndash;2016 WxChallenge Locations</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77986181-1', 'auto');
+  ga('send', 'pageview', '/wxchallenge/2015-2016.html');
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 
 <body>
+<!-- PLACE ALL SCRIPTS IN THIS SECTION -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a').mouseover(function(){
+		var stationName = $(this).attr('id');
+    		$('#' + stationName + 'star').addClass('onLinkHover');
+		$('a').mouseout(function(){
+    		$('#' + stationName + 'star').removeClass('onLinkHover');
+	});
+});
+	
+});
+</script>
+<!-- END OF SCRIPTS SECTION -->
+
+
+
 <div id="CenterPage">
 	
 <!-- Header (Logo, Menu) -->
@@ -44,19 +75,20 @@
 	<ul>
 
 
-	<!-- North Carolina Flag Map **** Source: https://commons.wikimedia.org/wiki/File:Flag-map_of_South_Carolina.svg **** Author: Darwinek **** License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+<!-- North Carolina Flag Map **** Source: https://commons.wikimedia.org/wiki/File:Flag-map_of_South_Carolina.svg **** Author: Darwinek **** License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
 	**** Changes: I removed some extra lines to the northwest of N.C. **** -->
 	<li class="widerLinkHeader" title="North Carolina"><a href="/NCmenus.html"><img id="NorthCarolina" src="/images/NCflagmap.png" alt="N.C." /></a></li>
 
-	<!-- South Carolina Flag Map **** Source: https://commons.wikimedia.org/wiki/File:Flag-map_of_North_Carolina.svg **** Author: Darwinek **** License: https://creativecommons.org/licenses/by-sa/3.0/deed.en -->
+<!-- South Carolina Flag Map **** Source: https://commons.wikimedia.org/wiki/File:Flag-map_of_North_Carolina.svg **** Author: Darwinek **** License: https://creativecommons.org/licenses/by-sa/3.0/deed.en -->
 	<li class="widerLinkHeader" title="South Carolina"><a><img id="SouthCarolina" src="/images/SCflagmap.png" alt="S.C." /></a></li>
 	</ul>
 
 </li>
 <li><a><b>WxChallenge</b></a>
 	<ul>
+	<li id="wxchallengeLogo"><a href="http://wxchallenge.com/"><img src="/images/wxchallengelogo.gif" alt=""/></a></li>
 	<li><a href="/wxchallenge/2015-2016.html">2015&ndash;2016 Locations</a></li>
-	<li><a href="/wxchallenge/2016-2017.html">2016&ndash;2017 Locations</a></li>
+	<li><a href="/wxchallenge/index.html">2016&ndash;2017 Locations</a></li>
 	</ul>
 </li>
 </ul>
@@ -64,54 +96,64 @@
 </div>
 </div><!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
-
+<div id="legend">
+<h3>Legend</h3>
+<img src="/images/star_red.svg" />
+<p>Fall 2015 Location</p>
+<img src="/images/star_blue.svg" />
+<p>Spring 2016 Location</p>
+<img src="/images/tourney_star.svg" />
+<p>Tournament Location</p>
+<img src="/images/current_star.svg" />
+<p>Current Location</p>
+</div>
 <h4 id="mapHeader">Click on one of the star icons below to view a forecasting resources menu for that WxChallenge location.</h4>
-<h4>Please note that currently the only available menu is for Huntsville, AL. Sorry for the inconvenience.</h4>
+
 <div id="USmap">
 
 <div id="stationLocations">
-<div id="KSDB">
-<a href="/wxchallenge/2015-16/KSDB.html"><img src="/images/star.svg" alt="KSDB" title="Sandberg, CA (KSDB)" /></a>	
+<div id="KSDBstar">
+<a href="/wxchallenge/2015-16/KSDB.html"><img src="/images/star_red.svg" alt="KSDB" title="Sandberg, CA (KSDB)" /></a>	
 </div>
 
-<div id="KISP">
-<a href="/wxchallenge/2015-16/KISP.html"><img src="/images/star.svg" alt="KISP" title="Islip, N.Y. (KISP)" /></a>
+<div id="KISPstar">
+<a href="/wxchallenge/2015-16/KISP.html"><img src="/images/star_red.svg" alt="KISP" title="Islip, N.Y. (KISP)" /></a>
 </div>
 
-<div id="KDRO">
-<a href="/wxchallenge/2015-16/KDRO.html"><img src="/images/star.svg" alt="KDRO" title="Durango, CO (KDRO)" /></a>
+<div id="KDROstar">
+<a href="/wxchallenge/2015-16/KDRO.html"><img src="/images/star_red.svg" alt="KDRO" title="Durango, CO (KDRO)" /></a>
 </div>
 
-<div id="KTPA">
-<a href="/wxchallenge/2015-16/KTPA.html"><img src="/images/star.svg" alt="KTPA" title="Tampa, FL (KTPA)" /></a>
+<div id="KTPAstar">
+<a href="/wxchallenge/2015-16/KTPA.html"><img src="/images/star_red.svg" alt="KTPA" title="Tampa, FL (KTPA)" /></a>
 </div>
 
-<div id="KGRB">
-<a href="/wxchallenge/2015-16/KGRB.html"><img src="/images/star.svg" alt="KGRB" title="Green Bay, WI (KGRB)" /></a>
+<div id="KGRBstar">
+<a href="/wxchallenge/2015-16/KGRB.html"><img src="/images/star_red.svg" alt="KGRB" title="Green Bay, WI (KGRB)" /></a>
 </div>
 
-<div id="KMSY">
-<a href="/wxchallenge/2015-16/KMSY.html"><img src="/images/star.svg" alt="KMSY" title="New Orleans, LA (KMSY)" /></a>
+<div id="KMSYstar">
+<a href="/wxchallenge/2015-16/KMSY.html"><img src="/images/star_blue.svg" alt="KMSY" title="New Orleans, LA (KMSY)" /></a>
 </div>
 
-<div id="KABR">
-<a href="/wxchallenge/2015-16/KABR.html"><img src="/images/star.svg" alt="KABR" title="Aberdeen, S.D. (KABR)" /></a>
+<div id="KABRstar">
+<a href="/wxchallenge/2015-16/KABR.html"><img src="/images/star_blue.svg" alt="KABR" title="Aberdeen, S.D. (KABR)" /></a>
 </div>
 
-<div id="KELP">
-<a href="/wxchallenge/2015-16/KELP.html"><img src="/images/star.svg" alt="KELP" title="El Paso, TX (KELP)" /></a>
+<div id="KELPstar">
+<a href="/wxchallenge/2015-16/KELP.html"><img src="/images/star_blue.svg" alt="KELP" title="El Paso, TX (KELP)" /></a>
 </div>
 
-<div id="KBKW">
-<a href="/wxchallenge/2015-16/KBKW.html"><img src="/images/star.svg" alt="KBKW" title="Beckley, W.V. (KBKW)" /></a>
+<div id="KBKWstar">
+<a href="/wxchallenge/2015-16/KBKW.html"><img src="/images/star_blue.svg" alt="KBKW" title="Beckley, W.V. (KBKW)" /></a>
 </div>
 
-<div id="KFWA">
-<a href="/wxchallenge/2015-16/KFWA.html"><img src="/images/star.svg" alt="KFWA" title="Fort Wayne, IN (KFWA)" /></a>
+<div id="KFWAstar">
+<a href="/wxchallenge/2015-16/KFWA.html"><img src="/images/star_blue.svg" alt="KFWA" title="Fort Wayne, IN (KFWA)" /></a>
 </div>
 
-<div id="KHSV">
-<a href="/wxchallenge/2015-16/KHSV.html"><img src="/images/star.svg" alt="KHSV" title="Huntsville, AL (KHSV)" /></a>
+<div id="KHSVstar">
+<a href="/wxchallenge/2015-16/KHSV.html"><img src="/images/tourney_star.svg" alt="KHSV" title="Huntsville, AL (KHSV)" /></a>
 </div>
 
 </div>
@@ -121,33 +163,40 @@
 <img id="USmapsvg" src="/images/USmap.svg" alt="There was an error displaying the map. See the list of locations below." onerror="displayTextLinks()" />
 </div>
 
-
 <script type="text/javascript">
 function displayTextLinks() {
 	alert("An ERROR has occurred and the map could not be displayed. Please use the list of available stations instead.");
-	document.getElementById("NorthCarolinaMap").style.display = "none";
+	document.getElementById("USMap").style.display = "none";
+	document.getElementById("legend").style.display = "none";
 	document.getElementById("mapHeader").style.display = "none";
 }	
 
 </script>
 
-<div id="textLinks">
-<h4>2015&ndash;2016 WxChallenge Locations</h4>
 
-<a href="/wxchallenge/2015-16/KSDB.html">Sandberg</a>
-<a href="/wxchallenge/2015-16/KISP.html">Islip</a>
-<a href="/wxchallenge/2015-16/KDRO.html">Durango</a>
-<a href="/wxchallenge/2015-16/KTPA.html">Tampa</a>
-<a href="/wxchallenge/2015-16/KGRB.html">Green Bay</a>
-<a href="/wxchallenge/2015-16/KMSY.html">New Orleans</a>
-<a href="/wxchallenge/2015-16/KABR.html">Aberdeen</a>
-<a href="/wxchallenge/2015-16/KELP.html">El Paso</a>
-<a href="/wxchallenge/2015-16/KBKW.html">Beckley</a>
-<a href="/wxchallenge/2015-16/KFWA.html">Fort Wayne</a>
-<a href="/wxchallenge/2015-16/KHSV.html">Huntsville</a>
+
+<div id="textLinks">
+<h3>2015&ndash;2016 WxChallenge Locations</h3>
+<ul>
+<li><b>Fall 2015:</b><li>
+<li><a id="KSDB" href="/wxchallenge/2015-16/KSDB.html">Sandberg, CA</a></li>
+<li><a id="KISP" href="/wxchallenge/2015-16/KISP.html">Islip, N.Y.</a></li>
+<li><a id="KDRO" href="/wxchallenge/2015-16/KDRO.html">Durango, CO</a></li>
+<li><a id="KTPA" href="/wxchallenge/2015-16/KTPA.html">Tampa, FL</a></li>
+<li><a id="KGRB" href="/wxchallenge/2015-16/KGRB.html">Green Bay, WI</a></li>
+<br>
+<br>
+<li><b>Spring 2016:</b></li>
+<li><a id="KMSY" href="/wxchallenge/2015-16/KMSY.html">New Orleans, LA</a></li>
+<li><a id="KABR" href="/wxchallenge/2015-16/KABR.html">Aberdeen, S.D.</a></li>
+<li><a id="KELP" href="/wxchallenge/2015-16/KELP.html">El Paso, TX</a></li>
+<li><a id="KBKW" href="/wxchallenge/2015-16/KBKW.html">Beckley, W.V.</a></li>
+<li><a id="KFWA" href="/wxchallenge/2015-16/KFWA.html">Fort Wayne, IN</a></li>
+<li><a id="KHSV" href="/wxchallenge/2015-16/KHSV.html">Huntsville, AL</a></li>
+</ul>
 </div>
 
-<br>
+
 
 
 
@@ -157,14 +206,20 @@ function displayTextLinks() {
 <div id="footer">
 <div id="footerContact">
 <p id="footerEmail">Please submit all inquiries about the site to <a href="mailto:info@perrottewx.com" target="_top">info@perrottewx.com</a>.</p>
-<p id="constructionNotice">This site is under construction and will continue to improve over the coming months. Check back often for new content!</p>
-</div>
-<div id="copyrightNotice">
-<p id="copyParagraph">&copy;2016 Gregory Perrotte</p>
-<p id="disclaimer"><a href="/disclaimer.html">Disclaimer</a></p>
+
+<ul>
+<p>&copy;2016 Gregory Perrotte</p>
+<li><a href="/disclaimer.html">Disclaimer</a></li>
+<li><a href="/privacypolicy.html">Privacy Policy</a></li>
+</ul>
 </div>
 
+<div id="footerSocialMedia">
+<a href="https://www.linkedin.com/in/gregoryperrotte"><img id="footerLinkedIn" src="/images/LinkedIn_footer.png" /></a>
+<a href="https://twitter.com/perrottewx"><img id="footerTwitter" src="/images/Twitter_Logo.png" /></a>
+</div>
 </div><!-- End of footer -->
+
 
 </div>
 </body>

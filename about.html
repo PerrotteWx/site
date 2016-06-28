@@ -1,15 +1,29 @@
 <!DOCTYPE html>
-<!-- Created by: Gregory Perrotte
-	 Last Modified: 31 May 2016 -->
+<!-- Last Modified: 26 June 2016 -->
+
 <html>
 <head>
-<title>PerrotteWx | About Me</title>
+
+<meta name="author" content="Gregory Perrotte" />
 <meta charset="UTF-8" />
+<meta name="description" content="This about me page contains some information about myself." />
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/about.css">
 <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
 <link rel="stylesheet" type="text/css" href="/stylesheets/footer.css">
 <link rel="icon" href="/images/favicon.png" />
+
+<title>PerrotteWx | About Gregory Perrotte</title>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-77986181-1', 'auto');
+  ga('send', 'pageview', '/about.html');
+</script>
 
 </head>
 
@@ -19,7 +33,7 @@
 <!-- Header (Logo, Menu) -->
 <div>	
 
-	<!-- Logo -->
+<!-- Logo -->
 <div id="logoWrapper">
 <div id="logoBackground">
 <img src="/images/logo.jpg" alt="Gregory Perrotte's Weather Links" />
@@ -39,22 +53,21 @@
 <li><a href="/about.html"><b>About Me</b></a></li>
 <li><a href="/contact.html"><b>Contact</b></a></li>
 <li class="widerLinkHeader"><a><b>Carolinas Forecasting Menus</b></a>
-	<ul>
-
-
-	<!-- North Carolina Flag Map **** Source: https://commons.wikimedia.org/wiki/File:Flag-map_of_South_Carolina.svg **** Author: Darwinek **** License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
+<ul>
+<!-- North Carolina Flag Map **** Source: https://commons.wikimedia.org/wiki/File:Flag-map_of_South_Carolina.svg **** Author: Darwinek **** License: https://creativecommons.org/licenses/by-sa/3.0/deed.en
 	**** Changes: I removed some extra lines to the northwest of N.C. **** -->
 	<li class="widerLinkHeader" title="North Carolina"><a href="/NCmenus.html"><img id="NorthCarolina" src="/images/NCflagmap.png" alt="N.C." /></a></li>
 
-	<!-- South Carolina Flag Map **** Source: https://commons.wikimedia.org/wiki/File:Flag-map_of_North_Carolina.svg **** Author: Darwinek **** License: https://creativecommons.org/licenses/by-sa/3.0/deed.en -->
+<!-- South Carolina Flag Map **** Source: https://commons.wikimedia.org/wiki/File:Flag-map_of_North_Carolina.svg **** Author: Darwinek **** License: https://creativecommons.org/licenses/by-sa/3.0/deed.en -->
 	<li class="widerLinkHeader" title="South Carolina"><a><img id="SouthCarolina" src="/images/SCflagmap.png" alt="S.C." /></a></li>
 	</ul>
 
 </li>
 <li><a><b>WxChallenge</b></a>
 	<ul>
+	<li id="wxchallengeLogo"><a href="http://wxchallenge.com/"><img src="/images/wxchallengelogo.gif" alt=""/></a></li>
 	<li><a href="/wxchallenge/2015-2016.html">2015&ndash;2016 Locations</a></li>
-	<li><a href="/wxchallenge/2016-2017.html">2016&ndash;2017 Locations</a></li>
+	<li><a href="/wxchallenge/index.html">2016&ndash;2017 Locations</a></li>
 	</ul>
 </li>
 </ul>
@@ -113,13 +126,18 @@
 <div id="footer">
 <div id="footerContact">
 <p id="footerEmail">Please submit all inquiries about the site to <a href="mailto:info@perrottewx.com" target="_top">info@perrottewx.com</a>.</p>
-<p id="constructionNotice">This site is under construction and will continue to improve over the coming months. Check back often for new content!</p>
-</div>
-<div id="copyrightNotice">
-<p id="copyParagraph">&copy;2016 Gregory Perrotte</p>
-<p id="disclaimer"><a href="/disclaimer.html">Disclaimer</a></p>
+
+<ul>
+<p>&copy;2016 Gregory Perrotte</p>
+<li><a href="/disclaimer.html">Disclaimer</a></li>
+<li><a href="/privacypolicy.html">Privacy Policy</a></li>
+</ul>
 </div>
 
+<div id="footerSocialMedia">
+<a href="https://www.linkedin.com/in/gregoryperrotte"><img id="footerLinkedIn" src="/images/LinkedIn_footer.png" /></a>
+<a href="https://twitter.com/perrottewx"><img id="footerTwitter" src="/images/Twitter_Logo.png" /></a>
+</div>
 </div><!-- End of footer -->
 
 </div><!-- End CenterPage Div -->
