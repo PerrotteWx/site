@@ -33,6 +33,7 @@ nav {
 	min-width: 1295px;
 	max-width: 1295px;
 	background-color: #0F0F0F;
+	z-index: 50;
 }
 
 nav:after {
