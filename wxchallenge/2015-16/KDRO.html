@@ -153,6 +153,7 @@ $(".toggleDivConverter").hide();
 <ul>
 	<li class="sublinkHeader"><u>Analyses</u></li>
 	<li><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif" target="content">U.S. Surface Analysis</a></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php" target="content">Interactive Surface Analysis</a></li>
 	<li><a href="http://wxmaps.org/pix/curtmp.png" target="content">U.S. Current Temperatures</a></li>
 	<li><a href="http://images.intellicast.com/WxImages/CurrentTemps/den.jpg" target="content">Regional Current Temperatures</a></li>
 	<li><a href="http://images.intellicast.com/WxImages/TempChange/den.jpg" target="content">24 hr Temperature Change</a></li>
@@ -201,11 +202,11 @@ $(".toggleDivConverter").hide();
 <!-- SATELLITE -->
 <div id="satelliteLinks" class="beforeSelect toggleDiv">
 <ul>
-<li><a href="http://climate.cod.edu/hanis/satellite/1km/index.php?type=S_California-vis-1-24&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">Visible Satellite Loop</a></li>
-	<li><a href="http://weather.rap.ucar.edu/satellite/displaySat.php?region=LAS&amp;itype=ir&amp;size=large&amp;endDate=20151022&amp;endTime=-1&amp;duration=12" target="content">Infrared Satellite Loop</a></li>
+<li><a href="http://climate.cod.edu/hanis/satellite/1km/index.php?type=Colorado-vis-1-24&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">Visible Satellite Loop</a></li>
+	<li><a href="http://weather.rap.ucar.edu/satellite/displaySat.php?region=DEN&amp;itype=ir&amp;size=large&amp;endDate=20151022&amp;endTime=-1&amp;duration=12" target="content">Infrared Satellite Loop</a></li>
 	<li><a href="http://www.ssd.noaa.gov/goes/east/sw/h5-mloop-rb.html" target="content">Regional Infrared Satellite Loop</a></li>
 	<li><a href="http://weather.rap.ucar.edu/satellite/displaySat.php?region=US&amp;itype=wv&amp;size=large&amp;duration=8" target="content">U.S. Water Vapor Loop</a></li>
-	<li><a href="http://www.star.nesdis.noaa.gov/smcd/opdb/aviation/loops/fog/cldbasese_loopw.html" target="_blank">Low Cloud Base Loop (Night)</a></li>
+	<li><a href="http://www.star.nesdis.noaa.gov/smcd/opdb/aviation/loops/fog/cldbasesw_loopw.html" target="_blank">Low Cloud Base Loop (Night)</a></li>
 	<li><a href="http://www.ospo.noaa.gov/Products/atmosphere/hdwinds/goes.html?satellite=W&maploc=NH&maptype=WV&interval=1" target="content">GOES High Density Winds WV</a></li>
 	<li><a href="http://climate.cod.edu/hanis/satellite/hemi/index.php?type=polar-wv-1-96&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">N. Hemisphere WV Loop</a></li>
 	<li><a href="https://worldview.earthdata.nasa.gov/?p=geographic&amp;l=VIIRS_SNPP_CorrectedReflectance_TrueColor,MODIS_Aqua_CorrectedReflectance_TrueColor,MODIS_Terra_CorrectedReflectance_TrueColor,Reference_Labels%28hidden%29,Reference_Features,Coastlines%28hidden%29&amp;v=-156.21937635834234,9.118399801831792,-21.21937635834236,75.7043373018318" target="_blank">NASA Worldview</a></li>
@@ -217,8 +218,8 @@ $(".toggleDivConverter").hide();
 <!-- RADAR -->
 <div id="radarLinks" class="beforeSelect toggleDiv">
 <ul>
-	<li><a href="http://weather.cod.edu/satrad/nexrad/index.php?type=GJT-undefined-0-undefined#" target="content">Local Radar via COD</a></li>
-	<li><a href="http://radar.weather.gov/ridge/radar.php?rid=gjt&product=N0R&overlay=01101111&loop=no" target="content">Local Radar via NWS</a></li>
+	<li><a href="http://weather.cod.edu/satrad/nexrad/index.php?type=GJX-undefined-0-undefined#" target="content">Local Radar via COD</a></li>
+	<li><a href="http://radar.weather.gov/ridge/radar.php?rid=gjx&product=N0R&overlay=01101111&loop=no" target="content">Local Radar via NWS</a></li>
 	<li><a href="http://tempest.aos.wisc.edu/radar/sw3comphtml5.html" target="content">Regional Loop via UW-Madison</a></li>
 	<li><a href="http://radar.weather.gov/ridge/Conus/full_lite_loop.php" target="content">U.S. Radar Loop</a></li>
 	<li><a href="http://mrms.ou.edu" target ="content">MRMS-NSSL Suite Launcher</a></li>
@@ -238,7 +239,7 @@ $(".toggleDivConverter").hide();
 	<li><a href="http://www.nws.noaa.gov/mdl/gfslamp/meteodata.php?BackHour=0&amp;sta=KDRO" target="content">LAMP</a></li>
 	<li><a href="http://68.226.77.253/text/1DegGFS/GFS_KDRO.txt" target="content">GFS Text Output</a></li>
 	<li><a href="https://wwwl.accuweather.com/pro_login.php" target="_blank">ECMWF (UNCA Login)</a></li>
-	<li><a href="http://ensemble.ucar.edu/dash.php?d=2016070100&amp;lat=34.75&amp;lon=-118.73&amp;t=temp&amp;b=qpf" target="content">NCAR Ensemble Plumes</a></li>
+	<li><a href="http://ensemble.ucar.edu/dash.php?d=2016070100&amp;lat=37.15&amp;lon=-107.75&amp;t=temp&amp;b=qpf" target="content">NCAR Ensemble Plumes</a></li>
 	<li><a href="http://www.spc.noaa.gov/exper/sref/srefplumes/?SID=DRO" target="content">SREF Plumes</a></li>
 	<li><a href="https://spotwx.com" target="_blank">SpotWx Meteorograms</a></li>
 	<li class="lastlink"><a href="http://www.nws.noaa.gov/cgi-bin/lamp/getlav.pl?sta=KDRO" target="content">LAMP Text</a></li>
