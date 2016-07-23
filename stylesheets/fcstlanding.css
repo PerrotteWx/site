@@ -1,0 +1,69 @@
+/* Possible footer background color: 435058 */
+
+body {
+  background-color: #879288;
+  font-family: "Helvetica", "Tahoma", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#CenterPage {
+  max-width: 1295px;
+  min-width: 1295px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
+}
+
+#mainContent {
+	height: 485px;
+	margin: 0;
+	padding: 275px 50px 25px 50px;
+	width: 1195px;
+	font-size: 13pt;
+}
+/* PLACE ALL UNIQUE CSS BELOW */
+
+.image {
+	width: 540px;
+	box-shadow: 10px 10px 20px black;
+}
+
+.imageContainer {
+	float: left;
+}
+
+.imageLabel {
+	margin: 20px 0 0 0;
+	padding: 0;
+	text-align: center;
+}
+
+.imageSpacing {
+	margin: 0 110px 0 0;
+}
+
+#mainContent a:link {
+	color: black;
+}
+
+ a:visited {
+	color: black;
+}
+
+#NorthCarolina:hover {
+	color: black;
+	text-decoration: underline;
+	filter:brightness(130%);
+	-webkit-filter:brightness(130%;
+	cursor: pointer;
+}
+
+#SouthCarolina:hover {
+	color: black;
+/*	text-decoration: underline;
+	filter:brightness(130%);
+	-webkit-filter:brightness(130%;
+	cursor: pointer;*/
+}
