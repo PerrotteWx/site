@@ -1,110 +1,161 @@
-.header {
+.widerLinkHeader {
+	width: 305px;
+}
+
+#logoWrapper {
+	position: relative;
 	width: 1295px;
-    	height: 180px;
-    	position: fixed;
-    	top: 0;
-    	transition: height 500ms, background 500ms;
-	background-color: #0086B3;
+	height: 250px;
 }
 
-.header.smallHeader {
-	height: 77px;
-    	position: fixed;
-	background-color: #006080;
-}
-
-.logo {
-	transition: width 330ms;
-	transition-timing-function: linear;
-	padding: 7px;
-	width: 250px;
- }
-
-.logoAfter {
-	width: 125px;
-	padding: 7px;
-}
-
-.menuWidthBefore {
-	float: right;
-	width: 173px;
-	background-color: #0086B3;
-	transition: width 500ms, background 500ms;
-	color: white;
-	margin: 0;
-	padding: 0;
-}
-
-.menuWidthAfter {
-	float: right;
-	width: 194px;
-	background-color: #006080;
-    	transition: width 500ms, background 500ms;
-	color: white;
-}
-
-.linkHeightBefore {
-	padding: 16px 0;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
-}
-
-.linkHeightAfter {
-	padding: 29px 0;
-	border-radius: 0px;
-}
-
-#logoImg {
-	float: left;
-	width: 100%;
-	z-index: 500;
-}
-
-#headerWrapper {
-	z-index: 100;
-}
-
-#horizontalnav {
+#logoBackground {
 	position: absolute;
-	bottom: 0;
-	right: 0;
-	margin: 0;
-	padding: 0;
-	background-color: green;	
 }
 
-/* Removes the underline from all links in the nav bar and sets the link color to white */
-#horizontalnav a {
+#logoBackground img {
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
+
+#logo img {
+	
+	width: 230px;
+}
+
+nav {
+	margin: 0 auto;
+	min-width: 1295px;
+	max-width: 1295px;
+	background-color: #0F0F0F;
+	z-index: 50;
+}
+
+nav:after {
+	content:"";
+	display: table;
+	clear: both;
+}
+
+/* Changes the location of the links within the menu bar (i.e., text-align changes location) */
+nav ul {
+	list-style-type: none;
+	position: relative;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	z-index: 10;
+	cursor: default;
+}
+
+/* Changes all main menu links that do not have an "a" associated with them (i.e., all non-clickable links) */
+nav ul li {
+	display: block;
+	position: relative;
+	float: left;
+	width: 198px;
+	margin: 0;
+	padding: 0;
+	font-family: "Tahoma", sans-serif;
+	color: white;
+	cursor: default;
+	background-color: #0F0F0F;
+	font-size: 95%;
+}
+
+/* Changes the main link color on hover and the area behind the main link on hover */
+nav ul li:hover {
+	background-color: #D5D5D5;
+	color: black;
+}
+
+/* Headers within dropdowns */
+nav ul span li {
+	background-color: #0F0F0F;
+	padding: 5px 0 2px 0;
+	font-size: 82%;
+}
+
+nav ul span li:hover {
+	background-color: #D5D5D5;
+	color: black;
+}
+
+/* */
+nav ul ul {
+	display: none;
+	position: absolute;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	top: 100%;
+	left: 0;
+	right: 0;
+}
+
+nav ul ul li {
+	float: none;
+	min-width: 180px;
+	color: white;
+	padding:0;
+	font-size: 13pt;
+}
+
+/* Changes the area behind the drop down links and is responsible for displaying the drop down on hover */
+nav ul li:hover > ul {
+	display: block;
+}
+
+/* Changes all links with the "a" tag */
+nav a {
+	display: block;
+	padding: 7px 0;
+}
+
+/* Changes the text in the drop downs */
+nav ul a {
 	display: block;
 	text-align: center;
 }
 
-#horizontalnav a:link {
-	text-decoration: none;
-	color: white;
+nav ul li ul li a {
+	padding: 20px 0;
 }
 
-#horizontalnav a:hover {
-	text-decoration: underline;
-	background-color: white;
+nav a:link {
+	color: white;
+	text-decoration: none;
+	font-family: "Tahoma", sans-serif;
+}
+
+nav a:visited {
+	color: white;
+	font-family: "Tahoma", sans-serif;
+}
+
+nav a:hover {
 	color: black;
+	font-family: "Tahoma", sans-serif;
+	background-color: #D5D5D5;
 }
 
-#horizontalnav a:visited {
-	text-decoration: none;
-	color: white;
+#NorthCarolina {
+	width: 275px;
+	margin: 0 auto;
+	padding: 5px 0;
 }
 
-#horizontalnav ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+#SouthCarolina {
+	width: 200px;
+	margin: 0 auto;
+	padding: 5px 0;
 }
 
-#textLogo {
-	float: right;
-	display: block;
-	width: 350px;
-	margin: 0;
-	padding: 10px;
+#wxchallengeLogo {
+	background-color: #D5D5D5;
+	border-bottom: 1px black solid;
 }

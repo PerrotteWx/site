@@ -1,5 +1,5 @@
 body {
-  background-color: #879288;
+  background-color: #5D92B1;
   font-family: "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@ body {
 #CenterPage {
   max-width: 1295px;
   min-width: 1295px;
+
   margin: 0 auto;
   padding: 0;
   background-color: white;
