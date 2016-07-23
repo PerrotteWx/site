@@ -38,7 +38,7 @@ $(window).on("scroll touchmove", function () {
 	$('#logoImgDiv').addClass('logoAfter');
  	$('#horizontalnav ul li').addClass('menuWidthAfter');
 	$('#horizontalnav ul li a').addClass('linkHeightAfter');
- 	$('#textLogo').fadeOut(100);	
+ 	$('#textLogo').fadeOut(90);	
   }
 
   else {
@@ -46,7 +46,7 @@ $(window).on("scroll touchmove", function () {
 	$('#logoImgDiv').removeClass('logoAfter');
 	$('#horizontalnav ul li').removeClass('menuWidthAfter');
 	$('#horizontalnav ul li a').removeClass('linkHeightAfter');
-	$('#textLogo').fadeIn(500);
+	$('#textLogo').fadeIn(750);
 	}
 });
 //-->
@@ -69,10 +69,10 @@ $(window).on("scroll touchmove", function () {
 
 <!-- Logo -->
 <div id="logoImgDiv" class="logo">
-<a href="/index.html"><img id="logoImg" src="/images/logo.png" alt="" /></a>
+<a href="/index.html"><img id="logoImg" src="/images/logo.png" alt="PerrotteWx" /></a>
 </div>
 
-<img id="textLogo" src="/images/text_logo.png" alt="" />
+<img id="textLogo" src="/images/text_logo.png" alt="Gregory T. Perrotte" />
 
 <div id="horizontalnav">
 <nav>
@@ -90,6 +90,10 @@ $(window).on("scroll touchmove", function () {
 </div><!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
 
+
+
+<div id="mainContent">
+
 <img id="portrait" src="/images/portrait.png" alt="Gregory Perrotte">
 <div id="aboutMe">
 
@@ -104,35 +108,41 @@ $(window).on("scroll touchmove", function () {
 <p>Thank you for taking the time to read a little bit about me and please feel free to contact me at any time! I look forward to seeing what the future will bring and my current forecast is for a sunny, bright future.</p>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-
 <div id="gallery">
 
 <h2>Gallery</h2>
 
 <br>
 
-<div id="galleryRow1">
-<a href="/images/gallery/Senior_Class_Photo.png"><img id="seniorPic" src="/images/gallery/Senior_Class_Photo.png" alt="Class of 2016"></a>
-
-<a href="/images/gallery/Tobacco_Cup.png"><img id="tobaccoCup" src="/images/gallery/Tobacco_Cup.png" alt="Tobacco Cup"></a>
+<!-- NOTE: Add the image spacing class to the first image of every row to set the 25px space between pictures -->
+<div class="imageContainer imageSpacing">
+<a href="/images/gallery/Senior_Class_Photo.png"><img class="image" src="/images/gallery/Senior_Class_Photo.png" alt="Class of 2016" /></a>
+<p class="imageLabel">Class of 2016 &ndash; UNC Asheville Atmospheric Sciences</p>
 </div>
 
-<div id="labelsRow1">
-<p id="leftLabel1">Class of 2016 &ndash; UNCA Atmospheric Sciences</p>
-<p id="rightLabel1">Myself, Holding the Tobacco Cup</p>
+<div class="imageContainer">
+<a href="/images/gallery/Tobacco_Cup.png"><img class="image" src="/images/gallery/Tobacco_Cup.png" alt="Tobacco Cup" /></a>
+<p class="imageLabel">Myself, Holding the Tobacco Cup</p>
 </div>
+
+<div class="imageContainer imageSpacing">
+<a href="/images/gallery/Chimney_Rock.jpg"><img class="image" src="/images/gallery/Chimney_Rock.jpg" alt="Chimney Rock" /></a>
+<p class="imageLabel">Chimney Rock, North Carolina</p>
 </div>
+
+<div class="imageContainer">
+<a href="/images/gallery/Graveyard_Fields.jpg"><img class="image" src="/images/gallery/Graveyard_Fields.jpg" alt="Graveyard Fields" /></a>
+<p class="imageLabel">Graveyard Fields, Blue Ridge Parkway, North Carolina</p>
+</div>
+
+
 
 <br>
 
 <p style="position:relative; left: 25px;">More pictures will be added soon!</p>
 
-
+</div>
+</div><!-- End of main content -->
 
 
 

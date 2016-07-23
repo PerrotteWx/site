@@ -18,26 +18,29 @@ p {
   box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
 }
 
-/* PLACE ALL UNIQUE CSS BELOW */
-#spacerDiv {
-	min-height: 550px
+#mainContent {
+	margin: 0;
+	padding: 205px 25px 25px 25px;
+	height: 500px;
+	width: 1245px;
+	font-size: 13pt;
 }
+/* PLACE ALL UNIQUE CSS BELOW */
 
 #picture {
-	position: relative;
 	float: left;
-	top: 25px;
-	left: 300px;
+	margin: 0 0 0 240px;
 }
 
 #contactInfo {
-	position: relative;
-	float: 
-	right;
-	top: 160px;
-	right: 300px;
-	margin: 0;
-	padding: 0;
+	float: right;
+	width: 375px;
+	margin: 125px 240px 0 0;
+	text-align: center;
+}
+
+#contactInfo p a {
+	font-size: 1.09em;
 }
 
 #contactInfo a:link {
@@ -63,21 +66,16 @@ p {
 }
 
 #linkedInLogo {
-	position: relative;
-	top: -25px;
-	left: 5px;
-	width: 100px;
+	margin: 0 4px 15px 10px;
+	width: 140px;
 }
 
 #twitterLogo {
-	position: relative;
-	left: 25px;
+	margin: 0 0 0px 20px;
 	width: 75px;
 }
 
 .twitterLink {
 	float: right;
-	position: relative;
-	right: 5px;
-	top: 10px;
+	margin: 20px 10px 0 0;
 }

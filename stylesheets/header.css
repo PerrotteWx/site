@@ -84,14 +84,15 @@
 	color: white;
 }
 
+#horizontalnav a:visited {
+	text-decoration: none;
+	color: white;
+}
+
 #horizontalnav a:hover {
 	text-decoration: underline;
 	background-color: white;
 	color: black;
-}
-
-#horizontalnav a:visited {
-	text-decoration: none;
 }
 
 #horizontalnav ul {

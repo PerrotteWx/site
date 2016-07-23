@@ -17,22 +17,44 @@ body {
   box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
 }
 
+#mainContent {
+	margin: 0;
+	padding: 185px 25px 25px 25px;
+	width: 1245px;
+	font-size: 13pt;
+}
 /* PLACE ALL UNIQUE CSS BELOW */
 
-#aboutMe {
-	position: relative;
-	top: 25px;
-	left: 25px;
-	height: 462px;
-	width: 920px;
-	margin: 0;
+.image {
+	width: 610px;
+}
+
+.imageContainer {
+	float: left;
+}
+
+.imageLabel {
+	margin: 5px 0 50px 0;
 	padding: 0;
-	font-size: 13pt;
+	text-align: center;
+	font-size: 1.09em;
+}
+
+.imageSpacing {
+	margin: 0 25px 0 0;
+}
+
+#aboutMe {
+	height: 450px;
+	width: 895px;
+	margin: 25px 0 0 0;
+	padding: 0;
+	font-size: 1.09em;
 	text-align: justify;
 }
 
 #aboutMe h2 {
-	margin: 0;
+	margin: 0 0 25px 230px;
 	padding: 0;
 }
 
@@ -40,77 +62,14 @@ body {
 	font-size: 13pt;
 }
 
+#gallery {
+	margin: 75px 0 0 0;
+	height: 1200px;
+}
+
 #portrait {
 	display: block;
 	float: right;
-	position: relative;
-	right: 25px;
-	top: 106px;
+	margin: 130px 20px 0 0;
+	box-shadow: black 4px 4px 20px;
 }
-
-#pictureFrame {
-	display: block;
-	float: left;
-	position: relative;
-	width: 310px;
-	height: 310px;
-	left: 965px;
-	top: 20px;
-	background-color: #0F0F0F;
-}
-
-#gallery {
-	position: relative;
-	left: 25px;
-	width: 1245px;
-}
-
-#gallery h2 {
-	margin: 0;
-	padding: 0;
-}
-
-#galleryRow1 {
-	min-height: 457px;
-	margin: 0;
-	padding: 0;
-}
-
-#labelsRow1 {
-	min-height: 30px;
-	margin: 0;
-	padding: 0;
-}
-
-#leftLabel1 {
-	float: left;
-	position: relative;
-	top: 5px;
-	left: -475px;
-	margin: 0;
-	padding: 0;
-}
-
-#rightLabel1 {
-	float: right;
-	position: relative;
-	top: 5px;
-	left: -180px;
-	margin: 0;
-	padding: 0;
-}
-
-#seniorPic {
-	display: block;
-	float: left;
-	width: 610px;
-}
-
-#tobaccoCup {
-	display: block;
-	float: right;
-	width: 610px;
-	position: relative;
-	top: 114px;
-}
-
