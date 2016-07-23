@@ -1,5 +1,5 @@
 body {
-  background-color: #5D92B1;
+  background-color: #879288;
   width: 100%;
   height: 100%;
   font-family: "Helvetica", sans-serif;
@@ -22,6 +22,7 @@ body {
 #mainContent h1 {
 	margin: 25px 0 0 25px;
 	padding: 0;
+
 }
 
 #mainContent h2 {
