@@ -9,9 +9,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="Menus of sorted links intended to streamline the forecast process are available for cities across the Carolinas." />
 
-<link rel="stylesheet" type="text/css" href="/stylesheets/NCmenus.css">
-<link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
-<link rel="stylesheet" type="text/css" href="/stylesheets/footer.css">
+<link rel="stylesheet" type="text/css" href="//stylesheets/NCmenus.css">
+<link rel="stylesheet" type="text/css" href="//stylesheets/header.css">
+<link rel="stylesheet" type="text/css" href="//stylesheets/footer.css">
 <link rel="icon" href="/images/favicon.png" />
 
 <title>North Carolina Forecasting Resources | PerrotteWx</title>
@@ -54,6 +54,17 @@ $(window).on("scroll touchmove", function () {
 </head>
 
 <body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a').mouseover(function(){
+		var stationName = $(this).attr('id');
+    		$('#' + stationName + 'star').addClass('onLinkHover');
+		$('a').mouseout(function(){
+    		$('#' + stationName + 'star').removeClass('onLinkHover');
+	});
+});
+</script>
+
 <div id="CenterPage">
 
 <noscript>
@@ -90,53 +101,8 @@ $(window).on("scroll touchmove", function () {
 </div><!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
 
-
-<h4 id="mapHeader">Click on one of the star icons below to view a forecasting resources menu for that North Carolina city.</h4>
-<div id="NorthCarolinaMap">
-
-<div id="stationLocations">
-<div id="KAVLstar">
-<a href="/forecast/KAVL.html"><img src="/images/star_blue.svg" alt="KAVL" title="Asheville, N.C. (KAVL)" /></a>	
-</div>
-
-<div id="KCLTstar">
-<a href="/forecast/KCLT.html"><img src="/images/star_blue.svg" alt="KCLT" title="Charlotte, N.C. (KCLT)" /></a>
-</div>
-
-<div id="KGSOstar">
-<a><img src="/images/star_blue.svg" alt="KGSO" title="Greensboro, N.C. (KGSO)" /></a>
-</div>
-
-<div id="KHKYstar">
-<a href="/forecast/KHKY.html"><img src="/images/star_blue.svg" alt="KHKY" title="Hickory, N.C. (KHKY)" /></a>
-</div>
-
-<div id="KILMstar">
-<a><img src="/images/star_blue.svg" alt="KILM" title="Wilmington, N.C. (KILM)" /></a>
-</div>
-
-<div id="KRDUstar">
-<a><img src="/images/star_blue.svg" alt="KRDU" title="Raleigh, N.C. (KRDU)" /></a>
-</div>
-
-<div id="KSVHstar">
-<a href="/forecast/KSVH.html"><img src="/images/star_blue.svg" alt="KSVH" title="Statesville, N.C. (KSVH)" /></a>
-</div>
-
-</div>
-
-<img id="NCstatemap" src="/images/NC.svg" alt="There was an error displaying the map. See the list of locations below." onerror="displayTextLinks()" />
-</div>
-
-
-<script type="text/javascript">
-function displayTextLinks() {
-	alert("An ERROR has occurred and the map could not be displayed. Please use the list of available stations instead.");
-	document.getElementById("NorthCarolinaMap").style.display = "none";
-	document.getElementById("mapHeader").style.display = "none";
-}	
-
-</script>
+<div id="mainContent">
+<p>The map is being reformatted and will be back shortly!</p>
 
 <div id="textLinks">
 <h3>Available North Carolina Stations</h3>
@@ -155,7 +121,7 @@ function displayTextLinks() {
 
 
 
-
+</div><!-- End of main content -->
 
 <!-- Enter footer below -->
 <div id="footer">
