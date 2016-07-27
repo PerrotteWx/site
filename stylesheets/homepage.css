@@ -23,18 +23,58 @@ body {
 	margin: 0;
 	padding: 240px 25px 25px 25px;
 	width: 1245px;
-	font-size: 13pt;
+	font-size: 1.09em;
 }
 /* PLACE ALL UNIQUE CSS BELOW */
+
+.fcstDay1 {
+	float: left;
+	height: 400px;
+	width: 247px;
+	margin: 0 0 0 1px;
+	border-right: 2px solid lightgray;
+}
+
+.fcstDay2 {
+	float: left;
+	height: 400px;
+	width: 247px;
+	border-right: 2px solid lightgray;
+}
+
+.fcstDay3 {
+	float: left;
+	height: 400px;
+	width: 247px;
+	border-right: 2px solid lightgray;
+}
+
+.fcstDay4 {
+	float: left;
+	height: 400px;
+	width: 247px;
+	border-right: 2px solid lightgray;
+}
+
+.fcstDay5 {
+	float: left;
+	height: 400px;
+	width: 247px;
+}
+
+.fcstHeaderBefore {
+	transition: height 500ms, background 500ms;
+	background-color: #0086B3;
+}
+
+.fcstHeaderAfter {
+	transition: height 500ms, background 500ms;
+	background-color: #006080;
+}
 
 h2 {
 	position: relative;
 	left: 25px;
-}
-
-#fcstValid {
-	text-align: right;
-	font-size: 10pt;
 }
 
 /****************************************/
@@ -42,234 +82,12 @@ h2 {
 /****************************************/
 
 #AshevilleFcst {
+	height: 439px;
 	width: 1245px;
 	border: 1px black solid;
 
 }
 
-#AshevilleFcst h3 {
-	margin: 0;
-	padding: 5px 0 5px 5px;
-	background-color: #0F0F0F;
-	color: white;
-	border-bottom: 1px black solid;
-}
-
-#AshevilleFcst h4 {
-	
-	height: 30px;
-	margin: 0;
-	padding: 0;
-	font-size: 15pt;
-}
-
-#AshevilleFcst img {
-	float: left;
-	height: 150px;
-	margin: 8px 0 0 0;
-	padding: 0;
-	background-color: #87CEEB;
-	border-radius: 10px;
-}
-
-#AVLday1 {
-	position: relative;
-	top: 13px;
-	margin: 0 0 0 10px;
-	padding: 0;
-	height: 220px;
-}
-
-
-#AVLminMaxDay1 {
-	float: left;
-	height: 150px;
-	width: 140px;
-	margin: 8px 0 0 20px;
-	padding: 0;
-}
-
-#AVLmaxDay1 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#AVLminDay1 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#AVLdiscDay1 {
-	margin: 8px 0 0 320px;
-	padding: 0;
-	width: 905px;
-	height: 150px;
-}
-
-#AVLdiscDay1 p {
-	margin: 0;
-	padding: 0;
-	font-size: 14pt;
-}
-
-#AVLday2 {
-	margin: 0;
-	padding: 13px 0 0 10px;
-	height: 205px;
-	border-top: double;
-}
-
-#AVLminMaxDay2 {
-	float: left;
-	height: 150px;
-	width: 140px;
-	margin: 8px 0 0 20px;
-	padding: 0;
-}
-
-#AVLmaxDay2 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#AVLminDay2 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#AVLdiscDay2 {
-	margin: 8px 0 0 320px;
-	padding: 0;
-	width: 905px;
-	height: 150px;
-}
-
-#AVLdiscDay2 p {
-	margin: 0;
-	padding: 0;
-	font-size: 14pt;
-}
-
-/****************************************/
-/* CSS for the Charlotte 2-day Forecast */
-/****************************************/
-
-#CharlotteFcst {
-	width: 1245px;
-	border: 1px black solid;
-
-}
-
-#CharlotteFcst h3 {
-	margin: 0;
-	padding: 5px 0 5px 5px;
-	background-color: #0F0F0F;
-	color: white;
-	border-bottom: 1px black solid;
-}
-
-#CharlotteFcst h4 {
-	
-	height: 30px;
-	margin: 0;
-	padding: 0;
-	font-size: 15pt;
-}
-
-#CharlotteFcst img {
-	float: left;
-	height: 150px;
-	margin: 8px 0 0 0;
-	padding: 0;
-	background-color: #87CEEB;
-	border-radius: 10px;
-}
-
-#CLTday1 {
-	position: relative;
-	top: 13px;
-	margin: 0 0 0 10px;
-	padding: 0;
-	height: 220px;
-}
-
-
-#CLTminMaxDay1 {
-	float: left;
-	height: 150px;
-	width: 140px;
-	margin: 8px 0 0 20px;
-	padding: 0;
-}
-
-#CLTmaxDay1 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#CLTminDay1 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#CLTdiscDay1 {
-	margin: 8px 0 0 320px;
-	padding: 0;
-	width: 905px;
-	height: 150px;
-}
-
-#CLTdiscDay1 p {
-	margin: 0;
-	padding: 0;
-	font-size: 14pt;
-}
-
-#CLTday2 {
-	margin: 0;
-	padding: 13px 0 0 10px;
-	height: 205px;
-	border-top: double;
-}
-
-#CLTminMaxDay2 {
-	float: left;
-	height: 150px;
-	width: 140px;
-	margin: 8px 0 0 20px;
-	padding: 0;
-}
-
-#CLTmaxDay2 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#CLTminDay2 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#CLTdiscDay2 {
-	margin: 8px 0 0 320px;
-	padding: 0;
-	width: 905px;
-	height: 150px;
-}
-
-#CLTdiscDay2 p {
-	margin: 0;
-	padding: 0;
-	font-size: 14pt;
-}
 
 /****************************************/
 /* CSS for the Hickory 2-day Forecast */
@@ -277,118 +95,40 @@ h2 {
 
 #HickoryFcst {
 	width: 1245px;
-	border: 1px black solid;
 
 }
 
-#HickoryFcst h3 {
-	margin: 0;
-	padding: 5px 0 5px 5px;
-	background-color: #0F0F0F;
-	color: white;
-	border-bottom: 1px black solid;
-}
 
-#HickoryFcst h4 {
-	
-	height: 30px;
-	margin: 0;
-	padding: 0;
-	font-size: 15pt;
-}
-
-#HickoryFcst img {
-	float: left;
-	height: 150px;
-	margin: 8px 0 0 0;
-	padding: 0;
-	background-color: #87CEEB;
-	border-radius: 10px;
-}
-
-#HKYday1 {
-	position: relative;
-	top: 13px;
-	margin: 0 0 0 10px;
-	padding: 0;
-	height: 220px;
-}
-
-
-#HKYminMaxDay1 {
-	float: left;
-	height: 150px;
-	width: 140px;
-	margin: 8px 0 0 20px;
-	padding: 0;
-}
-
-#HKYmaxDay1 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#HKYminDay1 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#HKYdiscDay1 {
-	margin: 8px 0 0 320px;
-	padding: 0;
-	width: 905px;
-	height: 150px;
-}
-
-#HKYdiscDay1 p {
-	margin: 0;
-	padding: 0;
-	font-size: 14pt;
-}
-
-#HKYday2 {
-	margin: 0;
-	padding: 13px 0 0 10px;
-	height: 205px;
-	border-top: double;
-}
-
-#HKYminMaxDay2 {
-	float: left;
-	height: 150px;
-	width: 140px;
-	margin: 8px 0 0 20px;
-	padding: 0;
-}
-
-#HKYmaxDay2 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#HKYminDay2 {
-	font-size: 18pt;
-	margin: 30px 0 10px 5px;
-	padding: 0;
-}
-
-#HKYdiscDay2 {
-	margin: 8px 0 0 320px;
-	padding: 0;
-	width: 905px;
-	height: 150px;
-}
-
-#HKYdiscDay2 p {
-	margin: 0;
-	padding: 0;
-	font-size: 14pt;
-}
 
 /* End of Forecast Div CSS */
+
+#forecastDiv h3 {
+	margin: 0;
+	padding: 7px 0 7px 12px;
+	color: white;
+}
+
+/* Sets properties for the day of the week headers in the forecast boxes */
+#forecastDiv h4 {
+	margin: 5px 0;
+	padding: 0;
+	text-align: center;
+	font-size: 1.09em;
+}
+
+#forecastDiv img {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#forecastDiv p {
+	margin: 12px 10px;
+	padding: 0;
+	text-align: left;
+	font-size: 1.05em;
+}
 
 #verificationButton a {
 	display: block;

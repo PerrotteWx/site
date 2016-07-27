@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Last Modified: 23 July 2016 -->
+<!-- Last Modified: 27 July 2016 -->
 
 <html>
 <head>
@@ -38,6 +38,7 @@ $(window).on("scroll touchmove", function () {
 	$('#logoImgDiv').addClass('logoAfter');
  	$('#horizontalnav ul li').addClass('menuWidthAfter');
 	$('#horizontalnav ul li a').addClass('linkHeightAfter');
+	$('#forecastDiv h3').addClass('fcstHeaderAfter');
  	$('#textLogo').fadeOut(90);	
   }
 
@@ -46,6 +47,7 @@ $(window).on("scroll touchmove", function () {
 	$('#logoImgDiv').removeClass('logoAfter');
 	$('#horizontalnav ul li').removeClass('menuWidthAfter');
 	$('#horizontalnav ul li a').removeClass('linkHeightAfter');
+	$('#forecastDiv h3').removeClass('fcstHeaderAfter');
 	$('#textLogo').fadeIn(750);
 	}
 });
@@ -93,166 +95,106 @@ $(window).on("scroll touchmove", function () {
 <div id="mainContent">
 
 
-	<p><b><u>THE WXCHALLENGE PAGE IS UNDER CONSTRUCTION AND IS CURRENTLY UNAVIALABLE.</u></b> Please note that this website is being tested in Firefox 47. There are some known issues with Internet Explorer. While this site should work properly in Chrome, I recommend using use Firefox for the best results.</p>
+	<p><b><i><u>THE WXCHALLENGE PAGE IS UNDER CONSTRUCTION AND IS CURRENTLY UNAVIALABLE.</u></b> Please note that this website is being tested in Firefox 47. There are some known issues with Internet Explorer. While this site should work properly in Chrome, I recommend using use Firefox for the best results.</i></p>
 
-<p>Welcome to my personal website which includes information about me and a wealth of links to both government and university weather products. Under the WxChallenge tab, you will find an array of sorted links to various weather products arranged in an easy-to-use interface [still under construction] for every WxChallenge location in the 2015-16 season. Pages will be built for every location in the 2016-17 season once the schedule is announced. Under the Forecasting Menus tab, you will find similar resource menus for locations across the Carolinas [also under construction].</p>
+<p>Welcome to my personal website which includes information about me and a wealth of links to both government and university weather products. Under the WxChallenge tab, you will find an array of sorted links to various weather products arranged in an easy-to-use interface [still under construction] for every WxChallenge location in the 2015-16 season. Pages will be built for every location in the 2016-17 season once the schedule is announced. Under the Forecasting Menus tab, you will find similar resource menus for locations across the Carolinas [only North Carolina is currently available].</p>
 
-<p>Below you will find 2-day forecasts for Asheville, N.C. (KAVL) and Hickory, N.C. (KHKY). I will be verifying my forecasts and it is planned that these verifications will be available in the future. Two day forecasts will be issued every two days (e.g., a Monday, Tuesday will be issued on Sunday followed by a Wednesday, Thursday forecast that will be issued on Tuesday). I will do my best to issue these forecasts continually. NOTE: These forecasts have been temporarily suspended while the website is being constructed.</p>
+<p>Below you will find a 5-day forecast for Asheville, N.C. (KAVL). I will be verifying my forecasts and it is planned that these verifications will be available in the future. Forecasts will be issued every five days to test the accuracy of my short and medium range forecasting. I will do my best to issue these forecasts continually.</p>
 <h4>Please note that forecasts are currently unavailable while the interface through which forecasts are displayed is being upgraded.</h4>
 
+<div id="forecastDiv">
 <!------------------->
 <!--Enter Forecast Time-->
 <!------------------>
-<div id="fcstValid">
-	<p></p>
-</div>
 
 <div id="AshevilleFcst">
-<h3>2-Day Forecast for Asheville, North Carolina (KAVL)</h3>
-<div id="AVLday1">
+<h3 class="fcstHeaderBefore">5-Day Forecast for Asheville, North Carolina (KAVL)</h3>
+<div class="fcstDay1">
+<h4>Day 1</h4>
 
-<!-------------------------->
-<!--Enter Forecasts Below-->
-<!-------------------------->
+<img src="/images/logo.png" alt="" />
 
-
-<!--**** ENTER DATE ****-->
-	
-<h4></h4>
-
-<!--**** Set Wx Icon ****-->
-<img  alt="">
-
-<!--**** Enter High and Low ****-->
-<div id="AVLminMaxDay1">
-
-<p id="AVLmaxDay1"><b></b></p>
-<p id="AVLminDay1"><b></b></p>
+<p style="text-align: center;"><b></b></p>
+<p>High: <b>&deg;F</b></p>
+<p>Low: <b>&deg;F</b></p>
+<p>Wind: <b>mph</b></p>
+<p>Precipitation Chance: <b>%</b></p>
+<p>Precipitation Amount: <b>"</b></p>
 
 </div>
 
-<!--**** Enter Forecast Discussion ****-->
+<div class="fcstDay2">
+<h4>Day 2</h4>
 
-<div id="AVLdiscDay1">
+<img src="/images/logo.png" alt="" />
 
-
-
-</div>
-
-</div><!-- End Day 1 -->
-
-<div id="AVLday2">
-
-<!-------------------------->
-<!--Enter Forecasts Below-->
-<!-------------------------->
-
-
-<!--**** ENTER DATE ****-->
-	
-<h4></h4>
-
-<!--**** Set Wx Icon ****-->
-<img alt="">
-
-<!--**** Enter High and Low ****-->
-<div id="AVLminMaxDay2">
-
-<p id="AVLmaxDay2"><b></b></p>
-<p id="AVLminDay2"><b></b></p>
+<p style="text-align: center;"><b></b></p>
+<p>High: <b>&deg;F</b></p>
+<p>Low: <b>&deg;F</b></p>
+<p>Wind: <b>mph</b></p>
+<p>Precipitation Chance: <b>%</b></p>
+<p>Precipitation Amount: <b>"</b></p>
 
 </div>
 
-<!--**** Enter Forecast Discussion ****-->
+<div class="fcstDay3">
+<h4>Day 3</h4>
 
-<div id="AVLdiscDay2">
+<img src="/images/logo.png" alt="" />
 
-
+<p style="text-align: center;"><b></b></p>
+<p>High: <b>&deg;F</b></p>
+<p>Low: <b>&deg;F</b></p>
+<p>Wind: <b>mph</b></p>
+<p>Precipitation Chance: <b>%</b></p>
+<p>Precipitation Amount: <b>"</b></p>
 
 </div>
 
-</div><!-- End Day 2 -->
+<div class="fcstDay4">
+<h4>Day 4</h4>
+
+<img src="/images/logo.png" alt="" />
+
+<p style="text-align: center;"><b></b></p>
+<p>High: <b>&deg;F</b></p>
+<p>Low: <b>&deg;F</b></p>
+<p>Wind: <b> mph</b></p>
+<p>Precipitation Chance: <b>%</b></p>
+<p>Precipitation Amount: <b>"</b></p>
+
+</div>
+
+<div class="fcstDay5">
+<h4>Day 5</h4>
+
+<img src="/images/logo.png" alt="" />
+
+<p style="text-align: center;"><b></b></p>
+<p>High: <b>&deg;F</b></p>
+<p>Low: <b>&deg;F</b></p>
+<p>Wind: <b>mph</b></p>
+<p>Precipitation Chance: <b>%</b></p>
+<p>Precipitation Amount: <b>"</b></p>
+
+</div>
+
+
+<br>
+<br>
+
+
 	
 </div><!-- End Asheville Forecast -->
 
-
-<br>
-<br>
-
-
 <div id="HickoryFcst">
-<h3>2-Day Forecast for Hickory, North Carolina (KHKY)</h3>
-<div id="CLTday1">
-
-<!-------------------------->
-<!--Enter Forecasts Below-->
-<!-------------------------->
-
-
-<!--**** ENTER DATE ****-->
-	
-<h4></h4>
-
-<!--**** Set Wx Icon ****-->
-<img  alt="">
-
-<!--**** Enter High and Low ****-->
-<div id="HKYminMaxDay1">
-
-<p id="HKYmaxDay1"><b></b></p>
-<p id="HKYminDay1"><b></b></p>
-
 </div>
-
-<!--**** Enter Forecast Discussion ****-->
-
-<div id="HKYdiscDay1">
-
-
-
-</div>
-
-</div><!-- End Day 1 -->
-
-<div id="HKYday2">
-
-<!-------------------------->
-<!--Enter Forecasts Below-->
-<!-------------------------->
-
-
-<!--**** ENTER DATE ****-->
-	
-<h4></h4>
-
-<!--**** Set Wx Icon ****-->
-<img  alt="">
-
-<!--**** Enter High and Low ****-->
-<div id="HKYminMaxDay2">
-
-<p id="HKYmaxDay2"><b></b></p>
-<p id="HKYminDay2"><b></b></p>
-
-</div>
-
-<!--**** Enter Forecast Discussion ****-->
-
-<div id="HKYdiscDay2">
-
-
-
-</div>
-
-</div><!-- End Day 2 -->
-
-</div><!-- End Hickory Forecast -->
-
-<br>
 
 <!--div id="verificationButton">
 <a href="/forecastverification.html">Forecast Verification</a>
 </div -->
+
+</div><!-- End of forecast div -->
 
 <br>
 <hr>
@@ -262,7 +204,6 @@ $(window).on("scroll touchmove", function () {
 <a href="http://www.unca.edu/"><img id="UNCAlogo" src="/images/UNC_Asheville.jpg" alt="UNC Asheville"></a>
 <a href="http://atms.unca.edu/"><img id="UNCAatms" src="/images/ATMSlogo.svg" alt="UNC Asheville Atmospheric Sciences"></a>
 <a href="http://www.wxchallenge.com/"><img id="WxChallengeLogo" src="/images/wxchallengelogo.jpg" alt="Weather Challenge"></a>
-
 </div><!-- End Main Content -->
 </div>
 

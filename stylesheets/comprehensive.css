@@ -1,0 +1,39 @@
+/* Possible footer background color: 435058 */
+/* Possible background color: #40798C or #40718C */
+body {
+	background-color: #879288;
+	width: 100%;
+	height: 100%;
+	font-family: "Helvetica", "Tahoma", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#CenterPage {
+	max-width: 1295px;
+	min-width: 1295px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: white;
+	box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
+}
+
+#mainContent {
+	margin: 0;
+	padding: 260px 0 0 0;
+	width: 1295px;
+	font-size: 13pt;
+}
+/* PLACE ALL UNIQUE CSS BELOW */
+
+#NWPsources {
+	height: 500px;
+}
+
+#NWPsources h3 {
+	margin: 0;
+	padding: 7px 25px;
+	color: white;
+	background-color: #0F0F0F;
+}
