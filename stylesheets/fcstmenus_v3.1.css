@@ -12,10 +12,11 @@
 
 .converterResult {
 	margin: 0;
-	padding: 2px 6px 0 0;
+	padding: 0;
 	font-size: 1.5em;
 	font-weight: bold;
 	color: white;
+	text-align: center;
 }
 
 .converterStyle {
@@ -27,9 +28,9 @@
 .converterStyle button {
 	float: left;
 	height: 25px;
-	margin: 0;
+	margin: 0 10px 0 0;
 	padding: 0;
-	width: 100px;
+	width: 95px;
 	background-color: #F4F4F4;
 	border-radius: 0px;
 	border-style: none;
@@ -39,8 +40,8 @@
 .converterStyle input {
 	float: left;
 	height: 25px;
-	width: 110px;
-	margin: 0 0 0 13px;
+	width: 120px;
+	margin: 0 0 0 10px;
 	padding: 0;
 	text-align: center;
 	border-radius: 0;
@@ -56,6 +57,10 @@
 	padding: 0;
 	font-size: 1.10em;
 	color: white;
+}
+
+.leftArrowHidden {
+	display: none;
 }
 
 .showConverter {
@@ -86,12 +91,10 @@ body {
 	width: 256px;
 	margin: 0;
 	padding: 0;
-
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b9b+0,00467f+49,003977+50,003c77+100 */
-	background: #003c77; /* Old browsers */
-	background: -moz-linear-gradient(top, #003b9b 0%, #00467f 49%, #003977 50%, #003c77 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #0086B3; /* Old browsers */
+	background: -moz-linear-gradient(top, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	border-bottom: 1px black solid;
 	border-right: 1px black solid;
 	text-align: center;
@@ -116,11 +119,10 @@ body {
 	width: 256px;
 	margin: 0;
 	padding: 0;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#003b9b+0,00467f+49,003977+50,003c77+100 */
-	background: #003c77; /* Old browsers */
-	background: -moz-linear-gradient(top, #003b9b 0%, #00467f 49%, #003977 50%, #003c77 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #003b9b 0%,#00467f 49%,#003977 50%,#003c77 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #0086B3; /* Old browsers */
+	background: -moz-linear-gradient(top, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	border-right: 1px black solid;
 	border-top: 1px black solid;
 }
@@ -363,17 +365,20 @@ body {
 	bottom: 0px;
 	height: 125px;
 	width: 300px;
-	background-color: #003c77;
-	border-right: 1px black solid;
+	background-color: #0086B3;
 	border-top: 1px black solid;
-	border-top-right-radius: 25px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+	box-shadow: 3px -3px 25px black;
 	z-index: 15;
 }
 
 #unitConverter p {
 	position: relative;
-	top: 17px;
-	left: 26px;
+	top: 18px;
+	margin: 0;
+	padding: 0;
 }
 
 #unitConverter select {
@@ -381,7 +386,7 @@ body {
 	left: 50px;
 	width: 200px;
 	height: 27px;
-	margin: 0 0 12px 0;
+	margin: 5px 0 12px 0;
 	padding: 0;
 	text-align: center;
 	border-radius: 0;
@@ -389,35 +394,10 @@ body {
 	font-size: 1.12em;
 }
 
-#unitConverterHide {
-	position: absolute;
-	right: 0;
-	bottom: 12px;
-	height: 30px;
-	width: 130px;
-	margin: 0;
-	padding: 0;
-	opacity: 0.35;
-	background-color: #F4F4F4;
-	border-radius: 30px;
-	text-align: center;
-}
-
-#unitConverterHide:hover {
-	opacity: 1.0;
-	text-decoration: underline;
-}
-
-#unitConverterHide h4 {
-	margin: 0;
-	padding: 5px 0 0 0;
-	cursor: pointer;
-}
-
 #unitConverterShow {
 	position: absolute;
-	top: 9px;
-	left: 40px;
+	top: 7px;
+	left: 35px;
 	margin: 0;
 	padding: 0;
 	cursor: pointer;
@@ -429,7 +409,10 @@ body {
 }
 
 #unitConverterShow h4 {
-	margin: 0;
+	display: block;
+	width: 130px;
+	margin: 3px 0 0 0;
 	padding: 0;
 	font-size: 1.2em;
+	float: left;
 }

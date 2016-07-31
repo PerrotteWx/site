@@ -1,0 +1,75 @@
+body {
+  background-color: #879288;
+  font-family: "Helvetica", "Tahoma", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#CenterPage {
+  max-width: 1295px;
+  min-width: 1295px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: white;
+  box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
+}
+
+.mainContentButton {
+	padding: 12px 10px;
+	text-align: center;
+	background-color: #0086B3;
+	border-radius: 10px;
+}
+
+#mainContent {
+	margin: 0;
+	padding: 150px 50px 25px 50px;
+	width: 1195px;
+	font-size: 13pt;
+}
+/* PLACE ALL UNIQUE CSS BELOW */
+#buttonsHorizontal {
+	display: block;
+	width: 745px;
+	margin: 0 auto;
+}
+
+#buttonsHorizontal a {
+	font-size: 2.10em;
+	color: white;
+}
+
+#buttonsHorizontal a:link {
+	color: white;
+	text-decoration: none;
+}
+
+#buttonsHorizontal a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+#buttonsHorizontal a:hover {
+	color: white;
+	text-decoration: underline;
+	background-color: #0099cc;
+}
+
+#wxchallengelogo {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#wxchallengelogo img {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#wxchallengelogo img:hover {
+	-webkit-filter: brightness(110%);
+	filter: brightness: (110%);
+}
