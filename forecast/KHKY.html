@@ -57,12 +57,10 @@ $(document).ready(function(){
 <script type="text/javascript">
 $(document).ready(function(){
 	$('#unitConverterShow').click(function(){
-		$('#unitConverter').fadeIn(250,function(){
-			$('#unitConverterHide').click(function(){
-			$('#unitConverter').fadeOut(250);
-			});
-		});		
-	});
+		$('#unitConverter').animate({width: 'toggle'}, 400);
+		$('#unitConverterShow img').toggleClass('leftArrowHidden');
+
+	});		
 });
 </script>
 
@@ -415,11 +413,6 @@ function getTempF() {
 <div>
 <p id="degC" class="converterResult"></p>
 </div>
-</div>
-
-
-<div id="unitConverterHide">
-	<h4>Hide Converter</h4>
 </div>
 
 </div><!-- End of wrapperToHideMenu -->
