@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Last Modified: 12 August 2016 -->
+<!-- Last Modified: 15 August 2016 -->
 
 <html>
 <head>
@@ -109,33 +109,33 @@ $(document).ready(function(){
 <div id="USmap">
 <div id="stationLocations">
 <div id="KEYWstar">
-<a href="/wxchallenge/2016-17/KEYW.html"><img src="/images/star_red.svg" alt="KEYW" title="Key West, FL (KEYW)" /></a>	
+<a href="/wxchallenge/2016-17/KEYW.html"><img src="/images/star_red1.svg" alt="KEYW" title="Key West, FL (KEYW)" /></a>	
 </div>
 
 <div id="KMDTstar">
-<a href="/wxchallenge/2016-17/KMDT.html"><img src="/images/star_red.svg" alt="KMDT" title="Harrisburg, PA (KMDT)" /></a>
+<a href="/wxchallenge/2016-17/KMDT.html"><img src="/images/star_red2.svg" alt="KMDT" title="Harrisburg, PA (KMDT)" /></a>
 </div>
 
 <div id="KGRIstar">
-<a href="/wxchallenge/2016-17/KGRI.html"><img src="/images/star_red.svg" alt="KGRI" title="Grand Island, NE (KGRI)" /></a>
+<a href="/wxchallenge/2016-17/KGRI.html"><img src="/images/star_red3.svg" alt="KGRI" title="Grand Island, NE (KGRI)" /></a>
 </div>
 
 <div id="KRNOstar">
-<a href="/wxchallenge/2016-17/KRNO.html"><img src="/images/star_red.svg" alt="KRNO" title="Reno, NV (KRNO)" /></a>
+<a href="/wxchallenge/2016-17/KRNO.html"><img src="/images/star_red4.svg" alt="KRNO" title="Reno, NV (KRNO)" /></a>
 </div>
 
 <div id="KSAWstar">
-<a href="/wxchallenge/2016-17/KSAW.html"><img src="/images/star_red.svg" alt="KSAW" title="Marquette, MI (KSAW)" /></a>
+<a href="/wxchallenge/2016-17/KSAW.html"><img src="/images/star_red5.svg" alt="KSAW" title="Marquette, MI (KSAW)" /></a>
 </div>
 
 <div id="KSEAstar">
-<a href="/wxchallenge/2016-17/KSEA.html"><img src="/images/star_blue.svg" alt="KSEA" title="Seattle, WA (KSEA)" /></a>
+<a href="/wxchallenge/2016-17/KSEA.html"><img src="/images/star_blue1.svg" alt="KSEA" title="Seattle, WA (KSEA)" /></a>
 </div>
 </div>
 
 <!-- US Map Source: https://commons.wikimedia.org/wiki/File:Blank_US_Map_48states.svg -->
 <br>
-<h4>Select one of the 2016-2017 WxChallenge locations below for a forecasting menu for that station. Please note that only a partial schedule has been released.</h4>
+<h4>Select one of the 2016-2017 WxChallenge locations below for a forecasting menu for that station. Please note that only a partial schedule is available.</h4>
 <div id="legend">
 <h3>Legend</h3>
 <img src="/images/star_red.svg" />
@@ -147,38 +147,71 @@ $(document).ready(function(){
 <img src="/images/current_star.svg" />
 <p>Current Location</p>
 </div>
-<img id="USmapsvg" src="/images/USmap.svg" alt="There was an error displaying the map. See the list of locations below." onerror="displayTextLinks()" />
+<img id="USmapsvg" src="/images/USmap.png" alt="There was an error displaying the map. See the list of locations below." onerror="displayTextLinks()" />
 </div>
 
 
 <script type="text/javascript">
 function displayTextLinks() {
+	$("#USmapsvg").hide();
+	$("#mapHeader").hide();
+	$("#legend").hide();
 	alert("An ERROR has occurred and the map could not be displayed. Please use the list of available stations instead.");
-	document.getElementById("USmapsvg").style.display = "none";
-	document.getElementById("mapHeader").style.display = "none";
 }	
 </script>
 
 
 <div id="textLinks">
 <h3>2016&ndash;2017 WxChallenge Locations</h3>
-<ul>
-<li><b>Fall 2016:</b><li>
-<li><a id="KEYW" href="/wxchallenge/2016-17/KEWY.html">Key West, FL</a></li>
-<li><a id="KMDT" href="/wxchallenge/2016-17/KMDT.html">Harrisburg, PA</a></li>
-<li><a id="KGRI" href="/wxchallenge/2016-17/KGRI.html">Grand Island, NE</a></li>
-<li><a id="KRNO" href="/wxchallenge/2016-17/KRNO.html">Reno, NV</a></li>
-<li><a id="KSAW" href="/wxchallenge/2016-17/KSAW.html">Marquette, MI</a></li>
-<br>
-<br>
-<li><b>Spring 2017:</b></li>
-<li><a id="KSEA" href="/wxchallenge/2016-17/KSEA.html">Seattle, WA</a></li>
-<li><a id="" href="">TBD</a></li>
-<li><a id="" href="">TBD</a></li>
-<li><a id="" href="">TBD</a></li>
-<li><a id="" href="">TBD</a></li>
-<li><a id="" href="">TBD</a></li>
-</ul>
+<table>
+<col><col><col><col><col><col><col>	
+<tr>
+<td><b><span>Fall 2016:</span></b></td>
+<td><a id="KEYW" href="/wxchallenge/2016-17/KEWY.html">Key West, FL</a></td>
+<td><a id="KMDT" href="/wxchallenge/2016-17/KMDT.html">Harrisburg, PA</a></td>
+<td><a id="KGRI" href="/wxchallenge/2016-17/KGRI.html">Grand Island, NE</a></td>
+<td><a id="KRNO" href="/wxchallenge/2016-17/KRNO.html">Reno, NV</a></td>
+<td><a id="KSAW" href="/wxchallenge/2016-17/KSAW.html">Marquette, MI</a></td>
+<td></td>
+</tr>
+
+<tr>
+<td><span>Dates</span></td>
+<td>26 SEP &ndash; 06 OCT</td>
+<td>10 OCT &ndash; 20 OCT</td>
+<td>24 OCT &ndash; 03 NOV</td>
+<td>07 NOV &ndash; 17 NOV</td>
+<td>28 NOV &ndash; 08 DEC</td>
+<td></td>
+</tr>
+
+<tr>
+<td>
+<br />
+</td>
+<td /><td /><td /><td /><td /><td><u>Tournament City</u></td>
+</tr>
+
+<tr>
+<td><b>Spring 2017:</b></td>
+<td><a id="KSEA" href="/wxchallenge/2016-17/KSEA.html">Seattle, WA</a></li></td>
+<td><a id="" href="">TBD</a></td>
+<td><a id="" href="">TBD</a></td>
+<td><a id="" href="">TBD</a></td>
+<td><a id="" href="">TBD</a></td>
+<td><a id="" href="">TBD</a></td>
+</tr>
+
+<tr>
+<td>Dates</td>
+<td>30 JAN &ndash; 09 FEB</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
 </div>
 
 <br>

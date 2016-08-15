@@ -70,6 +70,11 @@ body {
 	padding: 0;
 }
 
+/* Allows all stars to have absolute positioning */
+#stationLocations {
+	position: relative;
+}
+
 #stationLocations div:hover{
 	border-radius: 15px;
 	background: #D5D5D5;
@@ -81,10 +86,9 @@ body {
 }
 
 #KEYWstar {
-	position: relative;
-	float: left;
-	top: 750px;
-	left: 900px;
+	position: absolute;
+	top: 780px;
+	left: 920px;
 	margin: 0;
 	padding: 0;
 }
@@ -92,46 +96,42 @@ body {
 
 
 #KMDTstar {
-	position: relative;
-	float: left;
-	top: 325px;
-	left: 870px;
+	position: absolute;
+	top: 337px;
+	left: 950px;
 	margin: 0;
 	padding: 0;
 }
 
 #KGRIstar {
-	position: relative;
-	float: left;
-	top: 340px;
-	left: 375px;
+	position: absolute;
+	top: 355px;
+	left: 510px;
 	margin: 0;
 	padding: 0;
 }
 
 #KRNOstar {
-	position: relative;
-	float: left;
-	top: 325px;
-	left: -115px;
+	position: absolute;
+	top: 340px;
+	left: 63px;
 	margin: 0;
 	padding: 0;
 }
 
 #KSAWstar {
-	position: relative;
-	float: left;
-	top: 195px;
-	left: 455px;
+	position: absolute;
+	top: 202px;
+	left: 721px;
 	margin: 0;
 	padding: 0;
 }
 
 #KSEAstar {
-	position: relative;
-	float: left;
-	top: 100px;
-	left: -230px;
+	position: absolute;
+
+	top: 105px;
+	left: 80px;
 	margin: 0;
 	padding: 0;
 }
@@ -139,7 +139,7 @@ body {
 #legend {
 	float: right;
 	width: 100px;
-	margin: 110px 0 0 0;
+	margin: 130px 0 0 0;
 	padding: 0;
 	border: 1px black solid;
 	border-radius: 10px;
@@ -167,14 +167,37 @@ body {
 	font-size: 1.0em;
 }
 
+col:nth-child(2n+3) {background: #D9D9D9}
+
+table {
+	border: 1px black solid;
+	border-collapse: collapse;
+}
+
+table tr {
+	text-align: center;
+}
+
+table tr span {
+	display: block;
+	width: 107px;
+}
+
+table tr a {
+	display: block;
+	width: 187px;
+	font-weight: bold;
+}
+
+col:nth-child(even) {background-color: lightgray;}
+col:nth-child(odd) {background-color: white;}
+
 #textLinks {
-	margin: 0 0 25px 0;
+	margin: 0;
 	padding: 0;
 }
 
 #textLinks a {
-	margin: 0 20px 0 0;
-	padding: 5px;
 	font-size: 1.09em;
 }
 
@@ -193,11 +216,7 @@ body {
 	text-decoration: underline;
 }
 
-#textLinks ul {
-	margin: 5px 0 0 0;
+#textLinks h3 {
+	margin: 5px 0;
 	padding: 0;
-}
-
-#textLinks ul li {
-	display: inline;
 }
