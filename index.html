@@ -94,107 +94,112 @@ $(window).on("scroll touchmove", function () {
 
 <div id="mainContent">
 
+<p>Welcome to the personal website of Gregory Perrotte, which includes information about myself and a wealth of links to both government and university weather products. Under the WxChallenge tab, you will find an array of sorted links to various weather products arranged in an easy-to-use interface for every WxChallenge location [some are still under construction] in the 2015-16 season. A partial 2016-17 schedule has been released and the landing page has been created. The forecasting menus themselves will be created once the schedule is finalized. Under the Forecasting Menus tab, you will find similar resource menus for locations across the Carolinas [only North Carolina is currently available]. Please note that this site is not optimized for mobile devices. Sorry for the inconvenience!</p>
 
-<i><p>There are some known issues with Internet Explorer. I recommend using use Mozilla Firefox or a Chromium based broswer for the best results. Please note that there are some positioning differences for some items depending on the browser you are using. A resolution to this issue is being worked on.</i></p>
+<p>Below you will find a comprehensive listing of my favorite weather products and data sources. All resources are split up by category and include a thumbnail of the website and a short description of the products itself. Please note that this collection of resources is compiled by myself and is not provided or endorsed by any of the content creators. All content is owned by their respective owners.</p>
 
-<p>Welcome to my personal website which includes information about me and a wealth of links to both government and university weather products. Under the WxChallenge tab, you will find an array of sorted links to various weather products arranged in an easy-to-use interface for every WxChallenge location [some are still under construction] in the 2015-16 season. A partial 2016-17 schedule has been released and the landing page has been created. The forecasting menus themselves will be created in the coming days. Under the Forecasting Menus tab, you will find similar resource menus for locations across the Carolinas [only North Carolina is currently available].</p>
+<div id="comprehensiveWrapper">
 
-<p>Below you will find a 5-day forecast for Asheville, N.C. (KAVL). I will be verifying my forecasts and it is planned that these verifications will be available in the future. Forecasts will be issued every five days to test the accuracy of my short and medium range forecasting. I will do my best to issue these forecasts continually.</p>
-<h4>Please note that forecasts are currently unavailable while the website is under construction.</h4>
+<table>
+<div id="surfaceLinks">
 
-<div id="forecastDiv">
-<!------------------->
-<!--Enter Forecast Time-->
-<!------------------>
+<th colspan="5">Surface Observations</th>
+<tr>
+<td class="tableImg"></td>
+<td class="tableTxt">Product</td>
+<td class="tableTxt">Description</td>
+<td class="tableInstruction">Instructions</td>
+<td class="tableInput">Enter Station ID</td>
+</tr>
+<tr>
+<td class="tableImg"><img src="/images/comprehensive/surface_obs/nwsmesow.png" alt="" /></td>
+<td>National Weather Surface Western Region Observations</td>
+<td>Surface observations provided by the NWS Western Region. Please note that stations outside of the western region are still valid.</td>
+<td>Enter station ID in field to right</td>
+<td><form onsubmit="return false">
+<input id="ObsInputTxt1" type="text" placeholder="Station ID" maxlength="6" size="7" onkeypress="ObsInput1();" />
+<button id="ObsButton1" type="button">Open</button>
 
-<div id="AshevilleFcst">
-<h3 class="fcstHeaderBefore">5-Day Forecast for Asheville, North Carolina (KAVL)</h3>
-<div class="fcstDay1">
-<h4>Day 1</h4>
+<script type="text/javascript">
+document.getElementById('ObsButton1').addEventListener('click', ObsButtonJS1, false);
 
-<img src="/images/logo.png" alt="" />
+function ObsInput1() {
+	if (event.which == 13 || event.keyCode == 13) {
+		ObsButtonJS1();
+	}
+}
 
-<p style="text-align: center;"><b></b></p>
-<p>High: <b>&deg;F</b></p>
-<p>Low: <b>&deg;F</b></p>
-<p>Wind: <b>mph</b></p>
-<p>Precipitation Chance: <b>%</b></p>
-<p>Precipitation Amount: <b>"</b></p>
-
-</div>
-
-<div class="fcstDay2">
-<h4>Day 2</h4>
-
-<img src="/images/logo.png" alt="" />
-
-<p style="text-align: center;"><b></b></p>
-<p>High: <b>&deg;F</b></p>
-<p>Low: <b>&deg;F</b></p>
-<p>Wind: <b>mph</b></p>
-<p>Precipitation Chance: <b>%</b></p>
-<p>Precipitation Amount: <b>"</b></p>
-
-</div>
-
-<div class="fcstDay3">
-<h4>Day 3</h4>
-
-<img src="/images/logo.png" alt="" />
-
-<p style="text-align: center;"><b></b></p>
-<p>High: <b>&deg;F</b></p>
-<p>Low: <b>&deg;F</b></p>
-<p>Wind: <b>mph</b></p>
-<p>Precipitation Chance: <b>%</b></p>
-<p>Precipitation Amount: <b>"</b></p>
-
-</div>
-
-<div class="fcstDay4">
-<h4>Day 4</h4>
-
-<img src="/images/logo.png" alt="" />
-
-<p style="text-align: center;"><b></b></p>
-<p>High: <b>&deg;F</b></p>
-<p>Low: <b>&deg;F</b></p>
-<p>Wind: <b> mph</b></p>
-<p>Precipitation Chance: <b>%</b></p>
-<p>Precipitation Amount: <b>"</b></p>
-
-</div>
-
-<div class="fcstDay5">
-<h4>Day 5</h4>
-
-<img src="/images/logo.png" alt="" />
-
-<p style="text-align: center;"><b></b></p>
-<p>High: <b>&deg;F</b></p>
-<p>Low: <b>&deg;F</b></p>
-<p>Wind: <b>mph</b></p>
-<p>Precipitation Chance: <b>%</b></p>
-<p>Precipitation Amount: <b>"</b></p>
-
-</div>
-
-
-<br>
-<br>
-
-
+function ObsButtonJS1() {
+	var URLtxt1 = document.getElementById('ObsInputTxt1').value.toUpperCase();
+	window.open('http://www.wrh.noaa.gov/mesowest/getobext.php?wfo=slc&sid=' + URLtxt1 + '&num=20&raw=0&dbn=m&banner=header');
 	
-</div><!-- End Asheville Forecast -->
+};
+</script>
 
-<div id="HickoryFcst">
+</form></td>
+</tr>
+
+<tr>
+<td class="tableImg"><a href="https://www.faa.gov/air_traffic/weather/asos/" target="_blank"><img src="/images/comprehensive/surface_obs/faaobs.png" alt="" /></a></td>
+<td>FAA Surface Weather Observation Stations</td>
+<td>Select any state to view the ASOS and AWOS stations contained therein. You can click any of the pins followed by the identifier to view the latest observations for that station.</td>
+<td>Enter U.S. state postal abbreviation in field to right</td>
+<td><form onsubmit="return false">
+<input id="ObsInputTxt2" type="text" placeholder="e.g., NC" maxlength="2" size="7" onkeypress="ObsInput2();" />
+<button id="ObsButton2" type="button" onclick="ObsButtonJS2();">Open</button>
+
+<script type="text/javascript">
+document.getElementById('ObsButton2').addEventListener('click', ObsButtonJS2, false);
+
+function ObsInput2() {
+	if (event.which == 13 || event.keyCode == 13) {
+		ObsButtonJS2();
+	}
+}
+
+function ObsButtonJS2() {
+	var URLtxt2 = document.getElementById('ObsInputTxt2').value.toUpperCase();
+	window.open('https://www.faa.gov/air_traffic/weather/asos/?state=' + URLtxt2);
+	
+};
+</script>
+
+</form></td>
+</tr>
+
+<tr>
+<td class="tableImg"><a href="https://www.faa.gov/air_traffic/weather/asos/" target="_blank"><img src="/images/comprehensive/surface_obs/utmesow.png" alt="" /></a></td>
+<td>University of Utah MesoWest Observations</td>
+<td>Detailed surface observations for the station of your choice.</td>
+<td>Enter station ID in field to right</td>
+<td><form onsubmit="return false">
+<input id="ObsInputTxt3" type="text" placeholder="Station ID" maxlength="6" size="7" onkeypress="ObsInput3();" />
+<button id="ObsButton3" type="button" onclick="ObsButtonJS3();">Open</button>
+
+<script type="text/javascript">
+document.getElementById('ObsButton3').addEventListener('click', ObsButtonJS3, false);
+
+function ObsInput3() {
+	if (event.which == 13 || event.keyCode == 13) {
+		ObsButtonJS3();
+	}
+}
+
+function ObsButtonJS3() {
+	var URLtxt3 = document.getElementById('ObsInputTxt3').value.toUpperCase();
+	window.open('http://mesowest.utah.edu/cgi-bin/droman/meso_table_mesodyn.cgi?stn=' + URLtxt3 + '&unit=0&time=LOCAL&hours=24&past=0&order=1');
+	
+};
+</script>
+
+</form></td>
+</tr>
+
+</div>
+</table>
+
 </div>
 
-<!--div id="verificationButton">
-<a href="/forecastverification.html">Forecast Verification</a>
-</div -->
-
-</div><!-- End of forecast div -->
 
 <br>
 <hr>
@@ -213,7 +218,7 @@ $(window).on("scroll touchmove", function () {
 <p id="footerEmail">Please submit all inquiries about the site to <a href="mailto:info@perrottewx.com" target="_top">info@perrottewx.com</a>.</p>
 
 <ul>
-<p>&copy;2016 Gregory Perrotte</p>
+<p>&copy; 2016 Gregory Perrotte</p>
 <li><a href="/disclaimer.html">Disclaimer</a></li>
 <li><a href="/privacypolicy.html">Privacy Policy</a></li>
 </ul>

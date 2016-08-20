@@ -9,10 +9,10 @@
 }
 
 body {
-  background-color: #879288;
-  font-family: "Helvetica", sans-serif;
-  margin: 0;
-  padding: 0;
+  	background-color: #879288;
+ 	font-family: "Helvetica", sans-serif;
+ 	margin: 0;
+	padding: 0;
 }
 
 .mainContentButton {
@@ -23,12 +23,12 @@ body {
 }
 
 #CenterPage {
-  max-width: 1295px;
-  min-width: 1295px;
-  margin: 0 auto;
-  padding: 0;
-  background-color: white;
-  box-shadow: 0px 0px 40px 12px rgba(0,0,0,0.7);
+  	max-width: 1295px;
+  	min-width: 1295px;
+  	margin: 0 auto;
+  	padding: 0;
+  	background-color: white;
+  	box-shadow: 0px 0px 40px 12px rgba(0,0,0,0.7);
 }
 
 #mainContent {
