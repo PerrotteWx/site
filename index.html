@@ -117,18 +117,10 @@ $(window).on("scroll touchmove", function () {
 <td>Surface observations provided by the NWS Western Region. Please note that stations outside of the western region are still valid.</td>
 <td>Enter station ID in field to right</td>
 <td><form onsubmit="return false">
-<input id="ObsInputTxt1" type="text" placeholder="Station ID" maxlength="6" size="7" onkeypress="ObsInput1();" />
-<button id="ObsButton1" type="button">Open</button>
+<input id="ObsInputTxt1" type="text" placeholder="Station ID" maxlength="6" size="7" />
+<button id="ObsButton1" type="submit" onclick="ObsButtonJS1();">Open</button>
 
 <script type="text/javascript">
-document.getElementById('ObsButton1').addEventListener('click', ObsButtonJS1, false);
-
-function ObsInput1() {
-	if (event.which == 13 || event.keyCode == 13) {
-		ObsButtonJS1();
-	}
-}
-
 function ObsButtonJS1() {
 	var URLtxt1 = document.getElementById('ObsInputTxt1').value.toUpperCase();
 	window.open('http://www.wrh.noaa.gov/mesowest/getobext.php?wfo=slc&sid=' + URLtxt1 + '&num=20&raw=0&dbn=m&banner=header');
@@ -145,18 +137,10 @@ function ObsButtonJS1() {
 <td>Select any state to view the ASOS and AWOS stations contained therein. You can click any of the pins followed by the identifier to view the latest observations for that station.</td>
 <td>Enter U.S. state postal abbreviation in field to right</td>
 <td><form onsubmit="return false">
-<input id="ObsInputTxt2" type="text" placeholder="e.g., NC" maxlength="2" size="7" onkeypress="ObsInput2();" />
-<button id="ObsButton2" type="button" onclick="ObsButtonJS2();">Open</button>
+<input id="ObsInputTxt2" type="text" placeholder="e.g., NC" maxlength="2" size="7" />
+<button id="ObsButton2" type="submit" onclick="ObsButtonJS2();">Open</button>
 
 <script type="text/javascript">
-document.getElementById('ObsButton2').addEventListener('click', ObsButtonJS2, false);
-
-function ObsInput2() {
-	if (event.which == 13 || event.keyCode == 13) {
-		ObsButtonJS2();
-	}
-}
-
 function ObsButtonJS2() {
 	var URLtxt2 = document.getElementById('ObsInputTxt2').value.toUpperCase();
 	window.open('https://www.faa.gov/air_traffic/weather/asos/?state=' + URLtxt2);
@@ -173,18 +157,10 @@ function ObsButtonJS2() {
 <td>Detailed surface observations for the station of your choice.</td>
 <td>Enter station ID in field to right</td>
 <td><form onsubmit="return false">
-<input id="ObsInputTxt3" type="text" placeholder="Station ID" maxlength="6" size="7" onkeypress="ObsInput3();" />
-<button id="ObsButton3" type="button" onclick="ObsButtonJS3();">Open</button>
+<input id="ObsInputTxt3" type="text" placeholder="Station ID" maxlength="6" size="7" />
+<button id="ObsButton3" type="submit" onclick="ObsButtonJS3();">Open</button>
 
 <script type="text/javascript">
-document.getElementById('ObsButton3').addEventListener('click', ObsButtonJS3, false);
-
-function ObsInput3() {
-	if (event.which == 13 || event.keyCode == 13) {
-		ObsButtonJS3();
-	}
-}
-
 function ObsButtonJS3() {
 	var URLtxt3 = document.getElementById('ObsInputTxt3').value.toUpperCase();
 	window.open('http://mesowest.utah.edu/cgi-bin/droman/meso_table_mesodyn.cgi?stn=' + URLtxt3 + '&unit=0&time=LOCAL&hours=24&past=0&order=1');
@@ -194,32 +170,42 @@ function ObsButtonJS3() {
 
 </form></td>
 </tr>
+</table>
 
-<th colspan="5">Surface Analyses</th>
+<br>
+<br>
+
+<table>
+<th colspan="3">Surface Analyses</th>
 <tr>
 <td class="tableImg"></td>
 <td class="tableTxt">Product</td>
 <td class="tableTxt">Description</td>
-<td class="tableInstruction">Instructions</td>
-<td class="tableInput">Enter Station ID</td>
 </tr>
 
 <tr>
-<td class="tableImg"><a href="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php"><img src="/images/comprehensive/surface_obs/wpcinteractive.png" alt="" /></a></td>
+<td class="tableImg"><a href="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php" target="_blank"><img src="/images/comprehensive/surface_obs/wpcinteractive.png" alt="" /></a></td>
 <td><a href="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php">Weather Prediction Center Interactive Surface Analysis</a></td>
 <td>The WPC has an interactive surface analysis that allows you to pan and zoom around North America. Cyclones and anticyclones, fronts, SLP contours, and station plots are included.</td>
-<td></td>
-<td></td>
 </tr>
 
 <tr>
-<td class="tableImg"><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif"><img src="/images/comprehensive/surface_obs/codsurface.png" alt="" /></a></td>
+<td class="tableImg"><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif" target="_blank"><img src="/images/comprehensive/surface_obs/codsurface.png" alt="" /></a></td>
 <td><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif">College of DuPage Surface Analysis</a></td>
 <td>Surface analysis including: cyclones and anticyclones, fronts, station plots, SLP contours, 10 meter wind streamlines, and shaded dew points<br>(T<sub>d</sub> > 63&deg;F).</td>
-<td></td>
-<td></td>
 </tr>
 
+<tr>
+<td class="tableImg"><a href="http://www.lightningmaps.org/?lang=en#m=sat;r=0;t=3;s=0;o=0;b=;n=0;y=38.2612;x=-94.7769;z=4;d=2;dl=2;dc=0;" target="_blank"><img src="/images/comprehensive/surface_obs/lightning.png" alt="" /></a></td>
+<td><a href="http://www.lightningmaps.org/?lang=en#m=sat;r=0;t=3;s=0;o=0;b=;n=0;y=38.2612;x=-94.7769;z=4;d=2;dl=2;dc=0;">LightningMaps.org Real Time Lightning Map</a></td>
+<td>This interactive map shows you lightning strikes around the world in real time. It even shows an estimated thunder wave front!</td>
+</tr>
+
+<tr>
+<td class="tableImg"><a href="http://www.wrh.noaa.gov/map/?&zoom=4&scroll_zoom=true&center=39.06184913429154,-113.818359375&basemap=ESRI%20Topographic&boundaries=false,false,false&hazard=true&hazard_type=hi-all&hazard_opacity=60&obs=true&obs_type=weather&elements=temp,wind,gust&obs_popup=false&obs_density=1&radar=true&radar_min=0&radar_loop=false&radar_opacity=70" target="_blank"><img src="/images/comprehensive/surface_obs/weatherandhazards.png" alt="" /></a></td>
+<td><a href="http://www.wrh.noaa.gov/map/?&zoom=4&scroll_zoom=true&center=39.06184913429154,-113.818359375&basemap=ESRI%20Topographic&boundaries=false,false,false&hazard=true&hazard_type=hi-all&hazard_opacity=60&obs=true&obs_type=weather&elements=temp,wind,gust&obs_popup=false&obs_density=1&radar=true&radar_min=0&radar_loop=false&radar_opacity=70">National Weather Service Western Region &ndash; Weather and Hazards Data Viewer</a></td>
+<td>This interactive map allows you to view watches, warnings, advisories, surface observations, radar, NWS forecasts, precipitation analyses, and fire risk information all in one place. All products displayed are customizable so you can see the data you want the way you want at the density you want.</td>
+</tr>
 
 </div>
 </table>

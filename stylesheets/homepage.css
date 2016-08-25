@@ -42,6 +42,21 @@ body {
 	width: 200px;
 }
 
+#comprehensiveWrapper a:link {
+	color: #0086B3;
+	text-decoration: none;
+}
+
+#comprehensiveWrapper a:visited {
+	color: #0086B3;
+	text-decoration: none;
+}
+
+#comprehensiveWrapper a:hover {
+	color: #0086B3;
+	text-decoration: underline;
+}
+
 #comprehensiveWrapper button {
 	background-color: #0086B3;
 	padding: 5px 8px;
@@ -49,6 +64,7 @@ body {
 	border-radius: 5px;
 	color: white;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 #comprehensiveWrapper button:hover {
@@ -61,6 +77,10 @@ body {
 	margin: 10px;
 	padding: 0;
 	box-shadow: 5px 5px 10px black;
+}
+
+#comprehensiveWrapper a img:hover {
+	box-shadow: 10px 10px 20px black;
 }
 
 #comprehensiveWrapper table {
