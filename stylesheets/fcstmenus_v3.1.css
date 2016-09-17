@@ -92,9 +92,9 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #0086B3; /* Old browsers */
-	background: -moz-linear-gradient(top, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, #0086B3 0%,#0086B3 25%,#006080 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0086B3 0%,#0086B3 25%,#006080 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0086B3 0%,#0086B3 25%,#006080 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	border-bottom: 1px black solid;
 	border-right: 1px black solid;
 	text-align: center;
@@ -120,9 +120,9 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #0086B3; /* Old browsers */
-	background: -moz-linear-gradient(top, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #0086B3 0%,#0086B3 49%,#006080 50%,#006080 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, #0086B3 0%,#0086B3 25%,#006080 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #0086B3 0%,#0086B3 25%,#006080 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #0086B3 0%,#0086B3 25%,#006080 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	border-right: 1px black solid;
 	border-top: 1px black solid;
 }
