@@ -1,30 +1,39 @@
 body {
-  background-color: #879288;
+  background-color: #435058;
+  width: 100%;
+  height: 100%;
   font-family: "Helvetica", "Tahoma", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 #CenterPage {
-  max-width: 1295px;
-  min-width: 1295px;
+  max-width: 1700px;
+  height: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: white;
-  box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
+}
+
+#PageWrapper {
+	background-color: white;
 }
 
 #mainContent {
-	height: 485px;
 	margin: 0;
-	padding: 275px 50px 25px 50px;
-	width: 1195px;
-	font-size: 13pt;
+	padding: 25px;
+	min-height: 380px;
+	font-size: 1.09em;
 }
 /* PLACE ALL UNIQUE CSS BELOW */
+#centerImages {
+	display: block;
+	max-width: 1100px;
+	margin: 0 auto;
+}
 
 .image {
-	width: 540px;
+	width: 500px;
 	box-shadow: 10px 10px 20px black;
 }
 
@@ -39,7 +48,7 @@ body {
 }
 
 .imageSpacing {
-	margin: 0 110px 0 0;
+	margin: 0 100px 0 0;
 }
 
 #mainContent a:link {
@@ -54,14 +63,65 @@ body {
 	color: black;
 	text-decoration: underline;
 	filter:brightness(130%);
-	-webkit-filter:brightness(130%;
+	-webkit-filter:brightness(130%);
 	cursor: pointer;
 }
 
 #Maryland:hover {
 	color: black;
-/*	text-decoration: underline;
+	text-decoration: underline;
 	filter:brightness(130%);
-	-webkit-filter:brightness(130%;
-	cursor: pointer;*/
+	-webkit-filter:brightness(130%);
+	cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+#centerImages {
+	max-width: 650px;
+}
+
+#centerImages img {
+	width: 300px;
+}
+.imageSpacing {
+	margin: 0 50px 0 0;
+}
+
+#mainContent {
+	min-height: 245px;
+}
+}
+
+@media screen and (max-width:717px) {
+#centerImages {
+	max-width: 300px;
+}
+
+#centerImages img {
+	width: 275px;
+}
+.imageSpacing {
+	margin: 0;
+}
+
+#mainContent {
+	min-height: 495px;
+}
+}
+
+@media screen and (max-width:500px) {
+#centerImages {
+	max-width: 260px;
+}
+
+#centerImages img {
+	width: 250px;
+}
+.imageSpacing {
+	margin: 0;
+}
+
+#mainContent {
+	min-height: 460px;
+}
 }

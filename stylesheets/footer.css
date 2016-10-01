@@ -22,7 +22,7 @@
 	display: block;
 	float: left;
 	height: 100px;
-	width: 647px;
+	width: 50%;
 	text-align: left;
 	font-size: 11pt;
 	background-color:;
@@ -54,7 +54,7 @@
 	display: block;
 	float: right;
 	height: 100px;
-	width: 647px;
+	width: 50%;
 	background-color: ;
 }
 
@@ -74,4 +74,24 @@
 
 #footerSocialMedia img:hover{
 	filter: drop-shadow(5px 5px 5px black);
+}
+
+@media screen and (max-width:1150px) {
+#footer {
+	height: 150px;
+}
+}
+
+@media screen and (max-width:500px) {
+#footer {
+	height: 220px;
+}
+
+#footerContact {
+	width: 60%;
+}
+
+#footerSocialMedia {
+	width: 40%;
+}
 }

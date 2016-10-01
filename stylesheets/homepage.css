@@ -1,7 +1,7 @@
 /* Possible footer background color: 435058 */
 /* Possible background color: #40798C or #40718C */
 body {
-  background-color: #879288;
+  background-color: #435058;
   width: 100%;
   height: 100%;
   font-family: "Helvetica", "Tahoma", sans-serif;
@@ -10,23 +10,31 @@ body {
 }
 
 #CenterPage {
-  max-width: 1295px;
-  min-width: 1295px;
+  max-width: 1700px;
   height: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: white;
-  box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
+}
+
+#PageWrapper {
+	background-color: white;
 }
 
 #mainContent {
 	margin: 0;
-	padding: 240px 25px 25px 25px;
-	width: 1245px;
+	padding: 25px;
+	min-height: 500px;
 	font-size: 1.09em;
 }
+
 /* PLACE ALL UNIQUE CSS BELOW */
+p {
+	margin: 0 0 25px 0;
+	padding:0;
+}
 .tableImg {
+	display: block;
 	width: ;
 }
 
@@ -39,6 +47,7 @@ body {
 }
 
 .tableInstruction {
+	display: block;
 	width: 200px;
 }
 
@@ -86,6 +95,8 @@ body {
 #comprehensiveWrapper table {
 	border-collapse: collapse;
 	text-align: center;
+	margin: 0 auto;
+	box-shadow: 5px 5px 20px black;
 }
 
 #compreshensiveWrapper table th {
@@ -93,13 +104,37 @@ body {
 }
 
 #comprehensiveWrapper table tr {
-	border: 1px black solid;
+
 }
 
 #links {
+	display: block;
 	text-align: center;
 }
 
+@media screen and (max-width:1150px) {
+#links {
+	display: none;;
+}
+
+.tableImg {
+	display: none;
+}
+
+.tableInstruction1 {
+	display: none;
+}
+
+.tableInstruction {
+	display: none;
+}
+#comprehensiveWrapper table {
+	border: none;
+
+}
+
+
+}
 #UNCAlogo {
 	position: relative;
 	top: -82px;

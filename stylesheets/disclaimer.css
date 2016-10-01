@@ -21,14 +21,14 @@ body {
 
 #mainContent {
 	margin: 0;
-	padding: 185px 25px 25px 25px;
+	padding: 25px;
 	width: 1245px;
 	font-size: 13pt;
 }
 /* PLACE ALL UNIQUE CSS BELOW */
 
 #mainContent h2 {
-	margin: 25px 0 25px 230px;
+	margin: 0;
 	padding: 0;
 }
 

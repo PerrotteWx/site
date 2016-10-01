@@ -19,14 +19,14 @@ body {
 
 #mainContent {
 	margin: 0;
-	padding: 185px 25px 25px 25px;
+	padding: 25px;
 	width: 1245px;
 	font-size: 13pt;
 }
 /* PLACE ALL UNIQUE CSS BELOW */
 
 #mainContent span h2 {
-	margin: 25px 0 0 230px;
+	margin: 0;
 	padding: 0;
 
 }
@@ -37,7 +37,7 @@ body {
 }
 
 #mainContent h5 {
-	margin: 5px 0 0 230px;
+	margin: 0;
 	padding: 0;
 }
 #mainContent p {

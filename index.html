@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Last Modified: 20 August 2016 -->
+<!-- Last Modified: 01 October 2016 -->
 
 <html>
 <head>
@@ -7,7 +7,7 @@
 <meta name="author" content="Gregory Perrotte" />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Weather products from various universities, government agencies, and corporations are compiled in easy-to-use interfaces." />
+<meta name="description" content="Gregory Perrotte's personal website compiles weather products from various universities, government agencies, and corporations in easy-to-use interfaces." />
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/homepage.css">
 <link rel="stylesheet" type="text/css" href="/stylesheets/header.css">
@@ -29,7 +29,7 @@
 </script>
 
 <script type="text/javascript">
-<!--
+
 $(window).on("scroll touchmove", function () {
 	var scrollValue = $(document).scrollTop();
 
@@ -51,50 +51,43 @@ $(window).on("scroll touchmove", function () {
 	$('#textLogo').fadeIn(750);
 	}
 });
-//-->
+
 </script>
 </head>
 
 <body>
-<div id="CenterPage">
+<div id="PageWrapper">	
 
-<noscript>
-<style>
-#headerWrapper {
-	position: absolute;
-	top: 0;
-}
-</style>
-</noscript>
 <!-- Header (Logo, Menu) -->
-<div id="headerWrapper" class="header">
-
-<!-- Logo -->
-<div id="logoImgDiv" class="logo">
-<a href="/index.html"><img id="logoImg" src="/images/logo.png" alt="" /></a>
-</div>
-
-<img id="textLogo" src="/images/text_logo.png" alt="" />
-
-<div id="horizontalnav">
-<nav>
-<ul>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/wxchallengelanding.html><b>WxChallenge</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/forecast/index.html><b>Forecasting Menus</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/contact.html"><b>Contact</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/about.html"><b>About Me</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/files/Gregory_Perrotte_Resume.pdf"><b>Resume</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/index.html"><b>Home</b></a>
+<!--The horizontal menu is adapted from the one found at: http://www.w3schools.com/howto/howto_js_topnav.asp -->
+<div>
+<ul class="topnav" id="myTopnav">
+<li><a class="active" href="#home"><img id="textlogo" src="/images/text_logo.png"><img id="logo" src="/images/logo.png"></a></li>
+<li><a class="menulink" href="/about.html">About Me</a></li>
+<li><a class="menulink" href="/contact.html">Contact</a></li>
+<li><a class="menulink" href="/forecast/index.html">Forecasting Menus</a></li>
+<li><a class="menulink" href="/wxchallenge.index.html">WxChallenge</a></li>
+<li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="changeMenu()"><img class="hamburger" style="height: 25px;" src="/images/hamburgermenu.svg" alt=""></a>
+</li>
 </ul>
-</nav>
+
+<script>
+function changeMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </div>
 
-</div><!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
-
+<div id="CenterPage">
 <div id="mainContent">
 
-<p>Welcome to the personal website of Gregory Perrotte, which includes information about myself and a wealth of links to both government and university weather products. Under the WxChallenge tab, you will find an array of sorted links to various weather products arranged in an easy-to-use interface for every WxChallenge location [some are still under construction] in the 2015-16 season. A partial 2016-17 schedule has been released and all current locations have a forecasting menu available. Under the Forecasting Menus tab, you will find similar resource menus for locations across Maryland and North Carolina. Please note that this site is not optimized for mobile devices. Sorry for the inconvenience!</p>
+<p>Welcome to the personal website of Gregory Perrotte! You will find a wealth of links to both government and university weather products. Under the WxChallenge tab, you will find an array of sorted links to various weather products arranged in an easy-to-use interface for every WxChallenge location in the 2016-17 schedule. Under the Forecasting Menus tab, you will find similar resource menus for locations across Maryland and North Carolina. Please note that this site is in the process of being optimized for mobile devices but there still could be some issues during the conversion. Sorry for the inconvenience!</p>
 
 <p>Below you will find a comprehensive listing of my favorite weather products and data sources. All resources are split up by category and include a thumbnail of the website and a short description of the products itself. Please note that this collection of resources is compiled by myself and is not provided or endorsed by any of the content creators. All content is owned by their respective owners.</p>
 
@@ -115,7 +108,7 @@ $(window).on("scroll touchmove", function () {
 <td class="tableImg"><img src="/images/comprehensive/surface_obs/nwsmesow.png" alt="" /></td>
 <td>National Weather Service Western Region Observations</td>
 <td>Surface observations provided by the NWS Western Region. Please note that stations outside of the western region are still valid.</td>
-<td>Enter station ID in field to right</td>
+<td class="tableInstruction1">Enter station ID in field to right</td>
 <td><form onsubmit="return false">
 <input id="ObsInputTxt1" type="text" placeholder="Station ID" maxlength="6" size="7" />
 <button id="ObsButton1" type="submit" onclick="ObsButtonJS1();">Open</button>
@@ -135,7 +128,7 @@ function ObsButtonJS1() {
 <td class="tableImg"><a href="https://www.faa.gov/air_traffic/weather/asos/" target="_blank"><img src="/images/comprehensive/surface_obs/faaobs.png" alt="" /></a></td>
 <td>FAA Surface Weather Observation Stations</td>
 <td>Select any state to view the ASOS and AWOS stations contained therein. You can click any of the pins followed by the identifier to view the latest observations for that station.</td>
-<td>Enter U.S. state postal abbreviation in field to right</td>
+<td class="tableInstruction1">Enter U.S. state postal abbreviation in field to right</td>
 <td><form onsubmit="return false">
 <input id="ObsInputTxt2" type="text" placeholder="e.g., NC" maxlength="2" size="7" />
 <button id="ObsButton2" type="submit" onclick="ObsButtonJS2();">Open</button>
@@ -155,7 +148,7 @@ function ObsButtonJS2() {
 <td class="tableImg"><img src="/images/comprehensive/surface_obs/utmesow.png" alt="" /></td>
 <td>University of Utah MesoWest Observations</td>
 <td>Detailed surface observations for the station of your choice.</td>
-<td>Enter station ID in field to right</td>
+<td class="tableInstruction">Enter station ID in field to right</td>
 <td><form onsubmit="return false">
 <input id="ObsInputTxt3" type="text" placeholder="Station ID" maxlength="6" size="7" />
 <button id="ObsButton3" type="submit" onclick="ObsButtonJS3();">Open</button>
@@ -184,25 +177,25 @@ function ObsButtonJS3() {
 </tr>
 
 <tr>
-<td class="tableImg"><a href="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php" target="_blank"><img src="/images/comprehensive/surface_obs/wpcinteractive.png" alt="" /></a></td>
+<td class="tableImg"><a href="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php" target="_blank"><img src="file:///C:/Users/Gregory Perrotte/Documents/GitHub/site/images/comprehensive/surface_obs/wpcinteractive.png" alt="" /></a></td>
 <td><a href="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php">Weather Prediction Center Interactive Surface Analysis</a></td>
 <td>The WPC has an interactive surface analysis that allows you to pan and zoom around North America. Cyclones and anticyclones, fronts, SLP contours, and station plots are included.</td>
 </tr>
 
 <tr>
-<td class="tableImg"><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif" target="_blank"><img src="/images/comprehensive/surface_obs/codsurface.png" alt="" /></a></td>
+<td class="tableImg"><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif" target="_blank"><img src="file:///C:/Users/Gregory Perrotte/Documents/GitHub/site/images/comprehensive/surface_obs/codsurface.png" alt="" /></a></td>
 <td><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif">College of DuPage Surface Analysis</a></td>
 <td>Surface analysis including: cyclones and anticyclones, fronts, station plots, SLP contours, 10 meter wind streamlines, and shaded dew points<br>(T<sub>d</sub> > 63&deg;F).</td>
 </tr>
 
 <tr>
-<td class="tableImg"><a href="http://www.lightningmaps.org/?lang=en#m=sat;r=0;t=3;s=0;o=0;b=;n=0;y=38.2612;x=-94.7769;z=4;d=2;dl=2;dc=0;" target="_blank"><img src="/images/comprehensive/surface_obs/lightning.png" alt="" /></a></td>
+<td class="tableImg"><a href="http://www.lightningmaps.org/?lang=en#m=sat;r=0;t=3;s=0;o=0;b=;n=0;y=38.2612;x=-94.7769;z=4;d=2;dl=2;dc=0;" target="_blank"><img src="file:///C:/Users/Gregory Perrotte/Documents/GitHub/site/images/comprehensive/surface_obs/lightning.png" alt="" /></a></td>
 <td><a href="http://www.lightningmaps.org/?lang=en#m=sat;r=0;t=3;s=0;o=0;b=;n=0;y=38.2612;x=-94.7769;z=4;d=2;dl=2;dc=0;">LightningMaps.org Real Time Lightning Map</a></td>
 <td>This interactive map shows you lightning strikes around the world in real time. It even shows an estimated thunder wave front!</td>
 </tr>
 
 <tr>
-<td class="tableImg"><a href="http://www.wrh.noaa.gov/map/?&zoom=4&scroll_zoom=true&center=39.06184913429154,-113.818359375&basemap=ESRI%20Topographic&boundaries=false,false,false&hazard=true&hazard_type=hi-all&hazard_opacity=60&obs=true&obs_type=weather&elements=temp,wind,gust&obs_popup=false&obs_density=1&radar=true&radar_min=0&radar_loop=false&radar_opacity=70" target="_blank"><img src="/images/comprehensive/surface_obs/weatherandhazards.png" alt="" /></a></td>
+<td class="tableImg"><a href="http://www.wrh.noaa.gov/map/?&zoom=4&scroll_zoom=true&center=39.06184913429154,-113.818359375&basemap=ESRI%20Topographic&boundaries=false,false,false&hazard=true&hazard_type=hi-all&hazard_opacity=60&obs=true&obs_type=weather&elements=temp,wind,gust&obs_popup=false&obs_density=1&radar=true&radar_min=0&radar_loop=false&radar_opacity=70" target="_blank"><img src="file:///C:/Users/Gregory Perrotte/Documents/GitHub/site/images/comprehensive/surface_obs/weatherandhazards.png" alt="" /></a></td>
 <td><a href="http://www.wrh.noaa.gov/map/?&zoom=4&scroll_zoom=true&center=39.06184913429154,-113.818359375&basemap=ESRI%20Topographic&boundaries=false,false,false&hazard=true&hazard_type=hi-all&hazard_opacity=60&obs=true&obs_type=weather&elements=temp,wind,gust&obs_popup=false&obs_density=1&radar=true&radar_min=0&radar_loop=false&radar_opacity=70">National Weather Service Western Region &ndash; Weather and Hazards Data Viewer</a></td>
 <td>This interactive map allows you to view watches, warnings, advisories, surface observations, radar, NWS forecasts, precipitation analyses, and fire risk information all in one place. All products displayed are customizable so you can see the data you want the way you want at the density you want.</td>
 </tr>
@@ -214,16 +207,17 @@ function ObsButtonJS3() {
 
 
 <br>
-<hr>
 
 <div id="links">
+<hr>
+
 <h2>Links</h2>
 <a href="http://www.unca.edu/"><img id="UNCAlogo" src="/images/UNC_Asheville.jpg" alt="UNC Asheville"></a>
 <a href="http://atms.unca.edu/"><img id="UNCAatms" src="/images/ATMSlogo.svg" alt="UNC Asheville Atmospheric Sciences"></a>
 <a href="http://www.wxchallenge.com/"><img id="WxChallengeLogo" src="/images/wxchallengelogo.jpg" alt="Weather Challenge"></a>
 </div><!-- End Main Content -->
 </div>
-
+</div>
 <!-- Enter footer below -->
 <div id="footer">
 <div id="footerContact">
@@ -241,9 +235,9 @@ function ObsButtonJS3() {
 <a href="https://twitter.com/perrottewx"><img id="footerTwitter" src="/images/Twitter_Logo.png" /></a>
 </div>
 </div><!-- End of footer -->
-
-
 </div>
+
+
 </body>
 </html>
 

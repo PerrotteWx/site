@@ -1,30 +1,37 @@
 /* Possible footer background color: 435058 */
 
 body {
-  background-color: #879288;
+  background-color: #435058;
+  width: 100%;
+  height: 100%;
   font-family: "Helvetica", "Tahoma", sans-serif;
   margin: 0;
   padding: 0;
 }
 
 #CenterPage {
-  max-width: 1295px;
-  min-width: 1295px;
-  min-height: 1500px;
+  max-width: 1700px;
+  height: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: white;
-  box-shadow: 0px 0px 25px 12px rgba(0,0,0,0.7);
+}
+
+#PageWrapper {
+	background-color: white;
 }
 
 #mainContent {
 	margin: 0;
-	padding: 185px 25px 25px 25px;
-	width: 1245px;
-	font-size: 13pt;
+	padding: 25px;
+	min-height: 500px;
+	font-size: 1.09em;
 }
 /* PLACE ALL UNIQUE CSS BELOW */
-
+h2 {
+	margin: 0;
+	padding: 0;
+}
 .image {
 	width: 610px;
 }
@@ -45,20 +52,9 @@ body {
 }
 
 #aboutMe {
-	height: 450px;
-	width: 895px;
-	margin: 25px 0 0 0;
 	padding: 0;
 	font-size: 1.09em;
 	text-align: justify;
-}
-
-#aboutMe h2 {
-	margin: 0 0 25px 230px;
-	padding: 0;
-}
-
-#aboutMe p {
 	font-size: 13pt;
 }
 
@@ -70,6 +66,15 @@ body {
 #portrait {
 	display: block;
 	float: right;
-	margin: 130px 20px 0 0;
+	margin: 100px 20px 50px 25px;
 	box-shadow: black 4px 4px 20px;
+}
+
+@media screen and (max-width:1150px) {
+#portrait {
+	width: 200px;
+	display: block;
+	margin: 0 0 25px 25px;
+	box-shadow: black 4px 4px 20px;
+}
 }

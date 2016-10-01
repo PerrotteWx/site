@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Last Modified: 23 July 2016 -->
+<!-- Last Modified: 01 October 2016 -->
 
 <html>
 <head>
@@ -27,70 +27,40 @@
 </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
-<script type="text/javascript">
-<!--
-$(window).on("scroll touchmove", function () {
-	var scrollValue = $(document).scrollTop();
-
-  if (scrollValue > 0) {
-	$('#headerWrapper').addClass('smallHeader');
-	$('#logoImgDiv').addClass('logoAfter');
- 	$('#horizontalnav ul li').addClass('menuWidthAfter');
-	$('#horizontalnav ul li a').addClass('linkHeightAfter');
- 	$('#textLogo').fadeOut(90);	
-  }
-
-  else {
-	$('#headerWrapper').removeClass('smallHeader');
-	$('#logoImgDiv').removeClass('logoAfter');
-	$('#horizontalnav ul li').removeClass('menuWidthAfter');
-	$('#horizontalnav ul li a').removeClass('linkHeightAfter');
-	$('#textLogo').fadeIn(750);
-	}
-});
-//-->
-</script>
 </head>
 
 <body>
-<div id="CenterPage">
-	
-<noscript>
-<style>
-#headerWrapper {
-	position: absolute;
-	top: 0;
-}
-</style>
-</noscript>
+
+<div id="PageWrapper">	
 <!-- Header (Logo, Menu) -->
-<div id="headerWrapper" class="header">
-
-<!-- Logo -->
-<div id="logoImgDiv" class="logo">
-<a href="/index.html"><img id="logoImg" src="/images/logo.png" alt="PerrotteWx" /></a>
-</div>
-
-<img id="textLogo" src="/images/text_logo.png" alt="Gregory T. Perrotte" />
-
-<div id="horizontalnav">
-<nav>
-<ul>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/wxchallengelanding.html><b>WxChallenge</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/forecast/index.html><b>Forecasting Menus</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/contact.html"><b>Contact</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/about.html"><b>About Me</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/files/Gregory_Perrotte_Resume.pdf"><b>Resume</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/index.html"><b>Home</b></a>
+<!--The horizontal menu is adapted from the one found at: http://www.w3schools.com/howto/howto_js_topnav.asp -->
+<div>
+<ul class="topnav" id="myTopnav">
+<li><a class="active" href="#home"><img id="textlogo" src="/images/text_logo.png"><img id="logo" src="/images/logo.png"></a></li>
+<li><a class="menulink" href="/about.html">About Me</a></li>
+<li><a class="menulink" href="/contact.html">Contact</a></li>
+<li><a class="menulink" href="/forecast/index.html">Forecasting Menus</a></li>
+<li><a class="menulink" href="/wxchallenge.index.html">WxChallenge</a></li>
+<li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="changeMenu()"><img class="hamburger" style="height: 25px;" src="/images/hamburgermenu.svg" alt=""></a>
+</li>
 </ul>
-</nav>
+
+<script>
+function changeMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </div>
 
-</div><!-- End of Horizontal Menu Div -->
+<!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
 
-
+<div id="CenterPage">
 
 <div id="mainContent">
 
@@ -107,14 +77,14 @@ $(window).on("scroll touchmove", function () {
 
 <p>Thank you for taking the time to read a little bit about me and please feel free to contact me at any time! I look forward to seeing what the future will bring and my current forecast is for a sunny, bright future.</p>
 </div>
-
+<!--
 <div id="gallery">
 
 <h2>Gallery</h2>
 
 <br>
 
-<!-- NOTE: Add the image spacing class to the first image of every row to set the 25px space between pictures -->
+
 <div class="imageContainer imageSpacing">
 <a href="/images/gallery/Senior_Class_Photo.png"><img class="image" src="/images/gallery/Senior_Class_Photo.png" alt="Class of 2016" /></a>
 <p class="imageLabel">Class of 2016 &ndash; UNC Asheville Atmospheric Sciences</p>
@@ -134,17 +104,11 @@ $(window).on("scroll touchmove", function () {
 <a href="/images/gallery/Graveyard_Fields.jpg"><img class="image" src="/images/gallery/Graveyard_Fields.jpg" alt="Graveyard Fields" /></a>
 <p class="imageLabel">Graveyard Fields, Blue Ridge Parkway, North Carolina</p>
 </div>
-
-
-
-<br>
-
-<p style="position:relative; left: 25px;">More pictures will be added soon!</p>
-
+!-->
 </div>
 </div><!-- End of main content -->
 
-
+</div><!-- End CenterPage Div -->
 
 <!-- Enter footer below -->
 <div id="footer">
@@ -152,7 +116,7 @@ $(window).on("scroll touchmove", function () {
 <p id="footerEmail">Please submit all inquiries about the site to <a href="mailto:info@perrottewx.com" target="_top">info@perrottewx.com</a>.</p>
 
 <ul>
-<p>&copy;2016 Gregory Perrotte</p>
+<p>&copy; 2016 Gregory Perrotte</p>
 <li><a href="/disclaimer.html">Disclaimer</a></li>
 <li><a href="/privacypolicy.html">Privacy Policy</a></li>
 </ul>
@@ -163,8 +127,8 @@ $(window).on("scroll touchmove", function () {
 <a href="https://twitter.com/perrottewx"><img id="footerTwitter" src="/images/Twitter_Logo.png" /></a>
 </div>
 </div><!-- End of footer -->
+</div>
 
-</div><!-- End CenterPage Div -->
 </body>
 </html>
 

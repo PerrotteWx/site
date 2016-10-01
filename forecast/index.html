@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Last Modified: 23 July 2016 -->
+<!-- Last Modified: 01 October 2016 -->
 
 <html>
 <head>
@@ -27,71 +27,38 @@
   ga('create', 'UA-77986181-1', 'auto');
   ga('send', 'pageview', '/forecast/index.html');
 </script>
-
-<script type="text/javascript">
-<!--
-$(window).on("scroll touchmove", function () {
-	var scrollValue = $(document).scrollTop();
-
-  if (scrollValue > 0) {
-	$('#headerWrapper').addClass('smallHeader');
-	$('#logoImgDiv').addClass('logoAfter');
- 	$('#horizontalnav ul li').addClass('menuWidthAfter');
-	$('#horizontalnav ul li a').addClass('linkHeightAfter');
- 	$('#textLogo').fadeOut(90);	
-  }
-
-  else {
-	$('#headerWrapper').removeClass('smallHeader');
-	$('#logoImgDiv').removeClass('logoAfter');
-	$('#horizontalnav ul li').removeClass('menuWidthAfter');
-	$('#horizontalnav ul li a').removeClass('linkHeightAfter');
-	$('#textLogo').fadeIn(750);
-	}
-});
-//-->
-</script>
 </head>
-
 <body>
-<div id="CenterPage">
+<div id="PageWrapper">
 
-<noscript>
-<style>
-#headerWrapper {
-	position: absolute;
-	top: 0;
-}
-</style>
-</noscript>
 <!-- Header (Logo, Menu) -->
-<div id="headerWrapper" class="header">
-
-<!-- Logo -->
-<div id="logoImgDiv" class="logo">
-<a href="/index.html"><img id="logoImg" src="/images/logo.png" alt="" /></a>
-</div>
-
-<img id="textLogo" src="/images/text_logo.png" alt="" />
-
-<div id="horizontalnav">
-<nav>
-<ul>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/wxchallengelanding.html><b>WxChallenge</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/forecast/index.html><b>Forecasting Menus</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/contact.html"><b>Contact</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/about.html"><b>About Me</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/files/Gregory_Perrotte_Resume.pdf"><b>Resume</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/index.html"><b>Home</b></a>
+<div>
+<ul class="topnav" id="myTopnav">
+<li><a class="active" href="#home"><img id="textlogo" src="/images/text_logo.png"><img id="logo" src="/images/logo.png"></a></li>
+<li><a class="menulink" href="/about.html">About Me</a></li>
+<li><a class="menulink" href="/contact.html">Contact</a></li>
+<li><a class="menulink" href="/forecast/index.html">Forecasting Menus</a></li>
+<li><a class="menulink" href="/wxchallenge.index.html">WxChallenge</a></li>
+<li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="changeMenu()"><img class="hamburger" style="height: 25px;" src="/images/hamburgermenu.svg" alt=""></a>
+</li>
 </ul>
-</nav>
+
+<script>
+function changeMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </div>
 
-</div><!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
-
+<div id="CenterPage">
 <div id="mainContent">
-
+<div id="centerImages">
 <a href="/forecast/MDmenus.html">
 <div id="Maryland" class="imageContainer imageSpacing">
 <img class="image" src="/images/MDflag.png" alt="" />
@@ -103,16 +70,17 @@ $(window).on("scroll touchmove", function () {
 <img class="image" src="/images/NCflag.png" alt="" />
 <h2 class="imageLabel">North Carolina<h2>
 </div></a>
+</div>
 
 </div><!-- End Main Content -->
-
+</div>
 <!-- Enter footer below -->
 <div id="footer">
 <div id="footerContact">
 <p id="footerEmail">Please submit all inquiries about the site to <a href="mailto:info@perrottewx.com" target="_top">info@perrottewx.com</a>.</p>
 
 <ul>
-<p>&copy;2016 Gregory Perrotte</p>
+<p>&copy; 2016 Gregory Perrotte</p>
 <li><a href="/disclaimer.html">Disclaimer</a></li>
 <li><a href="/privacypolicy.html">Privacy Policy</a></li>
 </ul>
