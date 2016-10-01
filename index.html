@@ -28,31 +28,6 @@
   ga('send', 'pageview', '/index.html');
 </script>
 
-<script type="text/javascript">
-
-$(window).on("scroll touchmove", function () {
-	var scrollValue = $(document).scrollTop();
-
-  if (scrollValue > 0) {
-	$('#headerWrapper').addClass('smallHeader');
-	$('#logoImgDiv').addClass('logoAfter');
- 	$('#horizontalnav ul li').addClass('menuWidthAfter');
-	$('#horizontalnav ul li a').addClass('linkHeightAfter');
-	$('#forecastDiv h3').addClass('fcstHeaderAfter');
- 	$('#textLogo').fadeOut(90);	
-  }
-
-  else {
-	$('#headerWrapper').removeClass('smallHeader');
-	$('#logoImgDiv').removeClass('logoAfter');
-	$('#horizontalnav ul li').removeClass('menuWidthAfter');
-	$('#horizontalnav ul li a').removeClass('linkHeightAfter');
-	$('#forecastDiv h3').removeClass('fcstHeaderAfter');
-	$('#textLogo').fadeIn(750);
-	}
-});
-
-</script>
 </head>
 
 <body>
@@ -66,7 +41,7 @@ $(window).on("scroll touchmove", function () {
 <li><a class="menulink" href="/about.html">About Me</a></li>
 <li><a class="menulink" href="/contact.html">Contact</a></li>
 <li><a class="menulink" href="/forecast/index.html">Forecasting Menus</a></li>
-<li><a class="menulink" href="/wxchallenge.index.html">WxChallenge</a></li>
+<li><a class="menulink" href="/wxchallenge/index.html">WxChallenge</a></li>
 <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="changeMenu()"><img class="hamburger" style="height: 25px;" src="/images/hamburgermenu.svg" alt=""></a>
 </li>
 </ul>
