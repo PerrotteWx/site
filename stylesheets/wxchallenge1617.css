@@ -84,20 +84,24 @@ body {
 	filter: brightness(300%);
 }
 
+/* For current location subtract 1 from top and 18 from left */
+
 #KEYWstar {
 	position: absolute;
 	top: 720px;
 	left: 920px;
 	margin: 0;
 	padding: 0;
+	-webkit-filter: brightness(40%);
+	filter: brightness(40%);
 }
 
 
 
 #KMDTstar {
 	position: absolute;
-	top: 277px;
-	left: 950px;
+	top: 276px;
+	left: 932px;
 	margin: 0;
 	padding: 0;
 }
