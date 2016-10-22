@@ -24,6 +24,8 @@ body {
 h3 {
 	margin: 0;
 	padding: 0 0 10px 10px;
+	font-family: "Segoe UI", sans-serif;
+	font-size: 18pt;
 }
 
 li {
@@ -35,7 +37,7 @@ li {
 p {
 	text-align: center;
 	color: #cccccc;
-	font-size: 0.9em;
+	font-size: 0.95em;
 }
 
 ul {
@@ -47,29 +49,47 @@ ul ul {
 
 	list-style-type: square;
 }
-
+<br>
 ul ul li {
 	margin: 7px 20px 7px 0;
 }
 
+#CenterPage {
+	display: block;
+	width: 1100px;
+	margin: 0 auto;
+}
+
 #mainText {
+	font-family: "Segoe UI", sans-serif;
 	margin: 0;
 	padding: 0;
-	min-width: 1000px;
+
 	text-align: center;
 }
 
 #mainText h2 {
-	margin: 20px 0 10px 0;
+	margin: 0;
 	padding: 0;
 	color: white;
-	font-size: 26pt;
+	font-size: 27pt;
+	font-style: italic;
+	text-shadow: 2px 0 7px #003c77;
+}
+
+#mainText h5 {
+	margin: 0;
+	padding: 0;
+	font-size: 18pt;
+	font-style: italic;
+	color: white;
 	text-shadow: 2px 0 7px #003c77;
 }
 
 #myLogo {
-	width: 175px;
-	margin: 9px;
+	display: block;
+	margin: 0 auto;
+	padding: 25px 0 0 0;
 }
 
 #newsContent {
@@ -79,26 +99,4 @@ ul ul li {
 	padding: 0;
 	overflow-y: auto;
 	background-color: #212c2b;
-}
-
-#newsHeader {
-	width: 750px;
-	height: 200px;
-	margin: 0 auto;
-	padding: 0;
-}
-
-#newsHeader h1 {
-	float: right;
-	margin: 80px 28px 0px 0;
-	color: #F4F4F4;
-	font-size: 1.85em;
-}
-
-#newsHeader hr {
-	position: relative;
-	top: -85px;
-	left: 114px;
-	width: 500px;
-	color: #0F0F0F;
 }

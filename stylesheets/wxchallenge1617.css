@@ -100,10 +100,12 @@ body {
 
 #KMDTstar {
 	position: absolute;
-	top: 276px;
-	left: 932px;
+	top: 277px;
+	left: 950px;
 	margin: 0;
 	padding: 0;
+	-webkit-filter: brightness(40%);
+	filter: brightness(40%);
 }
 
 #KGRIstar {
