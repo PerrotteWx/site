@@ -113,7 +113,9 @@ body {
 	top: 294px;
 	left: 492px;
 	margin: 0;
-	padding: 0;
+	padding: 0;+
+	-webkit-filter: brightness(40%);
+	filter: brightness(40%);
 }
 
 #KRNOstar {
