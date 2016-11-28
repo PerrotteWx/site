@@ -120,16 +120,18 @@ body {
 
 #KRNOstar {
 	position: absolute;
-	top: 279px;
-	left: 45px;
+	top: 280px;
+	left: 63px;
 	margin: 0;
 	padding: 0;
+	-webkit-filter: brightness(40%);
+	filter: brightness(40%);
 }
 
 #KTVCstar {
 	position: absolute;
-	top: 180px;
-	left: 755px;
+	top: 179px;
+	left: 737px;
 	margin: 0;
 	padding: 0;
 }
