@@ -30,6 +30,10 @@ body {
 	padding: 150px 25px 25px 25px;
 	width: 1245px;
 }
+
+#PageWrapper {
+	background-color: white;
+}
 /* PLACE ALL UNIQUE CSS BELOW */
 
 #mainContent h3 {

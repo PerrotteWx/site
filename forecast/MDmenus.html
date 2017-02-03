@@ -45,34 +45,33 @@ $(document).ready(function(){
 
 <div id="CenterPage">
 
-<noscript>
-<style>
-#headerWrapper {
-	position: absolute;
-	top: 0;
-}
-</style>
-</noscript>
-<!-- Header (Logo, Menu) -->
-<div id="headerWrapper" class="header">
+<div id="PageWrapper">	
 
-<!-- Logo -->
-<p>This site is currently being optimized for mobile and a proper menu will be back shortly. Sorry for the inconvenience!</p>
-<br>
-<p><u>MENU</u></p>
-<div id="horizontalnav">
-<nav>
-<ul>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/wxchallengelanding.html><b>WxChallenge</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/forecast/index.html><b>Forecasting Menus</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/contact.html"><b>Contact</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/about.html"><b>About Me</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/index.html"><b>Home</b></a>
+<!-- Header (Logo, Menu) -->
+<!--The horizontal menu is adapted from the one found at: http://www.w3schools.com/howto/howto_js_topnav.asp -->
+<div>
+<ul class="topnav" id="myTopnav">
+<li><a class="active" href="/index.html"><img id="textlogo" src="/images/text_logo.png"><img id="logo" src="/images/logo.png"></a></li>
+<li><a class="menulink" href="/about.html">About Me</a></li>
+<li><a class="menulink" href="/contact.html">Contact</a></li>
+<li><a class="menulink" href="/forecast/index.html">Forecasting Menus</a></li>
+<li><a class="menulink" href="/wxchallenge/index.html">WxChallenge</a></li>
+<li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="changeMenu()"><img class="hamburger" style="height: 25px;" src="/images/hamburgermenu.svg" alt=""></a>
+</li>
 </ul>
-</nav>
+
+<script>
+function changeMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </div>
 
-</div><!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
 
 <div id="mainContent">
@@ -146,7 +145,7 @@ function displayTextLinks() {
 <p id="footerEmail">Please submit all inquiries about the site to <a href="mailto:info@perrottewx.com" target="_top">info@perrottewx.com</a>.</p>
 
 <ul>
-<p>&copy; 2016 Gregory Perrotte</p>
+<p>&copy; 2016&ndash;2017 Gregory Perrotte</p>
 <li><a href="/disclaimer.html">Disclaimer</a></li>
 <li><a href="/privacypolicy.html">Privacy Policy</a></li>
 </ul>
@@ -157,6 +156,7 @@ function displayTextLinks() {
 <a href="https://twitter.com/perrottewx"><img id="footerTwitter" src="/images/Twitter_Logo.png" /></a>
 
 </div><!-- End of footer -->
+</div>
 </div>
 </body>
 </html>
