@@ -23,7 +23,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-77986181-1', 'auto');
   ga('send', 'pageview', '/forecast/NCmenus.html');
 </script>
@@ -42,38 +41,34 @@ $(document).ready(function(){
 	
 });
 </script>
-
-<div id="CenterPage">
-
-<noscript>
-<style>
-#headerWrapper {
-	position: absolute;
-	top: 0;
-}
-</style>
-</noscript>
 <!-- Header (Logo, Menu) -->
-<div id="headerWrapper" class="header">
-
-<!-- Logo -->
-<p>This site is currently being optimized for mobile and a proper menu will be back shortly. Sorry for the inconvenience!</p>
-<br>
-<p><u>MENU</u></p>
-<div id="horizontalnav">
-<nav>
-<ul>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/wxchallengelanding.html><b>WxChallenge</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href=/forecast/index.html><b>Forecasting Menus</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/contact.html"><b>Contact</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/about.html"><b>About Me</b></a></li>
-<li class="menuWidthBefore"><a class="linkHeightBefore" href="/index.html"><b>Home</b></a>
+<!--The horizontal menu is adapted from the one found at: http://www.w3schools.com/howto/howto_js_topnav.asp -->
+<div>
+<ul class="topnav" id="myTopnav">
+<li><a class="active" href="/index.html"><img id="textlogo" src="/images/text_logo.png"><img id="logo" src="/images/logo.png"></a></li>
+<li><a class="menulink" href="/about.html">About Me</a></li>
+<li><a class="menulink" href="/contact.html">Contact</a></li>
+<li><a class="menulink" href="/forecast/index.html">Forecasting Menus</a></li>
+<li><a class="menulink" href="/wxchallenge/index.html">WxChallenge</a></li>
+<li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="changeMenu()"><img class="hamburger" style="height: 25px;" src="/images/hamburgermenu.svg" alt=""></a>
+</li>
 </ul>
-</nav>
+
+<script>
+function changeMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </div>
 
-</div><!-- End of Horizontal Menu Div -->
 <!-- End of Header (Logo, Menu) -->
+<div id="CenterPage">
+
 
 <div id="mainContent">
 
@@ -127,7 +122,6 @@ function displayTextLinks() {
 	document.getElementById("NorthCarolinaMap").style.display = "none";
 	document.getElementById("mapHeader").style.display = "none";
 }	
-
 </script>
 
 <div id="textLinks">
@@ -139,7 +133,6 @@ function displayTextLinks() {
 <li><a id="KHKY" href="/forecast/KHKY.html">Hickory</a></li>
 <li><a id="KRDU" href="/forecast/KRDU.html">Raleigh</a></li>
 <li><a id="KSVH" href="/forecast/KSVH.html">Statesville</a></li>
-<li><a id="KILM">Wilmington (coming soon!)</a></li>
 </ul>
 </div>
 
@@ -170,4 +163,3 @@ function displayTextLinks() {
 </div>
 </body>
 </html>
-	
