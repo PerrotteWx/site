@@ -144,6 +144,16 @@ body {
 	left: 62px;
 	margin: 0;
 	padding: 0;
+	-webkit-filter: brightness(40%);
+	filter: brightness(40%);
+}
+
+#KJANstar {
+	position: absolute;
+	top: 537px;
+	left: 675px;
+	margin: 0;
+	padding: 0;
 }
 
 #mobileTable {
@@ -151,10 +161,9 @@ body {
 }
 
 #mobileTable table {
-	width: 354px;
+	width: 353px;
 	display: block;
 	margin: 0 auto;
-	border: 1px black solid;
 	border-collapse: collapse;
 }
 
