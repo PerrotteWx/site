@@ -160,8 +160,18 @@ body {
 
 #KBISstar {
 	position: absolute;
-	top: 275px;
-	left: 840px;
+	top: 130px;
+	left: 460px;
+	margin: 0;
+	padding: 0;
+	-webkit-filter: brightness(40%);
+	filter: brightness(40%);
+}
+
+#KBNAstar {
+	position: absolute;
+	top: 417px;
+	left: 740px;
 	margin: 0;
 	padding: 0;
 }
