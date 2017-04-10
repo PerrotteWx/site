@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!-- Last Modified: 10 April 2017 -->
 
 <html>
@@ -133,7 +133,7 @@ $(".toggleDivConverter").hide();
 <p>Welcome to the WxChallenge forecasting menu! Choose a category of weather products in the selection box above. All links for that category will be displayed here. Then you simply have to click a link to have it dislayed in the panel on the right.</p>
 
 <h3>KDFW</h3>
-<img src="/images/ASOS_Locations/Texas_KDFW.png">
+<!--img src="/images/ASOS_Locations/Texas_KDFW.png"-->
 </div>
 
 <!-- Weather Challenge -->
@@ -175,11 +175,11 @@ $(".toggleDivConverter").hide();
 <ul>			     
 		
 	<li class="sublinkHeader"><u>National Weather Service Products</u></li>
-	<li><a href="http://forecast.weather.gov/product.php?site=FDW&amp;issuedby=FWD&amp;product=AFD&amp;format=CI&amp;version=1&amp;glossary=1" target="content">Forecast Discussion</a></li>
+	<li><a href="http://forecast.weather.gov/product.php?site=FWD&amp;issuedby=FWD&amp;product=AFD&amp;format=CI&amp;version=1&amp;glossary=1" target="content">Forecast Discussion</a></li>
 	<li><a href="http://www.wrh.noaa.gov/map/?&zoom=4&scroll_zoom=true&center=38.993572058209466,-113.99414062499999&basemap=ESRI%20Topographic&boundaries=false,false,false&hazard=true&hazard_type=all&hazard_opacity=60&obs=true&obs_type=weather&elements=temp,dew,wind,gust&obs_popup=false&obs_density=1" target="_blank">Weather and Hazards Data Viewer</a></li>
 	<li><a href="http://forecast.weather.gov/MapClick.php?lat=32.895947685000465&amp;lon=-97.03719868699966#.WOugZMm1vV8" target="content">NWS Forecast for KDFW</a></li>
 	<li><a href="http://forecast.weather.gov/MapClick.php?lat=32.8959&amp;lon=-97.0372&amp;unit=0&amp;lg=english&amp;FcstType=graphical" target="content">NWS Hourly Weather Graph</a></li>
-	<li><a href="http://graphical.weather.gov/sectors/fdw.php#tabs" target="content">National Digital Forecast Database</a></li>
+	<li><a href="http://graphical.weather.gov/sectors/fwd.php#tabs" target="content">National Digital Forecast Database</a></li>
 	<li class="lastlink"><a href="http://w2.weather.gov/climate/getclimate.php?date=&wfo=fwd&sid=DFW&pil=CLI&recent=yes" target="content">Climate Report (KDFW)</a></li>
 
 	<li class="sublinkHeader"><u>Storm Prediction Center Products</u></li>
@@ -220,8 +220,9 @@ $(".toggleDivConverter").hide();
 <div id="satelliteLinks" class="beforeSelect toggleDiv">
 <ul>
 <li><a href="http://climate.cod.edu/hanis/satellite/1km/index.php?type=E_Texas-vis-1-24&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">Visible Satellite Loop</a></li>
+	<li><a href="http://weather.cod.edu/satrad/exper/?parms=cenplains-02-48-1" target="_blank">GOES 16 Visible Loop</a></li>
 	<li><a href="http://www.ssd.noaa.gov/goes/east/wfo/fwd/h5-mloop-rb.html" target="content">Local Infrared Satellite Loop</a></li>
-	<li><a href="http://www.ssd.noaa.gov/goes/east/sp/h5-mloop-rb.html" target="content">Regional Infrared Satellite Loop</a></li>
+	<li><a href="http://www.ssd.noaa.gov/goes/east/sc/h5-mloop-rb.html" target="content">Regional Infrared Satellite Loop</a></li>
 	<li><a href="http://weather.rap.ucar.edu/satellite/displaySat.php?region=US&amp;itype=wv&amp;size=large&amp;duration=8" target="content">U.S. Water Vapor Loop</a></li>
 	<li><a href="http://www.ospo.noaa.gov/Products/atmosphere/hdwinds/goes.html?satellite=E&maploc=NH&maptype=WV&interval=1" target="content">GOES High Density Winds WV</a></li>
 	<li><a href="http://climate.cod.edu/hanis/satellite/hemi/index.php?type=polar-wv-1-96&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">N. Hemisphere WV Loop</a></li>
@@ -234,8 +235,8 @@ $(".toggleDivConverter").hide();
 <!-- RADAR -->
 <div id="radarLinks" class="beforeSelect toggleDiv">
 <ul>
-	<li><a href="http://weather.cod.edu/satrad/nexrad/index.php?type=FWD-undefined-0-undefined#" target="content">Local Radar via COD</a></li>
-	<li><a href="http://radar.weather.gov/ridge/radar.php?rid=fwd&product=N0R&overlay=01101111&loop=no" target="content">Local Radar via NWS</a></li>
+	<li><a href="http://weather.cod.edu/satrad/nexrad/index.php?type=FWS-undefined-0-undefined#" target="content">Local Radar via COD</a></li>
+	<li><a href="http://radar.weather.gov/ridge/radar.php?rid=fws&product=N0R&overlay=01101111&loop=no" target="content">Local Radar via NWS</a></li>
 	<li><a href="http://tempest.aos.wisc.edu/radar/sp3comphtml5.html" target="content">Regional Loop via UW-Madison</a></li>
 	<li><a href="http://radar.weather.gov/ridge/Conus/full_lite_loop.php" target="content">U.S. Radar Loop</a></li>
 	<li><a href="http://mrms.ou.edu" target ="content">MRMS-NSSL Suite Launcher</a></li>
