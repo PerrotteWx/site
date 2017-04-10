@@ -170,8 +170,18 @@ body {
 
 #KBNAstar {
 	position: absolute;
-	top: 417px;
-	left: 740px;
+	top: 418px;
+	left: 758px;
+	margin: 0;
+	padding: 0;
+	-webkit-filter: brightness(40%);
+	filter: brightness(40%);
+}
+
+#KDFWstar {
+	position: absolute;
+	top: 520px;
+	left: 520px;
 	margin: 0;
 	padding: 0;
 }

@@ -28,11 +28,11 @@
      objecttolerance="10"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="19.617348"
-     inkscape:cx="45.255983"
-     inkscape:cy="60.469904"
+     inkscape:zoom="6.9357799"
+     inkscape:cx="14.303995"
+     inkscape:cy="55.410858"
      inkscape:document-units="px"
-     inkscape:current-layer="g4137"
+     inkscape:current-layer="layer1"
      width="64px"
      height="64px"
      showgrid="false"
@@ -103,7 +103,7 @@
            y="41.935459"
            x="31.934372"
            id="tspan4137"
-           sodipodi:role="line">5</tspan></text>
+           sodipodi:role="line" /></text>
     </g>
     <text
        xml:space="preserve"
@@ -113,14 +113,9 @@
        id="text4382"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan4384"
          x="49.915771"
          y="41.507938"
-         style="font-size:15px;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">Current</tspan><tspan
-         sodipodi:role="line"
-         x="49.915771"
-         y="60.257938"
          id="tspan4386"
-         style="font-size:15px;-inkscape-font-specification:'sans-serif Bold';font-family:sans-serif;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal">Location</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:15px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold'">Tourney</tspan></text>
   </g>
 </svg>
