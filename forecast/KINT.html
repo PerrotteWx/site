@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<!-- Last Modified:  17 April 2016 -->
+
+<html>
+<head>
+<meta name="author" content="Gregory Perrotte" />
+<meta charset="UTF-8" />
+<meta name="description" content="Weather forecasting resources compiled in a dual-pane menu for Winston-Salem, NC (KINT)." />
+
+<title>Winston-Salem, N.C. (KINT) | PiedmontWx</title>
+
+<link rel="icon" href="/images/favicon.png" />
+<link rel="stylesheet" type="text/css" href="/stylesheets/fcstmenus_v3.1.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-77986181-1', 'auto');
+  ga('send', 'pageview', '/forecast/KINT.html');
+</script>
+</head>
+
+
+
+
+
+<body>
+<!-- ************************************************************
+     PLACE ALL SCRIPTS IN THIS SECTION -->
+
+<!-- This jQuery script hides and shows the menu -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#hideMenuButton h5').click(function(){
+		$('#showMenuButton').addClass('showButton');
+		$('#hideMenuButton').fadeOut(250,'linear');
+		$('#wrapperToHideMenu').fadeOut(250,'linear',function(){
+			$('#iframeContainer').css('left',"0");
+			$('#showMenuButton').fadeIn(250,'linear');
+			$('#showMenuButton').click(function(){
+				$('#showMenuButton').hide();
+				$('#hideMenuButton').fadeIn(500,'linear');
+				$('#iframeContainer').css('left',"257px")
+				$('#wrapperToHideMenu').fadeIn(500,'linear');
+			});
+		});
+	});
+});
+</script>
+
+<!-- This jQuery script hides and shows the unit converter -->
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#unitConverterShow').click(function(){
+		$('#unitConverter').animate({width: 'toggle'}, 400);
+		$('#unitConverterShow img').toggleClass('leftArrowHidden');
+	});		
+});
+</script>
+
+
+<!-- This jQuery script handles the mechanics of the menu itself (i.e., opening and closing the lists of links when selected) -->
+<script type="text/javascript">
+$(function(){
+$("#linksSelector").change(function(){
+$(".toggleDiv").hide();
+	$("#" + $(this).val()).fadeIn(0);
+});
+});
+</script>
+
+<script type="text/javascript">
+$(function(){
+$("#converterSelector").change(function(){
+$(".toggleDivConverter").hide();
+	$("#" + $(this).val()).fadeIn(700);
+});
+});
+</script>
+
+<!-- END OF SCRIPTS SECTION - Place page content below this line
+***************************************************************** -->
+
+
+
+
+
+<div id="showMenuButton">
+<h3>Show Menu</h3>
+</div>
+
+
+<div id="hideMenuButton">
+<h5><b><i>Click to Hide Menu</i></b></h5>
+</div>
+
+
+<div id="iframeContainer">
+<iframe  name="content" src="/forecasthome.html"></iframe>
+</div>
+
+
+<div id="wrapperToHideMenu"><!-- Beginning of the menu container -->
+<div id="cityName">
+<h3>Winston-Salem, N.C.</h3>
+</div>
+
+
+<div id="selectorContainer">
+<select id="linksSelector">
+	<option value="initalNotice" selected disabled>Link Categories</option>
+	<option value="obsLinks">Observations &amp; Analyses</option>
+	<option value="NOAAlinks">NWS and WPC Products</option>
+	<option value="upperAirLinks">Upper Air</option>
+	<option value="satelliteLinks">Satellite</option>
+	<option value="radarLinks">Radar</option>
+	<option value="NWPlinks">Numerical Weather Prediction</option>
+	<option value="stationInfoLinks">Station Information</option>
+	<option value="otherLinks">Other Resources</option>
+</select>
+</div>
+
+
+<div id="menucontainer"><!-- Beginning of the div that contains area in which the links are dINTlayed -->
+<div id="initialNotice" class="toggleDiv">
+<p>Choose a category of weather products in the selection box above. All links for that category will be dINTlayed here. Then you simply have to click a link to have it dINTlayed in the panel on the right.</p>
+
+<h3>KINT</h3>
+<!--img src="/images/ASOS_Locations/NorthCarolina_KINT.svg"-->
+</div>
+
+
+<!-- OBSERVATIONS AND ANALYSES -->
+<div id="obsLinks" class="beforeSelect toggleDiv">
+<ul>
+	<li class="sublinkHeader"><u>Observations</u></li>
+	<li><a href="http://mesowest.utah.edu/cgi-bin/droman/meso_table_mesodyn.cgi?stn=KINT&amp;unit=0&amp;time=LOCAL&amp;hours=24&amp;past=0&amp;order=1" target="content">MesoWest Tabular Observations</a></li>
+	<li><a href="http://mesowest.utah.edu/cgi-bin/droman/meso_graph_mesodyn.cgi?&amp;unit=0&amp;time=LOCAL&amp;past=0&amp;gsize=0.85&amp;hours=24&amp;stn1=KINT&amp;var1=TMPF&amp;level1=2.0m&amp;stn2=KINT&amp;var2=WND&amp;level2=10.0m" target="content">MesoWest Meteorogram Obs</a></li>
+	<li><a href="http://mesowest.utah.edu/cgi-bin/droman/mesomap.cgi?state=NC&rawsflag=3" target="content">MesoWest Statewide Obs</a></li>
+	<li><a href="http://www.wrh.noaa.gov/mesowest/getobext.php?wfo=slc&amp;sid=KINT&amp;num=48&amp;raw=0&amp;dbn=m&amp;banner=header" target="_blank"> 48 hour Obs via NWS</a></li>
+	<li><a href="https://www.faa.gov/air_traffic/weather/asos/?state=NC" target="_blank">Statewide ASOS/AWOS Obs</a></li>
+	<li><a href="http://weather.uwyo.edu/cgi-bin/wyowx.fcgi?TYPE=sfgram&amp;DATE=current&amp;HOUR=current&amp;UNITS=A&amp;STATION=INT" target="content">24 hour Meteorogram</a></li>
+	<li class="lastlink"><a href="http://www.lightningmaps.org/realtime?lang=en" target="_blank">Current Lightning Strikes</a></li>	
+</ul>
+<ul>
+	<li class="sublinkHeader"><u>Analyses</u></li>
+	<li><a href="http://climate.cod.edu/data/surface/US_zoom/contour/current/USZOOM.fronts.gif" target="content">U.S. Surface Analysis</a></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/html/sfc-zoom.php" target="content">Interactive Surface Analysis</a></li>
+	<li><a href="http://wxmaps.org/pix/curtmp.png" target="content">U.S. Current Temperatures</a></li>
+	<li><a href="http://images.intellicast.com/WxImages/CurrentTemps/ilm.jpg" target="content">Regional Current Temperatures</a></li>
+	<li><a href="https://www.atmos.illinois.edu/weather/tree/viewer.pl?launch/sfctdp" target="content">U.S. Current Dew Points</a></li>
+	<li><a href="http://images.intellicast.com/WxImages/TempChange/ilm.jpg" target="content">24 hr Temperature Change</a></li>
+	<li><a href="http://www.spc.noaa.gov/exper/mesoanalysis/new/viewsector.php?sector=17&amp;parm=pmsl&amp;underlay=1&amp;source=1" target="content">SPC Mesoanalysis</a></li>
+</ul>
+</div>
+
+
+<!-- NWS AND WPC PRODUCTS -->
+<div id="NOAAlinks" class="beforeSelect toggleDiv">
+<ul>			     
+		
+	<li class="sublinkHeader"><u>National Weather Service Products</u></li>
+	<li><a href="https://forecast.weather.gov/product.php?site=RAH&product=AFD&issuedby=RAH" target="content">Forecast Discussion</a></li>
+	<li><a href="http://www.wrh.noaa.gov/map/?&zoom=4&scroll_zoom=true&center=38.993572058209466,-113.99414062499999&basemap=ESRI%20Topographic&boundaries=false,false,false&hazard=true&hazard_type=all&hazard_opacity=60&obs=true&obs_type=weather&elements=temp,dew,wind,gust&obs_popup=false&obs_density=1" target="content">Weather and Hazards Data Viewer</a></li>
+	<li><a href="https://forecast.weather.gov/MapClick.php?lat=36.1&lon=-80.2412" target="content">NWS Forecast for KINT</a></li>
+	<li><a href="https://forecast.weather.gov/MapClick.php?lat=36.1&lon=-80.2412&unit=0&lg=english&FcstType=graphical" target="content">NWS Hourly Weather Graph</a></li>
+	<li><a href="http://graphical.weather.gov/sectors/RAH.php#tabs" target="content">National Digital Forecast Database</a></li>
+	<li class="lastlink"><a href="http://w2.weather.gov/climate/getclimate.php?date=&wfo=INT&sid=INT&pil=CLI&recent=yes" target="content">Climate Report (KINT)</a></li>
+
+	<li class="sublinkHeader"><u>Storm Prediction Center Products</u></li>
+	<li><a href="http://www.spc.noaa.gov/products/outlook/" target="content">Convective Outlooks</a></li>
+	<li><a href="http://www.spc.noaa.gov/products/md/" target="content">Mesoscale Discussions</a></li>
+	<li class="lastlink"><a href="http://www.spc.noaa.gov/climo/reports/today.html" target="content">Today's Storm Reports</a></li>	
+
+	<li class="sublinkHeader"><u>Weather Prediction Center Products</u></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/qpf/fill_94qwbg.gif?" target="content">Day 1 Quantitative Precipitation</a></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/qpf/fill_98qwbg.gif?" target="content">Day 2 Quantitative Precipitation</a></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/basicwx/bwxloop_ndfd.html" target="content">Short Range Forecast Loop</a></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/qpf/excess_rain.shtml" target="content">Excessive Rainfall Forecasts</a></li>
+	<li><a href="http://www.wpc.ncep.noaa.gov/wwd/winter_wx.shtml" target="content">Winter Weather Forecasts (available in winter)</a></li>
+</ul>
+</div>
+
+
+<!-- UPPER AIR -->
+<div id="upperAirLinks" class="beforeSelect toggleDiv">
+<ul>
+	<li><a href="http://climate.cod.edu/flanis/analysis/raob/index.php?type=conus-current-current-skewt-KMHX-0" target="content">Latest Sounding</a></li>
+	<li><a href="http://weather.rap.ucar.edu/upper/upaCNTR_250.gif" target="content">250 mb [Heights, Isotachs]</a></li>
+	<li><a href="http://weather.rap.ucar.edu/upper/upaCNTR_300.gif" target="content">300 mb [Heights, Isotachs]</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/rapmeso/index.php?type=US-wvvor-25" target="content">500 mb WV &amp; Vort. Mesoanalysis</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/upper/index.php?type=US-vort-0" target="content">500 mb [Heights, Vorticity, Wind]</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/upper/index.php?type=US-deltaz-0" target="content">500 mb [12 hour Height Change]</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/upper/index.php?type=US-700rh-0" target="content">700 mb [Heights, Temp, RH]</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/upper/index.php?type=US-850dew-0" target="content">850 mb [Heights, Temp, Dewpoint]</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/rapmeso/index.php?type=US-850Tadv-25" target="content">850 mb [Temperature Advection]</a></li>
+	<li><a href="http://twister.sbs.ohio-state.edu/upper/charts/925" target="content">925 mb Plot</a></li>
+	<li><a href="http://climate.cod.edu/flanis/analysis/upper/index.php?type=US-thick-0" target="content">1000-500 mb Thickness</a></li>
+	<li><a href="http://wxmaps.org/pix/gfsmr.00hr.html" target="content">GFS Analysis Plots</a></li>
+</ul>
+</div>
+
+
+<!-- SATELLITE -->
+<div id="satelliteLinks" class="beforeSelect toggleDiv">
+<ul>
+<li><a href="http://climate.cod.edu/hanis/satellite/1km/index.php?type=Carolinas-vis-1-24&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">Visible Satellite Loop</a></li>
+	<li><a href="http://www.ssd.noaa.gov/goes/east/wfo/INT/h5-loop-rb.html" target="content">Local Infrared Satellite Loop</a></li>
+	<li><a href="http://www.ssd.noaa.gov/goes/east/ma/h5-mloop-rb.html" target="content">Regional Infrared Satellite Loop</a></li>
+	<li><a href="http://weather.rap.ucar.edu/satellite/displaySat.php?region=US&amp;itype=wv&amp;size=large&amp;duration=8" target="content">U.S. Water Vapor Loop</a></li>
+	<li><a href="http://www.star.nesdis.noaa.gov/smcd/opdb/aviation/loops/fog/cldbasese_loope.html" target="_blank">Low Cloud Base Loop (Night)</a></li>
+	<li><a href="http://www.ospo.noaa.gov/Products/atmosphere/hdwinds/goes.html?satellite=E&maploc=NH&maptype=WV&interval=1" target="content">GOES High Density Winds WV</a></li>
+	<li><a href="http://climate.cod.edu/hanis/satellite/hemi/index.php?type=polar-wv-1-96&amp;checked=&amp;prodDim=100&amp;overDim=100" target="content">N. Hemisphere WV Loop</a></li>
+	<li><a href="https://worldview.earthdata.nasa.gov/?p=geographic&amp;l=VIIRS_SNPP_CorrectedReflectance_TrueColor,MODIS_Aqua_CorrectedReflectance_TrueColor,MODIS_Terra_CorrectedReflectance_TrueColor,Reference_Labels%28hidden%29,Reference_Features,Coastlines%28hidden%29&amp;v=-156.21937635834234,9.118399801831792,-21.21937635834236,75.7043373018318" target="_blank">NASA Worldview</a></li>
+	<li><a href="http://realearth.ssec.wisc.edu" target="_blank">UW&ndash;Madison RealEarth</a></li>
+</ul>
+</div>
+
+
+<!-- RADAR -->
+<div id="radarLinks" class="beforeSelect toggleDiv">
+<ul>
+	<li><a href="http://weather.cod.edu/satrad/nexrad/index.php?type=RNK-undefined-0-undefined#" target="content">Local Radar via COD</a></li>
+	<li><a href="http://radar.weather.gov/ridge/radar.php?rid=RNK&product=N0R&overlay=01101111&loop=no" target="content">Local Radar via NWS</a></li>
+	<li><a href="http://tempest.aos.wisc.edu/radar/se3comphtml5.html" target="content">Regional Loop via UW-Madison</a></li>
+	<li><a href="http://radar.weather.gov/ridge/Conus/full_lite_loop.php" target="content">U.S. Radar Loop</a></li>
+	<li><a href="http://mrms.ou.edu" target ="content">MRMS-NSSL Suite Launcher</a></li>
+</ul>
+</div>
+
+
+<!-- NUMERICAL WEATHER PREDICTION -->
+<div id="NWPlinks" class="beforeSelect toggleDiv">
+<ul>
+	<li class="sublinkHeader"><u>Text Output/Meteorograms</u></li>	
+	<li><a href="https://mesonet.agron.iastate.edu/mos/table.phtml?station=KINT" target="content">ISU Interactive MOS Table</a></li>
+	<li><a href="http://www.nws.noaa.gov/cgi-bin/mos/getall.pl?sta=KINT" target="content">NWS One Stop MOS</a></li>
+	<li><a href="http://www.mdl.nws.noaa.gov/~naefs_ekdmos/text_prods_v1.1.php" target="content">EKDMOS via MDL</a></li>
+	<li><a href="http://www.meteor.iastate.edu/~ckarsten/bufkit/image_loader.phtml?site=KINT&amp;nam=on&amp;nam_mos=on&amp;namm=on&amp;gfs_mos=on&amp;gfs=on&amp;gfsm_mos=on&amp;gfsm=on&amp;nws=on&amp;rap=on&amp;obs=on&amp;nam4km=on&amp;con=on&amp;ratio=11&amp;max_t=on&amp;cobb=on&amp;compaction=on&amp;mean_mt=on&amp;max_mt=on&amp;mean=on" target="content">ISU Meteorogram Generator</a></li>
+	<li><a href="https://spotwx.com" target="_blank">SpotWx Meteorograms</a></li>
+	<li><a href="http://www.nws.noaa.gov/mdl/gfslamp/meteodata.php?BackHour=0&amp;sta=KINT" target="content">LAMP</a></li>
+		<li class="lastlink"><a href="http://www.nws.noaa.gov/cgi-bin/lamp/getlav.pl?sta=KINT" target="content">LAMP Text</a></li>
+	<li><a href="http://ensemble.ucar.edu/dash.php?&amp;lat=35.87&amp;lon=-78.78&amp;t=temp&amp;b=qpf" target="content">NCAR Ensemble Plumes</a></li>
+	<li><a href="http://www.spc.noaa.gov/exper/sref/srefplumes/?SID=INT" target="content">SREF Plumes</a></li>
+	<li><a href="http://68.226.77.253/text/1DegGFS/GFS_KINT.txt" target="content">GFS Text Output</a></li>
+	<li><a href="https://wwwl.accuweather.com/pro_login.php" target="_blank">ECMWF (UNCA Login)</a></li>
+	
+	<li class="sublinkHeader"><u>Graphical Output</u></li>
+	<li><a href="http://www.pivotalweather.com/" target="content">Pivotal Weather Models Page</a></li>
+	<li><a href="http://weather.cod.edu/forecast/" target="content">COD Models Page</a></li>
+	<li><a href="http://www.tropicaltidbits.com/analysis/models/" target="content">Tropical Tidbits Models Page</a></li>
+	<li><a href="http://weather.graphics/hrrr/yhrrr.php" target="content">WxBell HRRR Plots</a></li>
+	<li><a href="http://rapidrefresh.noaa.gov/HRRR/Welcome.cgi" target="content">HRRR</a></li>
+	<li><a href="http://www.wunderground.com/wundermap/?zoom=4&amp;rad=0&amp;wxsn=0&amp;mm=1&amp;mm.mdl=ECMWF&amp;mm.type=SURPRE&amp;mm.hour=0&amp;mm.opa=100" target="content">ECMWF via WunderMap</a></li>
+	<li><a href="http://weather.gc.ca/astro/clds_vis_animation_e.html?id=se&amp;utc=12" target="content">GEM Clouds (12Z Run)</a></li>
+	<li><a href="http://weather.gc.ca/astro/clds_vis_animation_e.html?id=se&amp;utc=00" target="content">GEM Clouds (0Z Run)</a></li>
+	<li><a href="http://mag.ncep.noaa.gov/model-guidance-model-parameter.php?group=Model%20Guidance&amp;model=gefs-spag&amp;area=namer&amp;cycle=&amp;param=500_540_582_ht&amp;fourpan=no&amp;imageSize=&amp;ps=model" target="_blank">GEFS Spaghetti Plots</a></li>
+	<li><a href="http://www.esrl.noaa.gov/psd/map/images/ens/ens.html#us" target="content">NMC Ensemble</a></li>
+	<li><a href="http://www.atmos.albany.edu/facstaff/tang/forecast/" target="content">SUNY Albany Models Page</a></li>
+	<li><a href="http://www.twisterdata.com" target="content">TwisterData Models Page</a></li>
+	<li><a href="http://mp1.met.psu.edu/~fxg1/ewallhires.html" target="content">PSU e-WALL</a></li>
+</ul>
+</div>
+
+
+<!-- STATION INFORMATION -->
+<div id ="stationInfoLinks" class="beforeSelect toggleDiv">
+<ul>
+	<li><p>Latitude: 36.14&deg;N</p></li>
+	<li><p>Longitude: 80.22&deg;W</p></li>
+	<li><p>Elevation: 984 ft</p></li>
+	<!--li><a href="https://www.google.com/maps/place/35%C2%B053'31.9%22N+78%C2%B046'54.8%22W/@35.8792392,-78.800384,4854m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d35.8922!4d-78.7819" target="_blank">Google Maps</a></li>-->
+	<li><a href="http://xmacis.rcc-acis.org/" target="content">xmACIS2</a></li>
+</ul>
+</div>
+
+
+<!-- OTHER RESOURCES -->
+<div id="otherLinks" class="beforeSelect toggleDiv">
+<ul>
+<li><a href="/files/ForecastSheet.xls">Forecasting Spreadsheet</a></li>
+<li><a href="https://mesonet.agron.iastate.edu/mos/" target="content">GFS/NAM MOS Bias Plots</a></li>
+<li><a href="http://www.atmos.albany.edu/student/ppapin/hrrr.php#wxch" target="content">Philippe Papin's HRRR Page</a></li>
+<li><a href="http://leonardo.met.tamu.edu/Weather_Interface/" target="content">Texas A&amp;M Weather Interface</a></li>
+<li><a href="http://www.simuawips.com/" target="content">SimuAWIPS</a></li>
+<li><a href="http://www.aos.wisc.edu/~mkcollins4/wxchallenge.html" target="content">Marc Collins' Weather Portal</a></li>
+</ul>
+</div>
+</div><!-- End of menucontainer -->
+
+
+<div id="footerDiv">
+
+<div id="footerLinks">
+<ul>
+	<li><a id="link1" href="/index.html">Home</a></li>
+
+<div id="unitConverterShow">
+	<li><h4>Unit Converters</h4><img src="/images/right_arrow.png" alt="" /><img class="leftArrowHidden" src="/images/left_arrow.png" alt="" /></li>
+</div>
+</ul>
+</div>
+
+<!-- Beginning of the html and javascript for the unit converter. Note that the javascript cannot be moved to the scripts section -->
+<div id="unitConverter">
+<select id="converterSelector">
+	<option value="" selected disabled>Unit Converters</option>
+	<option value="wspdConverter">mph to kt</option>
+	<option value="degcToDegf">&deg;C to &deg;F</option>
+	<option value="degfToDegc">&deg;F to &deg;C</option>
+</select>
+
+<div id="wspdConverter" class="converterStyle toggleDivConverter">
+<form id="wspdForm" onkeypress="return event.keyCode != 13">
+<input id="wspdinput" type="text" placeholder="Enter Wind Speed" maxlength="4" size="4" />
+<label for="wspdinput"> mph</label>
+<button id="wspdButton" type="button">Convert</button>
+</form>
+
+<script type="text/javascript">
+document.getElementById('wspdButton').addEventListener('click', getWindSpeed, false);
+document.getElementById("wspdinput").addEventListener("keydown", getKeyCode, false);
+function getKeyCode(e){
+var keyCode = e.keyCode;
+	if(keyCode=='13') {
+        getWindSpeed();
+    }
+}
+	
+function getWindSpeed() {
+	var wspd = document.getElementById('wspdinput').value;
+	var mph = parseFloat(wspd);
+	var kt = mph * 0.868976;
+	var spd_kt = kt.toFixed(1);
+	var wind = document.getElementById('wind');
+		wind.textContent = spd_kt + ' kt';
+		
+}
+</script>
+<div>
+<p id="wind" class="converterResult"></p>
+</div>
+</div>
+
+<div id="degcToDegf" class="converterStyle toggleDivConverter">
+<form id="tempcForm" onkeypress="return event.keyCode != 13">
+<input id="tempCInput" type="text" placeholder="Enter Temp" maxlength="4" size="4" />
+<label for="tempCInput"> &deg;C</label>
+<button id="ctofButton" type="button">Convert</button>
+</form>
+
+<script type="text/javascript">
+document.getElementById('ctofButton').addEventListener('click', getTempC, false);
+document.getElementById("tempCInput").addEventListener("keydown", getKeyCode, false);
+function getKeyCode(e){
+var keyCode = e.keyCode;
+	if(keyCode=='13') {
+        getTempC();
+    }
+}
+	
+function getTempC() {
+	var tempC = document.getElementById('tempCInput').value;
+	var tempCRounded = parseFloat(tempC);
+	var tempF = (tempCRounded * 1.8) + 32;
+	var tempFRounded = tempF.toFixed(1);
+	var tempFConverted = document.getElementById('degF');
+		tempFConverted.textContent = tempFRounded + '°F';
+		
+}
+</script>
+<div>
+<p id="degF" class="converterResult"></p>
+</div>
+</div>
+
+<div id="degfToDegc" class="converterStyle toggleDivConverter">
+<form id="tempfForm" onkeypress="return event.keyCode != 13">
+<input id="tempFInput" type="text" placeholder="Enter Temp" maxlength="4" size="4" />
+<label for="tempFInput"> &deg;F</label>
+<button id="ftocButton" type="button">Convert</button>
+</form>
+
+<script type="text/javascript">
+document.getElementById('ftocButton').addEventListener('click', getTempF, false);
+document.getElementById("tempFInput").addEventListener("keydown", getKeyCode, false);
+function getKeyCode(e){
+var keyCode = e.keyCode;
+	if(keyCode=='13') {
+        getTempF();
+    }
+}
+	
+function getTempF() {
+	var tempF = document.getElementById('tempFInput').value;
+	var tempFRounded = parseFloat(tempF);
+	var tempC = (tempFRounded - 32) * 0.5556;
+	var tempCRounded = tempC.toFixed(1);
+	var tempCConverted = document.getElementById('degC');
+		tempCConverted.textContent = tempCRounded + '°C';
+		
+}
+</script>
+<div>
+<p id="degC" class="converterResult"></p>
+</div>
+</div>
+
+</div><!-- End of wrapperToHideMenu -->
+
+
+
+</div>
+
+</div>
+</body>
+</html>
